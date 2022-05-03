@@ -1,0 +1,84 @@
+.container{
+    position: absolute;
+    background-color: rgb(232, 225, 238);
+    width:100%;
+    height:100%;
+}
+.boostrap_sign{
+    position: absolute;
+    background-color: rgb(177, 141, 207);
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boostrap{
+    font-weight: bold;
+    background-color: none;
+    height:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:25px;
+   
+}
+
+.sign{
+    font-weight: bold;
+    background-color: blue;
+    height:20px;
+    margin-right:20px;
+    margin-top: 20px;
+    margin-bottom:25px;
+    color:white;
+}
+   
+.business{
+    position: absolute;
+    background-image: url("sea.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4% ;
+    width:100%;
+    height:90%;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.business_text{
+    position: absolute;
+    margin-top: 4% ;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size:35px ;
+    height:40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form{
+    position: absolute;
+    margin-top: 26% ;
+    margin-left: 40%;
+    
+    font-size:35px ;
+    height:4%;
+    display: flex;
+    justify-content: center;
+    }
+
+.form2{
+        display: flex;
+        justify-content: center;
+        }
+
+.button{
+       background-color: rgb(110, 110, 204);
+       padding: 0px 0px;
+       margin-left: 2px;
+       border:none;
+       cursor: pointer;
+       width:100%;
+    
+}
+

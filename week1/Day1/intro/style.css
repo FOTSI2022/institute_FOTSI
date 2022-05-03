@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(194, 169, 231);
+}
+
+p{
+    background-color: aqua;
+}
+
+div + h2 {
+    background-color: yellow;
+  }
+
+
+  div > h2 {
+    background-color: green;
+  }
+/*
+  div ~ h2 {
+    background-color: blue;
+  }
+*/
+
+.drapeau {
+  background-color: rgb(162, 214, 162);
+  width:200px;
+  height:200px
+  display: block;
+  }
+
+.drapeau div{
+  width:25px;
+  height:55px
+}
+
+.vert{
+  background-color: green;
+  padding:0px;
+}
+.rouge{
+  background-color: red;
+  padding:0px;
+}
+.jaune{
+  background-color: yellow;
+  padding:0px;
+
+}

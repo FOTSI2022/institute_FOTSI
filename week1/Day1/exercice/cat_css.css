@@ -1,0 +1,42 @@
+.divcat {
+    border: 5px outset red;
+    background-color: lightblue;
+    height: 200px;
+    width: 450px;
+    margin:auto;
+  }
+
+  .lionscaracteristique{
+    border: 5px outset red;
+    text-align: center;
+    height: 20px;
+    width: 450px;
+    margin:auto;
+    color: red;
+}
+
+div {
+    transition: width 2s;
+  }
+
+
+div:hover {
+    width: 500px;
+  }
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    height: 20px;
+    width: 450px;
+    margin:auto;
+    border-collapse: collapse;
+  }
+
+  .divlion {
+    border: 5px outset red;
+    background-color: lightblue;
+    height: 200px;
+    width: 450px;
+    margin:auto;
+  }
