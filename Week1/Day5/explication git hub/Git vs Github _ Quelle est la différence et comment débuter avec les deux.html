@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://kinsta.com/fr/base-de-connaissances/git-vs-github/ -->
+<html lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5333ED">
+
+<!--
+<pre>
+                                                ..                   ▄■▀▀▀▀■
+ ▄██████▄                                   –▀▀▀▀▀ ▀▀––            .▀        ▀
+█▀  ▀████ ░  ████ ███▄ ░███▄ █████▄   ▄█████████▄▄███████████▄ ▄██████▄ ▄██▄ ░
+█    ████ ░ ████ ░████ ░█████ ░████ ░████▀▀▀▀██▀ ░  ████ ░   ████▀     ▀████ ░
+ ▀   █▓▓█ ░█▓▓█ ░ █▓▓█ ░█▓▓█ ░ █▓▓█ ░▓▓█▀ ░   ▀     █▓▓█ ░  █▓▓█ ░      █▓▓█ ░
+ . ┌─█▓▓█ █▓▓█ ░──█▒▒█─░█▒▒█─░─█▒▒█─░▀▒▒▒▒▒▒▒█▄──░──█▒▒█─░─█▒▒█ ░ ──────█▒▒█ ░
+   : █░░█ ░█░░█ ░ █░░█ ░█░░█ ░ █░░█ ░  ▀░░░░░░░█ ░  █░░█ ░ █░░█ ░       █░░█ ░
+   . █..█ ░ █..█ ░█..█ ░█..█ ░ █..█ ░     .  █..█ ░ █..█ ░  █..█ ░      █..█ ░
+   | █  █ ░  █  █ █  █ ░█  █ ░ █  █ ░  ▄▀     █  █ ░█  █▄ ░  █  █▄    ▄██  █ ░
+   └ ▀███ ░───████████ ░███▀ ░─████ ░ ██──────████ ░▀███▓▀ ░  ▀██████▀ ▀██▀ ░
+      ░░░░░      ▀███▀  ░░░░░░ ████ ░ ███▄  ▄████ ░   ░░░░      ░░░░░░   ░░
+           ▄                   ▀███ ░  ▀███████▀          .
+   ┌──────▀▀▀▀ ▀▀─────────────── ██ ──────────────────────▀▀▄▄▄  ▄▄▄──────┐
+   : ░                            ▀█▄    ▄                      ▀▀       ░ :
+   |                                ▀––▀                                   |
+   |        We're building a world-class hosting platform at Kinsta.       |
+   |                                                                       |
+   |        🌎 Remote             🧕 Diverse             💪 Kick-ass      |
+   |                                                                       |
+   |                                                                       |
+   |        https://kinsta.com/careers/                     Join us!       |
+   |                                                                       |
+   |                                                                       |
+   | ░                                                                   ░ |
+   └───────▀▀▀▀ ▀▀───────────────────────────────────────────▀▀ ▀▀─────────┘
+</pre>
+-->
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.1.2 (Yoast SEO v17.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Git vs Github : Quelle est la différence et comment débuter avec les deux</title>
+	<meta name="description" content="Git est-il la même chose que GitHub ? Avez-vous besoin des deux pour le développement ? Consultez ce guide sur les principales différences entre git et GitHub et apprenez comment débuter.">
+	<link rel="canonical" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Git vs Github : Quelle est la différence et comment débuter avec les deux">
+	<meta property="og:description" content="Si vous avez fait des recherches ou expérimenté le codage pour WordPress, vous avez peut-être entendu parler de git ou GitHub. Ces outils peuvent être">
+	<meta property="og:url" content="https://kinsta.com/fr/base-de-connaissances/git-vs-github/">
+	<meta property="og:site_name" content="Kinsta">
+	<meta property="article:publisher" content="https://www.facebook.com/kinstafrance/">
+	<meta property="article:modified_time" content="2020-11-02T15:01:36+00:00">
+	<meta property="og:image" content="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png">
+	<meta property="og:image:width" content="1460">
+	<meta property="og:image:height" content="730">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png">
+	<meta name="twitter:site" content="@kinsta_fr">
+	<meta name="twitter:label1" content="Durée de lecture est.">
+	<meta name="twitter:data1" content="11 minutes">
+	<script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/insight.min.js.téléchargement"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/901459863397931" async=""></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/identity.js.téléchargement" async=""></script><script async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/fbevents.js.téléchargement"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/6635519.js.téléchargement" type="text/javascript" id="hs-script-loader"></script><script async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/clarity.js.téléchargement"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/6635519.js(1).téléchargement" type="text/javascript" id="hs-analytics"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/6635519.js(2).téléchargement" type="text/javascript" id="cookieBanner-6635519" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="6635519" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/fb.js.téléchargement" type="text/javascript" id="hs-ads-pixel-6635519" data-ads-portal-id="6635519" data-ads-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6635519" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/conversations-embed.js.téléchargement" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="6635519" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/collectedforms.js.téléchargement" type="text/javascript" id="CollectedForms-6635519" crossorigin="anonymous" data-leadin-portal-id="6635519" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6635519" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/main.32155010.js.téléchargement"></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js"></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/f.txt"></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/analytics.js.téléchargement"></script><script async="" defer="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/uwt.js.téléchargement"></script><script async="" defer="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/core.js.téléchargement"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/bat.js.téléchargement" defer=""></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js(1)"></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js(2)"></script><script type="text/javascript" async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js(3)"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kinsta.com/fr/#organization","name":"Kinsta","url":"https://kinsta.com/fr/","sameAs":["https://www.facebook.com/kinstafrance/","https://www.instagram.com/kinstahosting/","https://www.linkedin.com/company/kinsta/","https://www.youtube.com/c/Kinsta","https://www.pinterest.com/kinstahosting/","https://twitter.com/kinsta_fr"],"logo":{"@type":"ImageObject","@id":"https://kinsta.com/fr/#logo","inLanguage":"fr-FR","url":"https://kinsta.com/fr/wp-content/uploads/sites/4/2018/05/kinsta.png","contentUrl":"https://kinsta.com/fr/wp-content/uploads/sites/4/2018/05/kinsta.png","width":580,"height":580,"caption":"Kinsta"},"image":{"@id":"https://kinsta.com/fr/#logo"}},{"@type":"WebSite","@id":"https://kinsta.com/fr/#website","url":"https://kinsta.com/fr/","name":"Kinsta","description":"H\u00e9bergement WordPress Infog\u00e9r\u00e9 Rapide, S\u00e9curis\u00e9","publisher":{"@id":"https://kinsta.com/fr/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kinsta.com/fr/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"ImageObject","@id":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/#primaryimage","inLanguage":"fr-FR","url":"https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png","contentUrl":"https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png","width":1460,"height":730,"caption":"Git contre Github : Quelle est la diff\u00e9rence et comment commencer avec les deux"},{"@type":"WebPage","@id":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/#webpage","url":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/","name":"Git vs Github : Quelle est la diff\u00e9rence et comment d\u00e9buter avec les deux","isPartOf":{"@id":"https://kinsta.com/fr/#website"},"primaryImageOfPage":{"@id":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/#primaryimage"},"datePublished":"2020-01-29T16:35:53+00:00","dateModified":"2020-11-02T15:01:36+00:00","description":"Git est-il la m\u00eame chose que GitHub ? Avez-vous besoin des deux pour le d\u00e9veloppement ? Consultez ce guide sur les principales diff\u00e9rences entre git et GitHub et apprenez comment d\u00e9buter.","breadcrumb":{"@id":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://kinsta.com/fr/base-de-connaissances/git-vs-github/"]}]},{"@type":"BreadcrumbList","@id":"https://kinsta.com/fr/base-de-connaissances/git-vs-github/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kinsta.com/fr/"},{"@type":"ListItem","position":2,"name":"Knowledge Base","item":"https://kinsta.com/fr/base-de-connaissances/"},{"@type":"ListItem","position":3,"name":"Git vs Github : Quelle est la diff\u00e9rence et comment d\u00e9buter avec les deux"}]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Kinsta » Flux" href="https://kinsta.com/fr/feed/">
+<link rel="alternate" type="application/rss+xml" title="Kinsta » Git vs Github : Quelle est la différence et comment débuter avec les deux Flux des commentaires" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/feed/">
+<link rel="stylesheet" id="kinsta-css-style-css" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="kinsta-css-templates/post-types/knowledgebase-css" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/knowledgebase.css" type="text/css" media="all">
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/novashare.min.js.téléchargement" id="novashare-js-js"></script>
+<link rel="https://api.w.org/" href="https://kinsta.com/fr/wp-json/"><link rel="alternate" type="application/json" href="https://kinsta.com/fr/wp-json/wp/v2/knowledgebase/36498"><link rel="shortlink" href="https://kinsta.com/fr/?p=36498">
+<link rel="alternate" type="application/json+oembed" href="https://kinsta.com/fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkinsta.com%2Ffr%2Fbase-de-connaissances%2Fgit-vs-github%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://kinsta.com/fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkinsta.com%2Ffr%2Fbase-de-connaissances%2Fgit-vs-github%2F&amp;format=xml">
+
+<link rel="alternate" href="https://kinsta.com/knowledgebase/git-vs-github/" hreflang="x-default">
+<link rel="alternate" href="https://kinsta.com/knowledgebase/git-vs-github/" hreflang="en">
+<link rel="alternate" href="https://kinsta.com/pt/base-de-conhecimento/git-vs-github/" hreflang="pt">
+<link rel="alternate" href="https://kinsta.com/es/base-de-conocimiento/git-vs-github/" hreflang="es">
+<link rel="alternate" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/" hreflang="fr">
+<link rel="alternate" href="https://kinsta.com/it/knowledgebase/git-contro-github/" hreflang="it">
+<link rel="alternate" href="https://kinsta.com/se/kunskapsbas/git-vs-github/" hreflang="sv">
+<link rel="alternate" href="https://kinsta.com/de/wissensdatenbank/git-vs-github/" hreflang="de">
+<link rel="alternate" href="https://kinsta.com/dk/videnbase/git-vs-github/" hreflang="da">
+<link rel="alternate" href="https://kinsta.com/jp/knowledgebase/git-vs-github/" hreflang="ja">
+<link rel="alternate" href="https://kinsta.com/nl/kennisbank/git-vs-github/" hreflang="nl">
+<script>window.$kinsta = {"env":"production","restBaseURL":"https:\/\/kinsta.com\/fr\/wp-json\/","siteURL":"https:\/\/kinsta.com\/fr\/","themeDirURL":"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta\/","uploadDirBaseURL":"https:\/\/kinsta.com\/fr\/wp-content\/uploads\/sites\/4\/","postURL":{"\/legal\/privacy-policy":"\/"},"isSingular":true,"wpPost":{"id":36498,"title":"Git vs Github : Quelle est la diff\u00e9rence et comment d\u00e9buter avec les deux","type":"knowledgebase"}}</script>
+            <link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/BrandonText-light.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/BrandonText-Black.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/BrandonText-Medium.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/roboto/Roboto-300.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/roboto/Roboto-regular.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/roboto/Roboto-500.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="https://kinsta.com/fr/wp-content/themes/kinsta/fonts/roboto/Roboto-700.woff2" as="font" type="font/woff2" crossorigin=""><link rel="icon" href="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/09/kinsta-favicon-150x150.png" sizes="32x32">
+<link rel="icon" href="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/09/kinsta-favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/09/kinsta-favicon.png">
+<meta name="msapplication-TileImage" content="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/09/kinsta-favicon.png">
+<link rel="stylesheet" type="text/css" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/5378.css"><link rel="stylesheet" type="text/css" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/7279.css"><link rel="stylesheet" type="text/css" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/3438.css"><style data-emotion="yogurt" data-s=""></style><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/26014448.js.téléchargement" type="text/javascript" async="" data-ueto="ueto_fc916c478c"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/f(1).txt"></script><meta http-equiv="origin-trial" content="A3RXR0VQaEp/AfxPFnBULSgoOVp60FcUKXSswIgHKTXJHt6JnS4juFg8/7tWVoqWOyx77v0ujwGgxRpU8jEgnAAAAABveyJvcmlnaW4iOiJodHRwczovL3MucGluaW1nLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js(4)"></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/f(2).txt"></script></head>
+
+<body class="knowledgebase-template-default single single-knowledgebase postid-36498 wp-embed-responsive object-36498"><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}</style>
+
+<a class="skip-to-content" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#main">
+  Aller au contenu</a>
+
+
+
+<header id="nav" class="site-menu site-menu--theme-default is-scrolled is-transition-enabled is-pinned">
+    <div class="site-menu__inner">
+        <a href="https://kinsta.com/fr/" class="site-menu__logo" rel="home">
+            <svg class="icon icon--logo" aria-hidden="true" focusable="false" title="Kinsta"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#logo"></use></svg><span class="screen-reader-text">Kinsta</span>        </a>
+
+        <a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#nav" id="nav-toggle" class="site-menu__nav__toggle" aria-label="Menu hamburger" aria-haspopup="true" aria-expanded="false">
+            Navigation        </a>
+
+        <nav class="site-menu__nav" aria-label="Menu principal">
+    <div class="megamenu">
+        <ul class="megamenu__ul">
+                            <li class="megamenu__li">
+            <a href="https://kinsta.com/fr/fonctionnalites/" class="megamenu__item" tabindex="0">Fonctionnalités</a>
+        </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0" aria-expanded="false">Solutions</span>
+                <ul class="megamenu__submenu" data-title="Solutions" aria-hidden="true">
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-wordpress-agences/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/stopwatch.svg" width="16" height="16" alt="" aria-hidden="true">
+                Agence            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-wordpress-entreprise/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/clone.svg" width="16" height="16" alt="" aria-hidden="true">
+                Entreprise            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-woocommerce/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/percentage.svg" width="16" height="16" alt="" aria-hidden="true">
+                WooCommerce            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-petites-entreprises/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/home.svg" width="16" height="16" alt="" aria-hidden="true">
+                Petites entreprises            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-wordpress-site-adhesion/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/star.svg" width="16" height="16" alt="" aria-hidden="true">
+                Site d'adhésion            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-wordpress-multisite/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/platforms.svg" width="16" height="16" alt="" aria-hidden="true">
+                Multisite            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-wordpress-education/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/graduation-hat.svg" width="16" height="16" alt="" aria-hidden="true">
+                Éducation            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-lms-wordpress/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/lightbulb.svg" width="16" height="16" alt="" aria-hidden="true">
+                LMS            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/hebergement-organisations-but-non-lucratif/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/globe.svg" width="16" height="16" alt="" aria-hidden="true">
+                Caritatif            </a>
+</li>
+                    </ul>
+    </li>
+                            <li class="megamenu__li">
+            <a href="https://kinsta.com/fr/plans/" class="megamenu__item" tabindex="0">Plans</a>
+        </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0" aria-expanded="false">Clients</span>
+                <div class="megamenu__submenu megamenu__submenu--post-type" aria-hidden="true">
+                            <div class="related-posts related-posts--grid">
+        <div class="related-posts__inner container">
+            <h2 class="related-posts__title">
+                Études de cas            </h2>
+
+            <div class="posts-grid related-posts__list">
+<div class="post-preview post-50962 case_studies type-case_studies status-publish has-post-thumbnail hentry">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/pipe-wrench-760x380-1-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Comment Pipe Wrench a cessé de s&#39;inquiéter de son site Web pour se concentrer sur la croissance de son entreprise grâce à Kinsta" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/pipe-wrench-760x380-1-360x180.png 360w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/pipe-wrench-760x380-1-300x150.png 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/pipe-wrench-760x380-1.png 760w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/clients/pipe-wrench/" tabindex="-1">
+        Comment Pipe Wrench a cessé de s’inquiéter de son site web pour se concentrer sur la croissance de son entreprise grâce à Kinsta    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Pipe Wrench est un magazine en ligne qui devait trouver un moyen de faire face à des pics de trafic massifs sans craindre que son site ne tombe en…    </div>
+    </div>
+</div>
+
+<div class="post-preview post-50921 case_studies type-case_studies status-publish has-post-thumbnail hentry">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/wordlift-360x180.jpeg" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="wordlift" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/wordlift-360x180.jpeg 360w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/wordlift-300x150.jpeg 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/wordlift.jpeg 760w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/clients/wordlift/" tabindex="-1">
+        Comment WordLift a pu dire adieu aux problèmes de performance, de stabilité et d’assistance après avoir migré chez Kinsta    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        WordLift est passé à Kinsta et a immédiatement dit adieu aux problèmes de performance, de stabilité et de support. Lisez leur histoire maintenant.…    </div>
+    </div>
+</div>
+
+<div class="post-preview post-50967 case_studies type-case_studies status-publish has-post-thumbnail hentry">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/cornershop-creative-1-360x180.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Cornershop Creative" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/cornershop-creative-1-360x180.png 360w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/cornershop-creative-1-300x150.png 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2021/12/cornershop-creative-1.png 760w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/clients/cornershop-creative/" tabindex="-1">
+        Cornershop Creative transfère 110 sites chez Kinsta et gère efficacement 1,2 million de visites par mois sur son site    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Cornershop Creative a désormais transféré plusieurs sites très fréquentés vers l'hébergement Kinsta, qui gèrent collectivement des millions de visi…    </div>
+    </div>
+</div>
+</div>        </div>
+    </div>
+                            <a href="https://kinsta.com/fr/clients/" class="megamenu__submenu--post-type__all-link" tabindex="-1">
+                    Voir toutes                </a>
+                    </div>
+    </li>
+                            <li class="megamenu__li megamenu__li--has-children">
+            <span role="button" class="megamenu__item megamenu__item--has-children" tabindex="0" aria-expanded="false">Contactez-nous</span>
+                <ul class="megamenu__submenu megamenu__submenu--has-descriptions" data-title="Contactez-nous" aria-hidden="true">
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/planifier-demo/" class="megamenu__submenu__item" id="nav-js-sales" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/calendar.svg" width="16" height="16" alt="" aria-hidden="true">
+                Demandez une démo en direct                    <span class="megamenu__submenu__item__description">
+                Obtenez une démonstration personnalisée de notre puissant tableau de bord et de nos fonctionnalités d'hébergement.            </span>
+            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://kinsta.com/fr/nous-contacter/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/chat.svg" width="16" height="16" alt="" aria-hidden="true">
+                Posez vos questions                    <span class="megamenu__submenu__item__description">
+                Parlez-nous de votre site ou de votre projet. Nous vous répondrons en un jour ouvrable.            </span>
+            </a>
+</li>
+                            <li class="megamenu__submenu__li">
+    <a href="https://my.kinsta.com/" class="megamenu__submenu__item" tabindex="-1">
+                    <img class="megamenu__submenu__item__icon" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/lightning.svg" width="16" height="16" alt="" aria-hidden="true">
+                Obtenez l'aide de notre équipe                    <span class="megamenu__submenu__item__description">
+                Parlez avec nos experts en lançant une discussion dans le tableau de bord MyKinsta.            </span>
+            </a>
+</li>
+                    </ul>
+    </li>
+                            <li class="megamenu__li site-menu__hidden-large">
+            <a href="https://my.kinsta.com/?lang=fr" class="megamenu__item" tabindex="0">Connexion</a>
+        </li>
+                    </ul>
+    </div>
+</nav>
+
+                    <div class="site-menu__search" id="search-form-container">
+                <form class="site-menu__search__form" method="get" action="https://kinsta.com/fr" data-hs-cf-bound="true">
+                    <label>
+                        <span class="screen-reader-text">Rechercher</span>
+                        <input name="s" type="text" required="required" value="" placeholder="Rechercher dans toutes les ressources Kinsta">                    </label>
+                    <button type="submit" class="site-menu__search__icon">
+                        <span class="screen-reader-text">Envoyer la recherche</span>
+                        <svg class="icon icon--search" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#search"></use></svg>                    </button>
+                </form>
+            </div>
+        
+                    <div class="site-menu__extras">
+                                                        <a href="https://my.kinsta.com/login/?lang=fr" class="site-menu__extras__item site-menu__hidden-small">
+                        Connexion                    </a>
+                                                        <a href="https://kinsta.com/fr/planifier-demo/" class="site-menu__extras__item button button--ghost--purple">
+                        Planifier une démo                    </a>
+                            </div>
+            </div>
+</header>
+
+<div class="site-menu-placeholder" id="site-menu-placeholder"></div>
+
+<main id="main">
+
+
+<div class="knowledgebase-single-container container">        <div class="container container--narrow pt--40 post-36498 knowledgebase type-knowledgebase status-publish has-post-thumbnail hentry tag-controle-des-versions tag-git knowledge_categories-questions-sur-lenvironnement-de-dev">
+            
+<div class="article-title container container--narrow">
+            
+    <nav class="breadcrumbs breadcrumbs--only-last" aria-label="Fils d&#39;Ariane">
+        <ol>
+                                            <li>
+                    <a href="https://kinsta.com/fr" class="breadcrumbs__link">
+                        Accueil                    </a>
+                </li>
+                                            <li>
+                    <a href="https://kinsta.com/fr/ressources/" class="breadcrumbs__link">
+                        Centre de Ressources                    </a>
+                </li>
+                                            <li>
+                    <a href="https://kinsta.com/fr/base-de-connaissances/" class="breadcrumbs__link">
+                        Base de connaissances                    </a>
+                </li>
+                                            <li>
+                    <a href="https://kinsta.com/fr/categories_base_de_connaissances/questions-sur-lenvironnement-de-dev/" class="breadcrumbs__link">
+                        Questions sur l'environnement de dev                    </a>
+                </li>
+                    </ol>
+    </nav>
+    
+    <h1 class="article-title__title">
+        Git vs Github : Quelle est la différence et comment débuter avec les deux    </h1>
+
+    
+            <div class="article-title__meta">
+                                        <time class="article-title__meta__date" datetime="2020-11-02T16:01:36+00:00">
+                    Dernière mise à jour : 2 novembre 2020                </time>
+                    </div>
+    
+            <img width="1024" height="512" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/git-vs-github-1024x512.png" class="article-title__featured-image wp-post-image" alt="Git contre Github : Quelle est la différence et comment commencer avec les deux" loading="eager" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github-1024x512.png 1024w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github-300x150.png 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github-768x384.png 768w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png 1460w" sizes="(max-width: 1024px) 100vw, 1024px">    </div>
+
+            <div class="user-content post-content pt--40 pb--60 js-anchor-hashes" id="post-content-36498"><div><div style="height: 0px; overflow: hidden;"><div class="js-slide-toggle" style="overflow: hidden; position: relative;"><iframe style="background: transparent; border: none; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; z-index: -1;" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/saved_resource.html"></iframe><div class="language-notice"><div class="language-notice__icons"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="45" height="55"><path fill="none" stroke="#5333ED" stroke-width="2" stroke-miterlimit="10" d="M34.6 2.417H10.34c-4.882.037-8.824 3.808-8.84 8.456v28.254c.016 4.663 3.983 8.441 8.88 8.456h16.91l5.21 4.999v-4.999h2.1c4.905-.005 8.883-3.785 8.9-8.456V10.873c-.016-4.67-3.994-8.45-8.9-8.456z"></path><path fill="#5333ED" d="M37.127 24.561c-.482-7.318-6.333-13.168-13.65-13.65v-.032h-1.954v.032c-7.318.482-13.168 6.333-13.65 13.65h-.032v1.954h.032c.482 7.318 6.333 13.168 13.65 13.65v.032h1.954v-.032c7.318-.482 13.168-6.333 13.65-13.65h.032v-1.954h-.032zM17.018 14.074c-.944 1.256-1.73 2.83-2.299 4.623h-2.926a12.76 12.76 0 0 1 5.225-4.623zm-6.249 6.578h3.436a23.329 23.329 0 0 0-.481 3.909H9.832c.105-1.376.429-2.69.937-3.909zm-.937 5.864h3.891c.054 1.362.219 2.674.481 3.909h-3.436a12.676 12.676 0 0 1-.936-3.909zm1.96 5.864h2.926c.569 1.794 1.355 3.367 2.299 4.623a12.773 12.773 0 0 1-5.225-4.623zm9.731 5.735c-2.011-.534-3.739-2.692-4.788-5.735h4.788v5.735zm0-7.69h-5.339a21.946 21.946 0 0 1-.504-3.909h5.844v3.909zm0-5.864h-5.844c.056-1.376.231-2.691.504-3.909h5.339v3.909zm0-5.864h-4.788c1.049-3.043 2.778-5.201 4.788-5.735v5.735zm11.685 0h-2.927c-.569-1.794-1.355-3.367-2.299-4.623a12.77 12.77 0 0 1 5.226 4.623zm-9.731-5.735c2.011.534 3.739 2.692 4.788 5.735h-4.788v-5.735zm0 7.69h5.339c.274 1.219.448 2.533.504 3.909h-5.844v-3.909zm0 5.864h5.844a22.026 22.026 0 0 1-.504 3.909h-5.339v-3.909zm0 11.599V32.38h4.788c-1.049 3.043-2.777 5.201-4.788 5.735zm4.505-1.112c.944-1.256 1.73-2.83 2.299-4.623h2.927a12.77 12.77 0 0 1-5.226 4.623zm6.249-6.578h-3.436c.262-1.236.427-2.547.481-3.909h3.891a12.62 12.62 0 0 1-.936 3.909zm-2.955-5.864a23.329 23.329 0 0 0-.481-3.909h3.436c.508 1.219.832 2.533.937 3.909h-3.892z"></path></svg></div><div class="language-notice__content"><h3 class="language-notice__heading heading--small"></h3><p class="language-notice__body"></p><a class="language-notice__link unslidelink unslidelink--purple"></a></div><button type="button" class="language-notice__dismiss"><span class="screen-reader-text">Fermer</span><svg class="icon icon--cross" aria-hidden="true" focusable="false"><use href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#cross"></use></svg></button></div></div></div></div>
+                <div class="mb--50" data-interface="DownloadPostForm"><div class="yogurt-shh55t"><video class="yogurt-fq4vku" src="https://kinsta.com/fr/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4" width="224" height="288" loading="lazy" autoplay="true" playsinline="" loop="" disablepictureinpicture="" aria-hidden="true"></video><div class="mantine-Group-root yogurt-icujw5"><h3 class="mantine-Title-root mantine-Group-child yogurt-1myqd3c">Vous êtes pressé ? Enregistrez cet article en PDF.</h3><p class="mantine-Text-root mantine-Group-child yogurt-14s2w4o">Fatigué de faire défiler les pages ? Téléchargez une version PDF pour faciliter la lecture hors ligne et partager avec vos collègues.</p><button class="mantine-UnstyledButton-root yogurt-1x0rbjr" type="button" size="md"><div class="yogurt-3xbgk5"><span class="yogurt-qo1k2">Télécharger</span></div></button></div></div><script type="application/ld+json">{"@context":"https://schema.org","@id":"https://kinsta.com/fr/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","@type":"VideoObject","duration":"PT7S","name":"Enregistrer cet article en PDF","embedUrl":"https://kinsta.com/fr/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","contentUrl":"https://kinsta.com/fr/wp-content/themes/kinsta/images/interface/DownloadPostForm/post-download.mp4","description":"Vous \u00eates press\u00e9 ? T\u00e9l\u00e9chargez une version PDF pour faciliter la lecture hors ligne et le partager avec vos coll\u00e8gues.","thumbnailUrl":"https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/git-vs-github.png","uploadDate":"2020-11-02T16:01:36+0100"}</script></div><p>Si vous avez fait des recherches ou expérimenté le codage pour WordPress, vous avez peut-être entendu parler de <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git</a> ou <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>. Ces outils peuvent être très utiles aux développeurs, mais déterminer ce qu’ils font et les différences entre eux peut être déroutant.</p><link rel="stylesheet" href="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/cta-mini.css">
+<aside class="sidebar-cta">
+    <div class="sidebar-cta__inner">
+        <div class="cta-mini">
+            <form id="cta-mini-competition-form" class="cta-mini__content cta-mini__content--comparison" action="https://kinsta.com/fr/alternatives-kinsta/" method="post" data-hs-cf-bound="true">
+    <video src="https://kinsta.com/fr/wp-content/themes/kinsta/images/components/sidebar-cta/podium.mp4" loading="lazy" width="298" height="170" aria-hidden="true" loop="true" autoplay="true" playsinline="true" muted="true" disablepictureinpicture="true"></video>
+    <label for="cta-mini-competitors">Voyez comment Kinsta se positionne par rapport à la concurrence.</label>
+    <select name="cta-mini-competitors" id="cta-mini-competitors">
+        <option value="">
+            Sélectionnez votre fournisseur        </option>
+                    <option value="https://kinsta.com/fr/alternative-a-wp-engine/">
+                WP Engine            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-siteground/">
+                SiteGround            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-godaddy/">
+                GoDaddy            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-bluehost/">
+                Bluehost            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-flywheel/">
+                Flywheel            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-hostgator/">
+                HostGator            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-cloudways/">
+                Cloudways            </option>
+                    <option value="https://kinsta.com/fr/alternative-o2switch/">
+                o2switch            </option>
+                    <option value="https://kinsta.com/fr/alternative-ovh/">
+                OVH            </option>
+                    <option value="https://kinsta.com/fr/alternative-a-wpserveur/">
+                WPServeur            </option>
+                    <option value="https://kinsta.com/fr/alternatives-kinsta/">
+                Autres            </option>
+            </select>
+    <button class="button" type="submit" data-track-ga-category="sidebar-cta" data-track-ga-label="variation_comparison">Comparer</button>
+</form>
+        <button class="cta-mini__dismiss" title="Fermer"><svg class="icon icon--cross" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#cross"></use></svg></button></div>
+    </div>
+</aside>
+
+<p>Heureusement, une fois que vous avez compris les fonctions de git et de GitHub, vous pouvez les mettre en œuvre afin de rationaliser votre processus de développement. Vous pouvez même intégrer les deux et les utiliser conjointement.</p>
+<p>Dans cet article, nous allons présenter les utilisations de git et de GitHub. Nous expliquerons également à qui appartient chaque plateforme et discuterons de la manière de les utiliser ensemble pour le contrôle des versions et le développement collaboratif.</p>
+<p>Commençons !<br>
+</p><div></div><kinsta-auto-toc heading="Table des matières" exclude="last" list-style="arrow" selector="h2" count-number="-1"><nav class="wp-block-kinsta-table-of-contents"><h3 class="wp-block-kinsta-table-of-contents__title">Table des matières</h3><ol class="wp-block-kinsta-table-of-contents__list is-style-arrow"><li><a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#une-introduction--git-et-au-contrle-des-versions">Une introduction à git et au contrôle des versions</a></li><li><a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#la-diffrence-entre-git-et-github">La différence entre git et GitHub</a></li><li><a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#comprendre-github-vs-gitlab">Comprendre GitHub vs GitLab</a></li><li><a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#la-proprit-et-le-cot-de-git-vs-github">La Propriété et le Coût de git vs GitHub</a></li><li><a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#comment-intgrer-git-et-github-en-5-tapes">Comment intégrer git et GitHub (en 5 étapes)</a></li></ol></nav></kinsta-auto-toc>
+<h2 id="une-introduction--git-et-au-contrle-des-versions" class="has-anchor-hash">Une introduction à git et au contrôle des versions<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#une-introduction--git-et-au-contrle-des-versions" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p>Tout d’abord, examinons <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git</a>. Il s’agit d’un logiciel de contrôle de version pour les développeurs :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/page-accueil-git.png" alt="Page d&#39;accueil de git" width="1600" height="425"><figcaption class="wp-caption-text">Page d’accueil de git</figcaption></figure>
+<p>Le contrôle de version fait référence au processus d’enregistrement de différents fichiers ou «&nbsp;versions&nbsp;» tout au long des différentes étapes d’un projet (voir aussi : <a href="https://kinsta.com/fr/blog/controle-version-wordpress-git/">contrôle de version WordPress</a>). Cela permet aux développeurs de garder une trace de ce qui a été fait et de revenir à une phase précédente s’ils décident de revenir sur certains des changements qu’ils ont apportés.</p>
+<p>C’est utile pour diverses raisons. Par exemple, cela facilite la résolution des erreurs et la correction d’autres erreurs qui pourraient se produire au cours du développement. Vous pouvez également noter les changements dans chaque version, afin d’aider les membres de l’équipe à se tenir au courant de ce qui est terminé et de ce qui reste à accomplir.</p>
+<p>Contrairement à la plupart des autres systèmes de contrôle de version (VCS), git enregistre chaque version sauvegardée sous forme d’un «&nbsp;instantané&nbsp;» au lieu d’une liste des modifications apportées à chaque fichier. Vous pouvez référencer d’anciens instantanés chaque fois que vous en avez besoin et de nouveaux instantanés sont créés lorsque votre projet est modifié.</p>
+<p>Git vous permet également de «&nbsp;pousser&nbsp;» et de «&nbsp;tirer&nbsp;» des modifications vers et depuis des installations sur d’autres ordinateurs. Cela en fait ce que l’on appelle un «&nbsp;système de contrôle de version distribué&nbsp;», et permet à plusieurs développeurs de travailler sur le même projet.</p>
+<p>Cependant, cette façon de gérer le développement présente quelques inconvénients. En tant que logiciel local installé sur votre machine individuelle, git ne peut pas lire les modifications que d’autres développeurs peuvent apporter en temps réel. Cela signifie que si vous et un coéquipier travaillez simultanément sur un projet, vous ne pourrez pas voir le travail de l’autre.</p>
+<p>Ainsi, si vous n’êtes pas totalement sûr de la date à laquelle les membres de l’équipe travailleront sur votre projet, git est le mieux adapté à une utilisation individuelle. Vous pouvez ainsi éviter les conflits ou que quelqu’un d’autre passe accidentellement outre votre code.</p>
+<h2 id="la-diffrence-entre-git-et-github" class="has-anchor-hash">La différence entre git et GitHub<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#la-diffrence-entre-git-et-github" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> facilite la collaboration en utilisant git. C’est une plateforme qui peut contenir des dépôts de code dans <a href="https://kinsta.com/fr/blog/parts-de-marche-du-cloud/">un stockage </a>dans le cloud afin que plusieurs développeurs puissent travailler sur un même projet et voir les modifications des autres en temps réel :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/page-accueil-github.png" alt="Page d&#39;accueil de GitHub" width="1600" height="779"><figcaption class="wp-caption-text">Page d’accueil de GitHub</figcaption></figure>
+<p>De plus, il comprend également des fonctions d’organisation et de gestion de projets. Vous pouvez attribuer des tâches à des individus ou à des groupes, définir les autorisations et les rôles des collaborateurs et utiliser la modération des commentaires pour que chacun reste concentré sur sa tâche.</p>
+<p>En outre, les dépôts GitHub sont accessibles au public. Les développeurs du monde entier peuvent interagir et contribuer au code des autres afin de le modifier ou de l’améliorer, ce que l’on appelle le «&nbsp;codage social&nbsp;». D’une certaine manière, cela fait de GitHub un site de mise en réseau pour <a href="https://kinsta.com/fr/blog/engager-developpeur-wordpress/">les professionnels du web</a>.</p>
+<p>Il y a trois actions principales que vous pouvez entreprendre lorsqu’il s’agit d’interagir avec le code d’autres développeurs sur GitHub :</p>
+<ul>
+<li><strong>Fork :</strong> Processus consistant à copier le code d’un autre utilisateur du dépôt afin de le modifier.</li>
+<li><strong>Pull :</strong> Lorsque vous avez fini de modifier le code de quelqu’un d’autre, vous pouvez le partager avec le propriétaire d’origine via une «&nbsp;pull request&nbsp;».</li>
+<li><strong>Merge : </strong>Les propriétaires peuvent ajouter de nouvelles modifications à leurs projets par le biais d’une fusion, et donner du crédit aux contributeurs qui les ont suggérées.</li>
+</ul>
+<p>En particulier pour les nouveaux développeurs qui tentent de rédiger leur CV, cela peut être une excellente occasion d’acquérir de l’expérience. GitHub vous permet de partager des projets sur votre profil et conserve également une chronologie de tous ceux auxquels vous avez contribué.</p>
+<p>Pour résumer la différence entre git et GitHub :</p>
+<ol>
+<li><strong>git est un logiciel VCS local</strong> qui permet aux développeurs de sauvegarder des instantanés de leurs projets au fil du temps. Il est généralement mieux adapté à un usage individuel.</li>
+<li><strong>GitHub est une plateforme web qui intègre les fonctionnalités de contrôle de version de git</strong> afin de pouvoir les utiliser en collaboration. Il comprend également des fonctions de gestion de projets et d’équipes, ainsi que des possibilités de mise en réseau et de codage social.</li>
+</ol>
+<h2 id="comprendre-github-vs-gitlab" class="has-anchor-hash">Comprendre GitHub vs GitLab<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#comprendre-github-vs-gitlab" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p>GitHub n’est pas le seul dépôt git que vous pourriez envisager si vous cherchez à collaborer à un projet de développement. <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">GitLab</a> est une autre plateforme très similaire qui mérite également d’être examinée :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/page-accueil-gitlab.png" alt="Page d&#39;accueil de GitLab" width="1600" height="646"><figcaption class="wp-caption-text">Page d’accueil de GitLab</figcaption></figure>
+<p>Comme GitHub, GitLab vous permet de stocker du code et d’utiliser les capacités de contrôle de version de git. Toutefois, il prévoit également des autorisations d’utilisation plus nuancées et comprend une intégration continue (IC) intégrée. Cela élimine la nécessité des pull request utilisées dans GitHub.</p>
+<p>Cela dit, GitLab n’est toujours pas aussi populaire que GitHub. Avec 40 millions d’utilisateurs, GitHub offre beaucoup plus de possibilités de réseautage, de codage social et même d’apprentissage auprès d’autres professionnels plus expérimentés dans votre domaine.</p>
+<p>En bref, les deux plateformes sont utiles, mais pour des situations légèrement différentes. Si vous n’êtes pas intéressé par une collaboration avec des développeurs extérieurs à votre équipe, GitLab peut vous aider à accélérer un peu votre flux de travail. Cependant, GitHub peut être la meilleure voie pour ceux qui cherchent à développer leur carrière.</p>
+<h2 id="la-proprit-et-le-cot-de-git-vs-github" class="has-anchor-hash">La Propriété et le Coût de git vs GitHub<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#la-proprit-et-le-cot-de-git-vs-github" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p>Comme ils sont si étroitement liés, il serait logique que git et GitHub soient détenus par la même société. Au contraire, git est un logiciel open source, tandis que GitHub <a href="https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/" target="_blank" rel="noopener noreferrer">appartient à Microsoft</a>.</p>
+<p>Les platesformes open source – y compris git et <a href="https://kinsta.com/fr/blog/wordpress-est-il-gratuit/">WordPress</a> – sont libres d’utilisation, de modification et de distribution.</p>
+<p>Le modèle de tarification de GitHub est différent, mais il offre un plan gratuit intéressant. En fait, toutes les <a href="https://github.com/pricing" target="_blank" rel="noopener noreferrer">fonctionnalités de base de GitHub sont gratuites pour tout le monde</a> (dans le passé, l’abonnement Individual Pro était de 7 $ par mois). Pour les équipes, les prix commencent à 4 $ par utilisateur et par mois. Vous pouvez également consulter les options de tarification Enterprise pour les groupes plus importants qui ont besoin de fonctionnalités plus avancées.</p>
+<h2 id="comment-intgrer-git-et-github-en-5-tapes" class="has-anchor-hash">Comment intégrer git et GitHub (en 5 étapes)<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#comment-intgrer-git-et-github-en-5-tapes" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p>Afin d’utiliser ensemble git et GitHub pour le contrôle de version et la collaboration, il y a quelques étapes que vous devrez suivre. Voyons comment ce processus fonctionne.</p>
+<p>Il est important de noter que vous devez utiliser git pour profiter de GitHub, vous devrez donc vous familiariser avec le premier avant d’essayer d’intégrer les deux. Nous avons également inclus quelques instructions de base ci-dessous pour vous aider à démarrer.</p><div class="in-post-container"><dialog id="newsletter" class="dialog dialog has-dark-blue-background-color email-modal" aria-hidden="true">
+    <div class="dialog__content">
+        <h2 class="heading--large text--center color--white mb--30">
+            S'inscrire à la Newsletter        </h2>
+    <kinsta-form show-name="false" show-phone="false" show-website="false" show-company="false" show-disk-space="false" show-monthly-visits="false" show-number-of-websites="false" show-message="false" submit-button-text="Inscrivez-vous maintenant" submit-button-text-sending="S&#39;inscrire..." success-title="Merci pour votre abonnement !" success-message="Gardez un œil sur notre prochaine newsletter." terms-template="newsletter" hubspot-source="subscribe_to_newsletter" submit-button-text-loading="S&#39;inscrire"><form class="kinsta-form kinsta-form--whitebg contact-form__form" style="opacity: 1;" data-hs-cf-bound="true"><div class="input-with-button contact-form__form__full"><input type="email" name="email" autocomplete="email" placeholder="Entrez votre adresse email" required=""><button class="button button--purple" type="submit">Inscrivez-vous maintenant</button></div><div class="contact-form__form__legal form-control mt--15 terms-checkbox"><div class="control-container"><p class="text--normal">En soumettant ce formulaire, j'accepte les <a class="unslidelink--text" target="_blank" href="https://kinsta.com/fr/mentions-legales/conditions-utilisation/">Termes et Conditions</a> et la <a class="unslidelink--text" target="_blank" href="https://kinsta.com/fr/mentions-legales/politique-confidentialite/">Politique de Confidentialité</a>, y compris le transfert de données vers les États-Unis. En partageant votre e-mail, vous acceptez également de recevoir des informations occasionnelles liées a des services, des événements et des promotions de Kinsta. Vous êtes libre de vous désabonner à tout moment.</p></div></div></form></kinsta-form>
+    </div>
+</dialog>
+<div class="box box--noshadow has-gray-background-color newsletter-cta">
+  <div class="newsletter-cta__content">
+    <h3 class="heading" style="font-size: 2rem;">Vous voulez savoir comment nous avons augmenté notre trafic de plus de 1000&nbsp;%&nbsp;?</h3>
+          <p class="mt--10 mb--20"> Rejoignez plus de 20 000 autres personnes qui reçoivent notre bulletin hebdomadaire avec des conseils WordPress ! </p>
+      </div>
+  <a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#newsletter" data-dialog-src="#newsletter" class="button button--purple newsletter-cta__button">
+    S'abonner   </a>
+</div>
+</div>
+<p>Si vous utilisez déjà Git, vous pouvez passer à l’étape 2. En revanche, les nouveaux venus dans ce logiciel de contrôle de version devront l’installer et ajouter du code avant de passer à la suite.</p>
+<h3 id="tape-1--installer-git-et-ajouter-un-dpt" class="has-anchor-hash">Étape 1 : Installer git et ajouter un dépôt<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#tape-1--installer-git-et-ajouter-un-dpt" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h3>
+<p>Tout d’abord, téléchargez le logiciel git pour votre système d’exploitation (OS) :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/telecharger-git.png" alt="Télécharger git" width="1600" height="1124"><figcaption class="wp-caption-text">Télécharger git</figcaption></figure>
+<p>Vous devrez alors <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">faire fonctionner l’installateur</a>. Ce processus varie en fonction du système d’exploitation que vous utilisez. Vous pouvez alors <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" target="_blank" rel="noopener noreferrer">configure</a>r git en utilisant votre interface de ligne de commande.</p>
+<p>Une fois qu’il est opérationnel, il y a <a href="https://git-scm.com/docs/gitglossary" target="_blank" rel="noopener noreferrer">quelques termes</a> avec lesquels vous voudrez vous familiariser lorsque vous commencerez à utiliser le logiciel :</p>
+<ul>
+<li><strong>Repository : </strong>L’emplacement du fichier où votre projet est stocké.</li>
+<li><strong>Commit : </strong>La commande utilisée pour enregistrer les nouvelles modifications apportées à votre projet dans le dépôt.</li>
+<li><strong>Stage : </strong>Avant de pouvoir engager des changements dans Git, vous devez <a href="https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git" target="_blank" rel="noopener noreferrer">les mettre en stage</a> – cela vous donne la possibilité de préparer votre code avant de l’ajouter officiellement à votre projet.</li>
+<li><strong>Branch : </strong>La partie de votre projet que vous développez activement.</li>
+</ul>
+<p>Pour connecter git à GitHub, vous devez <a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank" rel="noopener noreferrer">ajouter un repository</a> et <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" target="_blank" rel="noopener noreferrer">prendre au moins un commit</a>. Vous aurez alors suffisamment de votre projet établi pour commencer à travailler sur GitHub.</p>
+<h3 id="tape-2--crer-un-compte-github" class="has-anchor-hash">Étape 2 : Créer un compte GitHub<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#tape-2--crer-un-compte-github" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h3>
+<p>Ensuite, vous aurez besoin d’un <a href="https://kinsta.com/fr/base-de-connaissances/base-de-connaissances-github/">compte GitHub</a>. Vous pouvez vous y inscrire gratuitement ou investir dans un forfait payant :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/options-tarification-comptes-github.png" alt="Options de tarification des comptes GitHub" width="1600" height="1178"><figcaption class="wp-caption-text">Options de tarification des comptes GitHub</figcaption></figure>
+<p>Un compte gratuit fonctionne bien pour les nouveaux développeurs qui cherchent à affiner leurs compétences. Un compte pro est mieux adapté aux indépendants et aux codeurs avancés, tandis que les agences voudront investir dans un plan d’équipe afin d’accéder à davantage d’outils de gestion de projet et de communication.</p>
+<p>En outre, GitHub offre des réductions pour <a href="https://github.com/nonprofit" target="_blank" rel="noopener noreferrer">les organisations à but non lucratif</a>, <a href="https://education.github.com/teachers" target="_blank" rel="noopener noreferrer">les éducateurs,</a> et les <a href="https://education.github.com/students" target="_blank" rel="noopener noreferrer">étudiants</a>.</p>
+<h3 id="tape-3--ajouter-un-repository-github--votre-compte" class="has-anchor-hash">Étape 3 : Ajouter un repository GitHub à votre compte<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#tape-3--ajouter-un-repository-github--votre-compte" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h3>
+<p>Après avoir créé et configuré votre compte, vous devrez créer un dépôt dans GitHub où vous pourrez stocker votre projet lorsque vous le déplacerez depuis git. Vous pouvez le faire en cliquant sur le lien correspondant dans la barre latérale de gauche :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/lien-creer-depot-github.png" alt="Le lien « Créer un dépôt » dans GitHub" width="1600" height="918"><figcaption class="wp-caption-text">Le lien «&nbsp;Créer un dépôt&nbsp;» dans GitHub</figcaption></figure>
+<p>Ensuite, vous devrez choisir un nom pour votre dépôt :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/donner-nom-nouveau-depot-github.png" alt="Donner un nom à un nouveau dépôt GitHub" width="1600" height="918"><figcaption class="wp-caption-text">Donner un nom à un nouveau dépôt GitHub</figcaption></figure>
+<p>Vous pouvez également décider si vous souhaitez que le dépôt soit public, afin que d’autres utilisateurs de GitHub puissent le trouver et y contribuer, ou si vous souhaitez qu’il reste privé.</p>
+<p>Quoi qu’il en soit, puisque vous utiliserez un projet existant, assurez-vous de laisser la case<strong> Initialiser ce dépôt avec un LISEZ-MOI</strong> non cochée.</p>
+<h3 id="tape-4--poussez-un-dpt-vers-github" class="has-anchor-hash">Étape 4 : Poussez un dépôt vers GitHub<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#tape-4--poussez-un-dpt-vers-github" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h3>
+<p>Ensuite, vous aurez la possibilité d’ajouter du code à votre dépôt de différentes manières.</p>
+<p>Puisque vous avez déjà configuré votre dépôt git, vous pouvez utiliser l’option «&nbsp;<strong>push&nbsp;» d’un dépôt existant en ligne de commande :</strong></p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/poussez-depot-existant-option-ligne-commande.png" alt="Poussez un dépôt existant à partir de l&#39;option de ligne de commande" width="1600" height="906"><figcaption class="wp-caption-text">Poussez un dépôt existant à partir de l’option de ligne de commande</figcaption></figure>
+<p>L’icône du presse-papiers à droite vous permet de copier les commandes énumérées ici, afin de les coller rapidement dans votre interface de ligne de commande préférée pour créer votre dépôt GitHub.</p>
+<p>Une fois que c’est fait, rafraîchissez votre page GitHub :</p>
+<figure style="width: 1600px" class="wp-caption alignnone"><img loading="lazy" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/nouveau-depot-github-liste-page-compte-utilisateur.png" alt="Un nouveau dépôt GitHub listé sur la page du compte utilisateur" width="1600" height="971"><figcaption class="wp-caption-text">Un nouveau dépôt GitHub listé sur la page du compte utilisateur</figcaption></figure>
+<p>Vous devriez maintenant pouvoir voir votre dépôt dans GitHub. À partir de là, vous pouvez commencer à apporter des modifications à votre projet en ligne.</p>
+<p>Il est également possible d’envoyer et de fusionner des pull request, et d’utiliser tout autre outil inclus dans votre offre.</p>
+<h3 id="tape-5--ramenez-vos-changements--lessentiel" class="has-anchor-hash">Étape 5 : Ramenez vos changements à l’essentiel<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#tape-5--ramenez-vos-changements--lessentiel" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h3>
+<p>Bien que vous puissiez voir sur GitHub toutes les modifications que vous et d’autres ont apportées à votre projet, la plateforme n’a pas d’accès direct aux fichiers de votre ordinateur. Pour que votre projet reste à jour sur votre ordinateur, vous devrez faire vos modifications via git.</p>
+<p>Pour ce faire, il suffit de saisir git pull origin master dans votre interface de ligne de commande. Cela devrait mettre à jour vos fichiers afin que tout soit synchronisé à travers toutes les itérations de votre projet.</p>
+<style>body a.novashare-ctt{display:block;background:#00abf0;margin:30px auto;padding:20px 20px 20px 15px;color:#fff;text-decoration:none!important;box-shadow:none!important;-webkit-box-shadow:none!important;-moz-box-shadow:none!important;border:none;border-left:5px solid #00abf0}body a.novashare-ctt:hover{color:#fff;border-left:5px solid #008cc4}body a.novashare-ctt:visited{color:#fff}body a.novashare-ctt *{pointer-events:none}body a.novashare-ctt .novashare-ctt-tweet{display:block;font-size:18px;line-height:27px;margin-bottom:10px}body a.novashare-ctt .novashare-ctt-cta-container{display:block;overflow:hidden}body a.novashare-ctt .novashare-ctt-cta{float:right}body a.novashare-ctt.novashare-ctt-cta-left .novashare-ctt-cta{float:left}body a.novashare-ctt .novashare-ctt-cta-text{font-size:16px;line-height:16px;vertical-align:middle}body a.novashare-ctt .novashare-ctt-cta-icon{margin-left:10px;display:inline-block;vertical-align:middle}body a.novashare-ctt .novashare-ctt-cta-icon svg{vertical-align:middle;height:18px}body a.novashare-ctt.novashare-ctt-simple{background:0 0;padding:10px 0 10px 20px;color:inherit}body a.novashare-ctt.novashare-ctt-simple-alt{background:#f9f9f9;padding:20px;color:#404040}body a.novashare-ctt.novashare-ctt-simple-alt:hover,body a.novashare-ctt.novashare-ctt-simple:hover{border-left:5px solid #008cc4}body a.novashare-ctt.novashare-ctt-simple .novashare-ctt-cta,body a.novashare-ctt.novashare-ctt-simple-alt .novashare-ctt-cta{color:#00abf0}body a.novashare-ctt.novashare-ctt-simple-alt:hover .novashare-ctt-cta,body a.novashare-ctt.novashare-ctt-simple:hover .novashare-ctt-cta{color:#008cc4}</style><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbit.ly%2F3gnMfa6&amp;via=kinsta_fr&amp;text=GitHub+vs+git+%3A+quels+sont+ces+outils+%3F+%F0%9F%A4%94++En+avez-vous+besoin+lorsque+vous+travaillez+sur+du+code+%3F+D%C3%A9couvrez+%C3%A0+quel+point+ils+sont+diff%C3%A9rents+mais+puissants+dans+ce+guide+%21+Bonus+%3A+apprenez+%C3%A0+les+configur...&amp;hashtags=git%2Cdeveloppement%2Cdev" class="novashare-ctt novashare-ctt-cta-left" target="_blank" rel="nofollow noopener noreferrer"><span class="novashare-ctt-tweet">GitHub vs git : quels sont ces outils ? 🤔  En avez-vous besoin lorsque vous travaillez sur du code ? Découvrez à quel point ils sont différents mais puissants dans ce guide ! Bonus : apprenez à les configurer correctement. 👩‍💻👩🏻‍💻</span><span class="novashare-ctt-cta-container"><span class="novashare-ctt-cta"><span class="novashare-ctt-cta-text">Click to Tweet</span><span class="novashare-ctt-cta-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span></span></span></a>
+<h2 id="rsum" class="has-anchor-hash">Résumé<a class="anchor-hash" href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#rsum" aria-hidden="true"><svg class="icon icon--link" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#link"></use></svg></a></h2>
+<p>Bien que la différence entre git et GitHub puisse être un peu confuse au début, une fois que vous avez compris les bases, ils sont tous les deux inestimables pour le développement.</p>
+<p>Pour intégrer git et GitHub, vous devez suivre les étapes suivantes :</p>
+<ol>
+<li>Installez git, ajoutez un dépôt et créez un commit.</li>
+<li>Créez un compte GitHub.</li>
+<li>Ajoutez un dépôt GitHub à votre compte.</li>
+<li>“Push” un commit pour GitHub.</li>
+<li>“Pull” vos changements sur git.</li>
+</ol>
+<p>Si vous travaillez avec une équipe pour <a href="https://kinsta.com/fr/blog/cout-site-web-wordpress/">construire un site web,</a> le contrôle des versions et le partage peuvent être vitaux.        </p>
+<div class="user-content mt--40 pb--60">
+<hr class="mini-divider">
+<p>
+            Économisez du temps et de l’argent et optimisez les performances de votre site avec&nbsp;:</p>
+<ul>
+<li>Aide instantanée des experts en hébergement WordPress, 24/7.</li>
+<li>Intégration de Cloudflare Enterprise.</li>
+<li>Une audience mondiale avec 29 centres de données dans le monde entier.</li>
+<li>Optimisation avec notre surveillance intégrée de performance d’applications (APM).</li>
+</ul>
+<p>Tout cela et bien plus encore, dans un seul plan sans contrat à long terme, avec des migrations assistées et une garantie de remboursement de 30 jours. Pour trouver le plan qui vous convient, <a data-track-ga-category="kb" data-track-ga-label="kb-bottom-cta" href="https://kinsta.com/fr/plans/">Découvrez nos plans</a> ou <a data-track-ga-category="kb" data-track-ga-label="kb-bottom-cta" href="https://kinsta.com/fr/nous-contacter/">contactez nous</a>.        </p>
+</div>            </div>
+        </div>
+        </div><kinsta-article-feedback post-id="36498"><div class="container container--narrow pt--40 pb--40 border--top--gray article-feedback"><form class="kinsta-form kinsta-form--whitebg" data-hs-cf-bound="true"><h3 class="article-feedback__title h4 mt--0">Cet article vous a été utile ?</h3><div class="button-group"><button class="button button--ghost--gray button--small" type="submit"><svg class="icon icon--check opacity--40" aria-hidden="true" focusable="false"><use href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#check"></use></svg><span>Oui, c'était bien !</span></button><button class="button button--ghost--gray button--small" type="button"><svg class="icon icon--cross opacity--40" aria-hidden="true" focusable="false"><use href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#cross"></use></svg><span>Non, ou il manquait quelque chose</span></button></div><div class="article-feedback__toggle" style="height: 0px; overflow: hidden;"><div class="js-slide-toggle" style="overflow: hidden; position: relative;"><iframe style="background: transparent; border: none; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; z-index: -1;" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/saved_resource(1).html"></iframe><label for="article-feedback__message">S'il vous plaît, laissez-nous savoir ce que vous pensez !<textarea minlength="20" rows="5" name="feedback" id="article-feedback__message" placeholder="Partagez vos commentaires ici"></textarea></label><button class="button button--ghost--purple mt--20" type="submit">Envoyer des commentaires</button></div></div></form></div></kinsta-article-feedback>    <div class="related-posts">
+        <div class="related-posts__inner container">
+            <h2 class="related-posts__title">
+                Articles similaires sélectionnés à la main            </h2>
+
+            <div class="posts-grid related-posts__list">
+<div class="post-preview post-36424 post type-post status-publish format-standard has-post-thumbnail hentry tag-codes-courts tag-shortcodes tag-wptips">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/codes-courts-wordpress.jpg" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Le guide ultime des codes courts WordPress" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/codes-courts-wordpress.jpg 1460w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/codes-courts-wordpress-300x150.jpg 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/codes-courts-wordpress-1024x512.jpg 1024w, https://kinsta.com/fr/wp-content/uploads/sites/4/2020/01/codes-courts-wordpress-768x384.jpg 768w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Blog        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/blog/shortcodes-wordpress/">
+        Le guide ultime des codes courts ou shortcodes WordPress (avec des exemples pour créer les vôtres)    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Les shortcodes de WordPress vous facilitent la vie. Découvrez ce qu'ils sont et comment créer vos raccourcis WordPress personnalisés grâce à ce gui…    </div>
+<dl class="post-preview__meta">
+            <dt>Temps de lecture</dt>
+        <dd>27 min de lecture</dd>
+            <dt>Date de publication</dt>
+        <dd>29 janvier 2020</dd>
+    </dl>
+    </div>
+</div>
+
+<div class="post-preview post-33757 knowledgebase type-knowledgebase status-publish has-post-thumbnail hentry tag-developpement-web tag-git tag-webdev knowledge_categories-glossaire">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/base-de-connaissances-github.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="Qu&#39;est-ce Que GitHub ? Présentation de GitHub pour un Débutant" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2019/11/base-de-connaissances-github.png 1460w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/11/base-de-connaissances-github-300x150.png 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/11/base-de-connaissances-github-768x384.png 768w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/11/base-de-connaissances-github-1024x512.png 1024w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Base de Connaissances        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/base-de-connaissances/base-de-connaissances-github/">
+        Qu’est-ce Que GitHub ? Présentation de GitHub pour un Débutant    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        Vous vous demandez ce qu'est GitHub ? Dans cet article, nous allons vous donner une introduction à GitHub, Git, et au contrôle de version. Ensuite,…    </div>
+<dl class="post-preview__meta">
+            <dt>Temps de lecture</dt>
+        <dd>5 min de lecture</dd>
+            <dt>Date de publication</dt>
+        <dd>11 novembre 2019</dd>
+    </dl>
+    </div>
+</div>
+
+<div class="post-preview post-23002 post type-post status-publish format-standard has-post-thumbnail hentry">
+    <div class="post-preview__thumbnail">
+            <img width="360" height="180" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/wp-cli-v2.png" class="attachment-kinsta-thumbnail size-kinsta-thumbnail wp-post-image" alt="WP CLI v2" loading="lazy" srcset="https://kinsta.com/fr/wp-content/uploads/sites/4/2019/01/wp-cli-v2.png 1460w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/01/wp-cli-v2-300x150.png 300w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/01/wp-cli-v2-768x384.png 768w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/01/wp-cli-v2-1024x512.png 1024w, https://kinsta.com/fr/wp-content/uploads/sites/4/2019/01/wp-cli-v2-610x305.png 610w" sizes="(max-width: 360px) 100vw, 360px">    </div>
+
+    <div class="post-preview__content">
+        <div class="post-preview__labels">
+            <span class="post-preview__label has-purple-background-color">
+            Blog        </span>
+    </div>
+
+<h2 class="post-preview__title">
+        <a class="post-preview__link" href="https://kinsta.com/fr/blog/wp-cli/">
+        WP-CLI v2 – Gérer votre site WordPress depuis le Terminal    </a>
+</h2>
+
+    <div class="post-preview__excerpt">
+        WP-CLI v2 est un puissant outil en ligne de commande permettant aux développeurs de gérer les installations WordPress. Découvrez comment installer…    </div>
+<dl class="post-preview__meta">
+            <dt>Temps de lecture</dt>
+        <dd>15 min de lecture</dd>
+            <dt>Date de publication</dt>
+        <dd>23 janvier 2019</dd>
+    </dl>
+    </div>
+</div>
+</div>        </div>
+    </div>
+<footer class="site-footer">
+    <div class="site-footer__marketing">
+    <div class="container">
+        <div class="site-footer__newsletter">
+            <a class="featured-g2-badges flex center-xs" href="https://www.g2.com/products/kinsta" rel="noopener noreferrer sponsored" target="_blank" style="flex-wrap: wrap; gap: 2.5%; text-decoration: none;">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/leader.svg" alt="Prix G2 de leader">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/sb-best-usability.svg" alt="Prix G2 de la meilleure ergonomie pour les petites entreprises">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/sb-easiest-to-use.svg" alt="Prix G2 des petites entreprises les plus faciles à utiliser">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/top-100-fastest-growing-products.svg" alt="Prix G2 des 100 produits à la croissance la plus rapide">
+            <img style="max-width: 18%; display: block;" loading="lazy" width="99" height="118" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/users-love-us.svg" alt="Prix G2 Les utilisateurs nous aiment">
+    </a>
+            <h3>S'abonner à notre newsletter</h3>
+            <p>Obtenez du contenu premium depuis une plateforme <a href="https://kinsta.com/fr/avis-kinsta/">récompensée</a> d'hébergement WordPress</p>
+            <a href="https://kinsta.com/fr/base-de-connaissances/git-vs-github/#newsletter" data-dialog-src="#newsletter" class="button button--ghost">Abonnez-vous</a>
+        </div>
+        <img class="site-footer__marketing__illustration" aria-hidden="true" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/foreground.svg" width="538" height="291" loading="lazy">
+    </div>
+</div>
+<dialog id="newsletter" class="dialog dialog has-dark-blue-background-color email-modal" aria-hidden="true">
+    <div class="dialog__content">
+        <h2 class="heading--large text--center color--white mb--30">
+            S'inscrire à la Newsletter        </h2>
+    <kinsta-form show-name="false" show-phone="false" show-website="false" show-company="false" show-disk-space="false" show-monthly-visits="false" show-number-of-websites="false" show-message="false" submit-button-text="Inscrivez-vous maintenant" submit-button-text-sending="S&#39;inscrire..." success-title="Merci pour votre abonnement !" success-message="Gardez un œil sur notre prochaine newsletter." terms-template="newsletter" hubspot-source="subscribe_to_newsletter" submit-button-text-loading="S&#39;inscrire"><form class="kinsta-form kinsta-form--whitebg contact-form__form" style="opacity: 1;" data-hs-cf-bound="true"><div class="input-with-button contact-form__form__full"><input type="email" name="email" autocomplete="email" placeholder="Entrez votre adresse email" required=""><button class="button button--purple" type="submit">Inscrivez-vous maintenant</button></div><div class="contact-form__form__legal form-control mt--15 terms-checkbox"><div class="control-container"><p class="text--normal">En soumettant ce formulaire, j'accepte les <a class="unslidelink--text" target="_blank" href="https://kinsta.com/fr/mentions-legales/conditions-utilisation/">Termes et Conditions</a> et la <a class="unslidelink--text" target="_blank" href="https://kinsta.com/fr/mentions-legales/politique-confidentialite/">Politique de Confidentialité</a>, y compris le transfert de données vers les États-Unis. En partageant votre e-mail, vous acceptez également de recevoir des informations occasionnelles liées a des services, des événements et des promotions de Kinsta. Vous êtes libre de vous désabonner à tout moment.</p></div></div></form></kinsta-form>
+    </div>
+</dialog>
+
+    <div class="container">
+        <div class="site-footer__language-bar">
+            <div class="site-footer__language-aside">
+            <p><a href="https://my.kinsta.com/login?lang=fr">Connectez-vous</a> sur MyKinsta ou jetez un coup d'œil furtif avec un <a href="https://kinsta.com/fr/mykinsta/">compte de démo</a></p>
+        </div>
+    
+            <div class="site-footer__language">
+            <label class="language-select-label"><span class="screen-reader-text">Changer de langue</span><svg class="icon icon--language" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#language"></use></svg><select class="language-select site-footer__language__options"><option value="https://kinsta.com/dk/videnbase/git-vs-github/">Dansk</option><option value="https://kinsta.com/de/wissensdatenbank/git-vs-github/">Deutsch</option><option value="https://kinsta.com/knowledgebase/git-vs-github/">English</option><option value="https://kinsta.com/es/base-de-conocimiento/git-vs-github/">Español</option><option value="https://kinsta.com/fr/base-de-connaissances/git-vs-github/" selected="selected">Français</option><option value="https://kinsta.com/it/knowledgebase/git-contro-github/">Italiano</option><option value="https://kinsta.com/nl/kennisbank/git-vs-github/">Nederlands</option><option value="https://kinsta.com/jp/knowledgebase/git-vs-github/">日本語</option><option value="https://kinsta.com/pt/base-de-conhecimento/git-vs-github/">Português</option><option value="https://kinsta.com/se/kunskapsbas/git-vs-github/">Svenska</option></select><svg class="icon icon--chevron" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron"></use></svg></label>        </div>
+    </div>
+<nav class="site-footer__menu"><ul id="menu-footer" class="menu"><li id="menu-item-54501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54501"><h3>Hébergement Kinsta</h3>
+<ul class="sub-menu">
+	<li id="menu-item-54506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54506"><a href="https://kinsta.com/fr/plans/">Plans</a></li>
+	<li id="menu-item-54507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54507"><a href="https://kinsta.com/fr/fonctionnalites/">Fonctionnalités</a></li>
+	<li id="menu-item-54508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54508"><a href="https://kinsta.com/fr/modules/">Modules</a></li>
+	<li id="menu-item-54509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54509"><a href="https://kinsta.com/fr/integration-cloudflare/">Intégration Cloudflare</a></li>
+	<li id="menu-item-54510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54510"><a href="https://kinsta.com/fr/outil-apm/">Outil APM</a></li>
+	<li id="menu-item-54511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54511"><a href="https://kinsta.com/fr/devkinsta/download/">DevKinsta</a></li>
+	<li id="menu-item-54512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54512"><a href="https://kinsta.com/fr/support-kinsta/">Support Kinsta</a></li>
+	<li id="menu-item-54513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54513"><a href="https://kinsta.com/fr/migration-wordpress/">Migration WordPress</a></li>
+</ul>
+</li>
+<li id="menu-item-54502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54502"><h3>Solutions</h3>
+<ul class="sub-menu">
+	<li id="menu-item-54514" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-54514"><a href="https://kinsta.com/fr/blog/hebergement-wordpress-infogere/">Hébergement WordPress infogéré</a></li>
+	<li id="menu-item-54515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54515"><a href="https://kinsta.com/fr/hebergement-wordpress/">Hébergement WordPress</a></li>
+	<li id="menu-item-54516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54516"><a href="https://kinsta.com/fr/hebergement-wordpress-agences/">Hébergement agences</a></li>
+	<li id="menu-item-54518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54518"><a href="https://kinsta.com/fr/hebergement-wordpress-entreprise/">Hébergement entreprise</a></li>
+	<li id="menu-item-54519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54519"><a href="https://kinsta.com/fr/hebergement-woocommerce/">Hébergement WooCommerce</a></li>
+	<li id="menu-item-54520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54520"><a href="https://kinsta.com/fr/hebergement-wordpress-multisite/">Hébergement multisite</a></li>
+	<li id="menu-item-54521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54521"><a href="https://kinsta.com/fr/hebergement-wordpress-securise/">Hébergement sécurisé</a></li>
+	<li id="menu-item-54522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54522"><a href="https://kinsta.com/fr/wordpress-infogere-pour-les-editeurs/">Hébergement pour éditeurs</a></li>
+</ul>
+</li>
+<li id="menu-item-54503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54503"><h3>Ressources</h3>
+<ul class="sub-menu">
+	<li id="menu-item-54523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54523"><a href="https://kinsta.com/fr/ressources/">Toutes les ressources</a></li>
+	<li id="menu-item-54524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54524"><a href="https://kinsta.com/fr/blog/">Blog</a></li>
+	<li id="menu-item-54525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54525"><a href="https://kinsta.com/fr/base-de-connaissances/">Base de connaissances</a></li>
+	<li id="menu-item-54526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54526"><a href="https://kinsta.com/fr/aide/">Centre d’aide</a></li>
+	<li id="menu-item-54527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54527"><a href="https://kinsta.com/fr/mises-a-jour-de-fonctionnalites/">Mise à jour de fonctionnalités</a></li>
+	<li id="menu-item-54528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54528"><a href="https://kinsta.com/fr/ebooks/">E-books</a></li>
+	<li id="menu-item-54529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54529"><a href="https://kinsta.com/fr/repertoire-agences/">Répertoire des agences</a></li>
+	<li id="menu-item-54530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54530"><a href="https://kinsta.com/fr/academie-affiliation/">Académie d’affiliation</a></li>
+	<li id="menu-item-54531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54531"><a href="https://status.kinsta.com/">État du système</a></li>
+</ul>
+</li>
+<li id="menu-item-54504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54504"><h3>Entreprise</h3>
+<ul class="sub-menu">
+	<li id="menu-item-54532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54532"><a href="https://kinsta.com/fr/a-propos-de-nous/">À propos de nous</a></li>
+	<li id="menu-item-54533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54533"><a href="https://kinsta.com/fr/carrieres/">Carrières</a></li>
+	<li id="menu-item-54534" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54534"><a href="https://kinsta.com/fr/clients/">Clients et études de cas</a></li>
+	<li id="menu-item-54535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54535"><a href="https://kinsta.com/fr/nous-contacter/">Nous contacter</a></li>
+	<li id="menu-item-54536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54536"><a href="https://kinsta.com/fr/avis-kinsta/">Évaluations Kinsta</a></li>
+	<li id="menu-item-54537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54537"><a href="https://kinsta.com/fr/partenaires/">Partenaires</a></li>
+	<li id="menu-item-54538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54538"><a href="https://kinsta.com/fr/presse/">Presse</a></li>
+	<li id="menu-item-54539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54539"><a href="https://kinsta.com/fr/pourquoi-nous/">Pourquoi nous</a></li>
+	<li id="menu-item-54540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54540"><a href="https://kinsta.com/fr/affiliation/">Programme d’affiliation</a></li>
+	<li id="menu-item-54541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54541"><a href="https://affiliate.kinsta.com/?lang=fr">Tableau de bord d’affiliation</a></li>
+</ul>
+</li>
+<li id="menu-item-54505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54505"><h3>Comparer Kinsta</h3>
+<ul class="sub-menu">
+	<li id="menu-item-54542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54542"><a href="https://kinsta.com/fr/alternative-a-wp-engine/">Kinsta vs WP Engine</a></li>
+	<li id="menu-item-54543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54543"><a href="https://kinsta.com/fr/alternative-a-wpserveur/">Kinsta vs WPServeur</a></li>
+	<li id="menu-item-54544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54544"><a href="https://kinsta.com/fr/alternative-o2switch/">Kinsta vs o2switch</a></li>
+	<li id="menu-item-54545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54545"><a href="https://kinsta.com/fr/alternative-ovh/">Kinsta vs OVH</a></li>
+	<li id="menu-item-54546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54546"><a href="https://kinsta.com/fr/alternatives-kinsta/">Plus de comparaisons</a></li>
+</ul>
+</li>
+</ul></nav>
+<div class="site-footer__company">
+    <div class="site-footer__logo">
+        <svg class="icon icon--logo" aria-hidden="true" focusable="false"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#logo"></use></svg>    </div>
+    <p class="site-footer__legal">
+        <small>© 2022 Kinsta Inc. Tous droits réservés.</small>
+        <small>Kinsta ® et WordPress ® sont des marques déposées.</small>
+        <small><a href="https://kinsta.com/fr/mentions-legales/">Mentions légales.</a></small>
+    </p>
+
+    <nav class="site-footer__social">
+        <ul>
+            <li><a class="site-footer__social__link" href="https://www.linkedin.com/company/kinsta/" target="_blank" rel="noopener noreferrer"><svg class="icon icon--linkedin" aria-hidden="true" focusable="false" title="Kinsta sur LinkedIn"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#linkedin"></use></svg><span class="screen-reader-text">Kinsta sur LinkedIn</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.facebook.com/kinstafr" target="_blank" rel="noopener noreferrer"><svg class="icon icon--facebook" aria-hidden="true" focusable="false" title="Kinsta sur Facebook"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#facebook"></use></svg><span class="screen-reader-text">Kinsta sur Facebook</span></a></li>
+            <li><a class="site-footer__social__link" href="https://twitter.com/kinsta_fr" target="_blank" rel="noopener noreferrer"><svg class="icon icon--twitter" aria-hidden="true" focusable="false" title="Kinsta sur Twitter"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#twitter"></use></svg><span class="screen-reader-text">Kinsta sur Twitter</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.instagram.com/kinstahosting" target="_blank" rel="noopener noreferrer"><svg class="icon icon--instagram" aria-hidden="true" focusable="false" title="Kinsta sur Instagram"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#instagram"></use></svg><span class="screen-reader-text">Kinsta sur Instagram</span></a></li>
+            <li><a class="site-footer__social__link" href="https://www.youtube.com/kinsta" target="_blank" rel="noopener noreferrer"><svg class="icon icon--youtube" aria-hidden="true" focusable="false" title="Kinsta sur YouTube"><use xlink:href="https://kinsta.com/fr/wp-content/themes/kinsta/dist/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#youtube"></use></svg><span class="screen-reader-text">Kinsta sur YouTube</span></a></li>
+        </ul>
+    </nav>
+</div>
+    </div>
+</footer>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/jquery.min.js.téléchargement" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/jquery-migrate.min.js.téléchargement" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/jquery.form.min.js.téléchargement" id="jquery-form-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/regenerator-runtime.min.js.téléchargement" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/wp-polyfill.min.js.téléchargement" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/hooks.min.js.téléchargement" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/i18n.min.js.téléchargement" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="text/javascript" id="kinsta-js-main-js-extra">
+/* <![CDATA[ */
+var kinsta = {"ajaxurl":"https:\/\/kinsta.com\/fr\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/kinsta.com\/fr\/wp-json\/","kinstanonce":"d8dea46e33","stripe_public_key":"pk_live_r16EiSaRITiPDMKQjLeoOviT","sentry_key":null,"env":"production","chevronRight":"<svg  class=\"icon icon--chevron color--purple\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron\" \/><\/svg>","chevronLeft":"<svg  class=\"icon icon--chevron color--purple icon--reverse\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#chevron\" \/><\/svg>","check_m":"<svg  class=\"icon icon--check color--purple\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97#check\" \/><\/svg>","translations":{"thanksForSubscribing":"Merci pour votre abonnement !","validationRequired":"Veuillez remplir ce champ","validationEmail":"Veuillez fournir une adresse email valide","validationPassword":"Le mot de passe doit contenir au moins 6 caract\u00e8res, et au moins une lettre minuscule et majuscule ainsi qu'un chiffre","validationDuplicate":"Les deux champs ne correspondent pas","validationVatInvalidCountry":"Le code pays de votre num\u00e9ro de TVA ne correspond pas \u00e0 votre pays","validationVatInvalidFormat":"Le num\u00e9ro de TVA entr\u00e9 est invalide","validationVatInvalidVies":"Le num\u00e9ro de TVA entr\u00e9 ne peut pas \u00eatre v\u00e9rifi\u00e9 par le syst\u00e8me VIES EU","validationCard":"Les informations sur votre carte ne sont pas correctes","validationFreeEmail":"Adresse email d\u00e9j\u00e0 utilis\u00e9e"},"svg_sprite":"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta\/dist\/sprite.svg?v=89f4e1b4f833b563fecd7f57ab066d97","urls":{"api":"https:\/\/kinsta.com\/fr\/wp-json\/","ajax":"https:\/\/kinsta.com\/fr\/wp-admin\/admin-ajax.php","terms":"https:\/\/kinsta.com\/fr\/mentions-legales\/conditions-utilisation\/","privacy":"https:\/\/kinsta.com\/fr\/mentions-legales\/politique-confidentialite\/","home":"https:\/\/kinsta.com\/fr\/","theme":"https:\/\/kinsta.com\/fr\/wp-content\/themes\/kinsta","cookieSettings":"https:\/\/kinsta.com\/fr\/parametres-cookies\/"},"contact_terms_html":"<div class=\"form-control mt--15 terms-checkbox\" data-state=\"neutral\">\n  <div class=\"control-container\">\n          <p class=\"text--normal\">En envoyant ce formulaire : Vous acceptez le traitement des donn\u00e9es personnelles soumises conform\u00e9ment \u00e0 la <a class=\"unslidelink--text\" target=\"_blank\" href=\"https:\/\/kinsta.com\/fr\/mentions-legales\/politique-confidentialite\/\">Politique de Confidentialit\u00e9<\/a> de Kinsta, y compris le transfert de donn\u00e9es vers les \u00c9tats-Unis.<\/p>\n              <label class=\"checkbox-label row nocol js-marketing-optin\">\n        <span class=\"checkbox mr--6\">\n          <input name=\"marketing_opt_in\" type=\"checkbox\" checked \/>\n          <span class=\"indicator\"><\/span>\n        <\/span>\n                  <p class=\"text--normal mb--0\">Vous acceptez \u00e9galement de recevoir des informations de Kinsta relatives \u00e0 nos services, \u00e9v\u00e9nements et promotions. Vous pouvez vous d\u00e9sabonner \u00e0 tout moment en suivant les instructions figurant dans les communications re\u00e7ues.<\/p>\n              <\/label>\n      <\/div>\n<\/div>\n","maintenanceMode":"","timeFormat":"g:i a","dateFormat":"j F Y","defaultPlan":"visits-business1"};
+var kinstaVatRates = {"AT":"0.2","BE":"0.21","BG":"0.2","HR":"0.25","CY":"0.19","CZ":"0.21","DK":"0.25","EE":"0.2","FI":"0.24","FR":"0.2","DE":"0.19","GR":"0.24","HU":"0.27","IE":"0.23","IT":"0.22","LV":"0.21","LT":"0.21","LU":"0.17","MT":"0.18","NL":"0.21","PL":"0.23","PT":"0.23","RO":"0.19","SK":"0.2","SI":"0.22","ES":"0.21","SE":"0.25","GB":"0.2"};
+var kinstaFloatingContactText = {"termsHtml":"<div class=\"form-control mt--15 terms-checkbox\" data-state=\"neutral\">\n  <div class=\"control-container\">\n          <p class=\"text--normal\">En envoyant ce formulaire : Vous acceptez le traitement des donn\u00e9es personnelles soumises conform\u00e9ment \u00e0 la <a class=\"unslidelink--text\" target=\"_blank\" href=\"https:\/\/kinsta.com\/fr\/mentions-legales\/politique-confidentialite\/\">Politique de Confidentialit\u00e9<\/a> de Kinsta, y compris le transfert de donn\u00e9es vers les \u00c9tats-Unis.<\/p>\n              <label class=\"checkbox-label row nocol js-marketing-optin\">\n        <span class=\"checkbox mr--6\">\n          <input name=\"marketing_opt_in\" type=\"checkbox\" checked \/>\n          <span class=\"indicator\"><\/span>\n        <\/span>\n                  <p class=\"text--normal mb--0\">Vous acceptez \u00e9galement de recevoir des informations de Kinsta relatives \u00e0 nos services, \u00e9v\u00e9nements et promotions. Vous pouvez vous d\u00e9sabonner \u00e0 tout moment en suivant les instructions figurant dans les communications re\u00e7ues.<\/p>\n              <\/label>\n      <\/div>\n<\/div>\n"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="kinsta-js-main-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "kinsta-theme", {"translation-revision-date":"2022-03-16 00:16","generator":"WP-CLI\/2.6.0","source":"dist\/main.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"fr_FR","plural-forms":"nplurals=2; plural=(n > 1);"},"Search":["Rechercher"],"Name":["Nom"],"Email":["Email"],"Thanks for subscribing!":["Merci pour votre abonnement !"],"Company":["Entreprise"],"Website":["Site Web"],"Number of websites":["Nombre de sites"],"Message":["Message"],"Enter your email":["Entrez votre adresse email"],"Home":["Accueil"],"Monthly visits":["Visites mensuelles"],"Download":["T\u00e9l\u00e9charger"],"minute":["minute","minutes"],"Thanks!":["Merci !"],"Description":["Description"],"Previous":["Pr\u00e9c\u00e9dent"],"Next":["Suivant"],"Pricing or plans":["Prix ou Plans"],"Affiliate marketing program":["Programme de marketing d'affiliation"],"Thanks for your message!":["Merci pour votre message !"],"We will get back to you as soon as possible.":["Nous reviendrons vers vous d\u00e8s que possible."],"Keep an eye out for our next newsletter.":["Gardez un \u0153il sur notre prochaine newsletter."],"Sign Up Now":["Inscrivez-vous maintenant"],"Signing Up":["S'inscrire"],"Signing Up...":["S'inscrire..."],"or":["ou"],"Here's your ebook!":["Voici votre ebook !"],"Hope you enjoy it \ud83d\ude42":["J'esp\u00e8re que vous l'appr\u00e9cierez \ud83d\ude42"],"Download it now!":["T\u00e9l\u00e9charger-le maintenant !"],"Privacy Policy":["Politique de Confidentialit\u00e9"],"By submitting this form I agree to the %1$s and %2$s, including the transfer of data to the United States. By sharing your email, you also agree to receive occasional information related to services, events, and promotions from Kinsta. You're free to unsubscribe at any time.":["En soumettant ce formulaire, j'accepte les %1$s et la %2$s, y compris le transfert de donn\u00e9es vers les \u00c9tats-Unis. En partageant votre e-mail, vous acceptez \u00e9galement de recevoir des informations occasionnelles li\u00e9es a des services, des \u00e9v\u00e9nements et des promotions de Kinsta. Vous \u00eates libre de vous d\u00e9sabonner \u00e0 tout moment."],"Terms and Conditions":["Termes et Conditions"],"By submitting this form: You agree to the processing of the submitted personal data in accordance with Kinsta's %s, including the transfer of data to the United States.":["En envoyant ce formulaire : Vous acceptez le traitement des donn\u00e9es personnelles soumises conform\u00e9ment \u00e0 la %s de Kinsta, y compris le transfert de donn\u00e9es vers les \u00c9tats-Unis."],"You also agree to receive information from Kinsta related to our services, events, and promotions. You may unsubscribe at any time by following the instructions in the communications received.":["Vous acceptez \u00e9galement de recevoir des informations de Kinsta relatives \u00e0 nos services, \u00e9v\u00e9nements et promotions. Vous pouvez vous d\u00e9sabonner \u00e0 tout moment en suivant les instructions figurant dans les communications re\u00e7ues."],"Cookie Settings":["Param\u00e8tres des cookies"],"Details":["D\u00e9tails"],"WordPress Theme Detector":["D\u00e9tecteur de th\u00e8me WordPress"],"Version":["La version"],"Author":["L'auteur"],"Ever wondered what WordPress theme a site is using? No more guessing! Use Kinsta\u2019s free WordPress Theme Detector to discover what theme is being used, along with other key info about it.":["Vous vous \u00eates d\u00e9j\u00e0 demand\u00e9 quel th\u00e8me WordPress un site utilisait ? Plus besoin de deviner ! Utilisez le d\u00e9tecteur de th\u00e8me WordPress gratuit de Kinsta pour d\u00e9couvrir quel th\u00e8me est utilis\u00e9, ainsi que d'autres informations cl\u00e9s \u00e0 son sujet."],"Watch Video":["Voir la Vid\u00e9o"],"Start Playlist":["D\u00e9marrer la liste de lecture"],"Support requests":["Demandes de support"],"To contact the Kinsta support team, log in to your %s and send us a message with the chat box. If you are unable to access MyKinsta, you can contact our support team by sending an email to support@kinsta.com from the email address associated with your MyKinsta account.":["Pour contacter l'\u00e9quipe de support de Kinsta, connectez-vous \u00e0 votre %s et envoyez-nous un message avec la bo\u00eete de discussion. Si vous ne pouvez pas acc\u00e9der \u00e0 MyKinsta, vous pouvez contacter notre \u00e9quipe de support en envoyant un e-mail \u00e0 support@kinsta.com \u00e0 partir de l'adresse e-mail associ\u00e9e \u00e0 votre compte MyKinsta."],"MyKinsta account":["Compte MyKinsta"],"optional":["facultatif"],"Phone":["T\u00e9l\u00e9phone"],"Select an option":["S\u00e9lectionnez une option"],"contact form monthly visits option\u00040 - 25K":["0 - 25K"],"contact form monthly visits option\u000425K - 50K":["25K - 50K"],"contact form monthly visits option\u000450K - 250K":["50K - 250K"],"contact form monthly visits option\u0004250K - 1 Million":["250K - 1 Million"],"contact form monthly visits option\u00041 Million +":["+ de 1 Million"],"Combined disk space requirement":["Espace disque combin\u00e9 n\u00e9cessaire"],"contact form disk space option\u0004< 10GB":["< 10\u00a0Go"],"contact form disk space option\u000410GB - 20GB":["10\u00a0Go - 20\u00a0Go"],"contact form disk space option\u000420GB - 60GB":["20 Go - 60 Go"],"contact form disk space option\u000460GB - 100GB":["60 Go - 100 Go"],"contact form disk space option\u0004100+ GB":["+ de 100 Go"],"Sending Message":["Envoi du message"],"Send Message":["Envoyer le message"],"There was an error sending your message. Please try again later on.":["Il y a eu une erreur dans l'envoi de votre message. Veuillez r\u00e9essayer plus tard."],"The website is currently under maintenance, we'll be back up and running soon.":["Le site web est actuellement en cours de maintenance, nous serons bient\u00f4t de nouveau op\u00e9rationnels."],"Back to select a type of message":["Revenir en arri\u00e8re pour s\u00e9lectionner un type de message"],"The hash url to popup the live chat, must be url safe (lowercase, dashes instead of spaces)\u0004live-chat":["live-tchat"],"Close Form":["Fermer le formulaire"],"Latest from the Kinsta Blog":["Derni\u00e8res nouvelles du blog Kinsta"],"What do you need help with?":["En quoi pouvons-nous vous aider ?"],"We'll get back to you within one business day.":["Nous vous r\u00e9pondrons dans un d\u00e9lai d'un jour ouvrable."],"Have a question?":["Vous avez une question ?"],"Draft Saved":["Sauvegarde enregistr\u00e9e"],"If your download doesn\u2019t start automatically please click below.":["Si votre t\u00e9l\u00e9chargement ne d\u00e9marre pas automatiquement, veuillez cliquer ci-dessous."],"Email inbox":["Bo\u00eete de r\u00e9ception"],"HTTPS":["HTTPS"],"Database manager":["Gestionnaire de base de donn\u00e9es"],"Logging":["Enregistrement"],"Windows":["Windows"],"Ubuntu":["Ubuntu"],"Mac":["Mac"],"Download for %s":["T\u00e9l\u00e9charger pour %s"],"Uh oh!":["Uh oh!"],"There was an error submitting your details, please try again later on.":["Il y a eu une erreur lors de l'envoi de vos informations, veuillez r\u00e9essayer plus tard."],"How to speed up your WordPress site":["Comment acc\u00e9l\u00e9rer votre site WordPress"],"Understanding different WordPress site types":["Comprendre les diff\u00e9rents types de sites WordPress"],"Choosing and managing high-performance hosting":["Choisir et g\u00e9rer un h\u00e9bergement haute performance"],"Lowdown on WordPress themes and plugins":["Le point sur les th\u00e8mes et plugins WordPress"],"Fine-tuning WordPress settings":["Optimiser les param\u00e8tres WordPress"],"Troubleshooting slowness":["D\u00e9pannage de la lenteur"],"Front-end and back-end optimization":["Optimisation du back-end et du front-end"],"Your message has been sent":["Votre message a \u00e9t\u00e9 envoy\u00e9"],"Submitting":["Envoi"],"Show Less":["Afficher Moins"],"Read More":["Lire La Suite"],"day":["jour","jours"],"hour":["hour","heures"],"min":["min","mins"],"second":["seconde","secondes"],"sec":["sec","secs"],"Now":["Maintenant"],"Show Documentation Navigation":["Afficher la navigation de la documentation"],"Hide Documentation Navigation":["Masquer la navigation de la documentation"],"Thank you for your feedback!":["Merci pour votre avis !"],"Sending Feedback":["Envoyer un retour d'informations"],"We use cookies for some functionality on our website to work properly, as well as for marketing purposes: collecting analytics data to understand and  improve user experience and to personalize advertising. You can accept all cookies, decline marketing cookies, or fine tune your preferences on the %s page.":["Nous utilisons des cookies pour que certaines fonctionnalit\u00e9s de notre site web fonctionnent correctement, ainsi qu'\u00e0 des fins de marketing : collecte de donn\u00e9es d'analyse pour comprendre et am\u00e9liorer l'exp\u00e9rience utilisateur et pour personnaliser la publicit\u00e9. Vous pouvez accepter tous les cookies, refuser les cookies marketing ou affiner vos pr\u00e9f\u00e9rences sur la page %s."],"Thanks, we've saved your settings, you can modify them any time on the %s page":["Merci, nous avons enregistr\u00e9 vos param\u00e8tres, vous pouvez les modifier \u00e0 tout moment sur la page des %s"],"Accept All Cookies":["Accepter tous les cookies"],"Decline Marketing Cookies":["Refuser les cookies de marketing"],"Accepting":["Acceptation"],"cookie settings":["param\u00e8tres des cookies"],"Enable all necessary cookies":["Activer tous les cookies n\u00e9cessaires"],"Necessary cookies":["Cookies n\u00e9cessaires"],"These cookies are needed for our website to function providing payment gateway security and other essentials. Therefore they are always on but they do not contain personally identifiable information (PII).":["Ces cookies sont n\u00e9cessaires pour que notre site web fonctionne en assurant la s\u00e9curit\u00e9 de la passerelle de paiement et ses fonctionnalit\u00e9s. Ils sont donc toujours actifs, mais ne contiennent pas d'informations personnelles identifiables (PII)."],"Purpose":["Objectif"],"Enable all marketing cookies":["Activer tous les cookies commerciaux"],"Marketing cookies":["Cookies de marketing"],"Marketing cookies help us target our ads better. We mainly use them to target ads to users who have visited Kinsta.":["Les cookies de marketing nous aident \u00e0 mieux cibler nos publicit\u00e9s. Nous les utilisons principalement pour cibler les annonces pour les utilisateurs qui ont visit\u00e9 Kinsta."],"Provider":["Fournisseur"],"Enable %s":["Activer %s"],"Saving settings":["Sauvegarde des param\u00e8tres"],"Save settings":["Sauvegarder les param\u00e8tres"],"Settings saved":["R\u00e9glages enregistr\u00e9s"],"Close":["Fermer"],"Loading...":["Chargement..."],"Was this article helpful?":["Cet article vous a \u00e9t\u00e9 utile ?"],"There was an error sending your feedback. Please try again later on.":["Il y a eu une erreur dans l'envoi de votre message. Veuillez r\u00e9essayer plus tard."],"Yes, it was fine!":["Oui, c'\u00e9tait bien !"],"No, or there was something off":["Non, ou il manquait quelque chose"],"Please, let us know what you think!":["S'il vous pla\u00eet, laissez-nous savoir ce que vous pensez !"],"Share your feedback here":["Partagez vos commentaires ici"],"Send Feedback":["Envoyer des commentaires"],"Paid Monthly":["Paiement mensuel"],"Paid Yearly":["Paiement annuel"],"Select to pay monthly or yearly":["Choisissez de payer mensuellement ou annuellement"],"Next available Monday %s":["Prochain lundi disponible \u00e0 %s"],"Support hours by language":["Horaires du support par langue"],"Available support by language":["Support disponible par langue"],"Filters":["Filtres"],"Clear All Filters":["Effacer tous les filtres"],"Search by name":["Rechercher par nom"],"Agency Name":["Nom de l'agence"],"Additional site information":["Informations compl\u00e9mentaires sur le site"],"Screenshot":["Capture d'\u00e9cran"],"theme":["th\u00e8me"],"child theme":["th\u00e8me enfant"],"parent theme":["th\u00e8me parent"],"free theme":["th\u00e8me gratuit"],"premium theme":["th\u00e8me premium"],"Theme Screenshot":["Capture d'\u00e9cran du th\u00e8me"],"IP":["IP"],"URL":["URL"],"Downloaded":["T\u00e9l\u00e9charg\u00e9"],"Last updated":["Derni\u00e8re mise \u00e0 jour"],"Creation time":["Temps de cr\u00e9ation"],"License":["Licence"],"Required PHP":["PHP n\u00e9cessaire"],"Required WordPress":["WordPress n\u00e9cessaire"],"Visit site":["Aller sur le site"],"Preview theme":["Aper\u00e7u du th\u00e8me"],"WordPress name":["Nom WordPress"],"WordPress description":["Description WordPress"],"Meta description":["M\u00e9ta description"],"Meta generators":["G\u00e9n\u00e9rateur m\u00e9ta"],"Tags":["\u00c9tiquettes"],"show less":["afficher moins"],"show more":["afficher plus"],"Search again":["Rechercher \u00e0 nouveau"],"Please enter a URL or domain name.":["Veuillez saisir une URL ou un nom de domaine valide."],"What WordPress Theme is That?":["Quel th\u00e8me WordPress est-ce ?"],"Oops. It looks like %s can\u2019t be found or may be running a custom theme.":["Oups. Il semble que %s soit introuvable ou qu'il utilise un th\u00e8me personnalis\u00e9."],"Oops. It looks like %s is not using WordPress.":["Oups. Il semble que %s n'utilise pas WordPress."],"Oops, it looks like you\u2019re moving too quickly.":["Oups, on dirait que vous allez trop vite."],"Please wait a minute and give it another try.":["Veuillez attendre une minute et r\u00e9essayer."],"Let\u2019s try another URL.":["Essayons une autre URL."],"Your help has been excellent!!!!!!!":["Votre aide a \u00e9t\u00e9 excellente !!!!!!!"],"Thank you so much for the support the past few hours!":["Merci beaucoup pour votre support ces derni\u00e8res heures !"],"Thanks for the reassurance! I shall give it a go \ud83d\ude0e":["Merci de m'avoir rassur\u00e9 ! Je vais tenter le coup \ud83d\ude0e"],"also Kinsta support is off the chain! ~ so good":["Aussi le support de Kinsta est hors-pair ! ~ tellement bien"],"cannot tell you how impressed I am with you guys":["Je ne peux pas vous dire \u00e0 quel point je suis impressionn\u00e9 par vous"],"really great that Kinsta have experts on chat like this.":["c'est vraiment g\u00e9nial que Kinsta ait des experts comme \u00e7a."],"Wow! Thankyou! Lovely! Sending LOVE!!!!!!!! :-)":["Wow ! Merci ! Superbe ! Je vous AIME !!!!!!!! :-)"],"you guys are the best":["Vous \u00eates les meilleurs"],"Every interaction makes me happy i am with Kinsta. Honestly.":["Chaque interaction me rend heureux d'\u00eatre avec Kinsta. Honn\u00eatement."],"I've never had such help from any hosting company so far":["Je n'ai jamais eu une telle aide de la part d'un h\u00e9bergeur jusqu'\u00e0 pr\u00e9sent"],"this is beyond one can expect from a hosting support.":["C'est au-del\u00e0 de ce que l'on peut attendre d'un support d'h\u00e9bergeur."],"You truly are the best hosting out there!":["Vous \u00eates vraiment le meilleur h\u00e9bergeur qui soit !"],"lol I appreciate the help and patience you guys provide":["lol j'appr\u00e9cie l'aide et la patience dont vous faites preuve"],"You guys are super cool":["Vous \u00eates super sympas"],"thank you, that worked, you are awesome!":["Merci, \u00e7a a march\u00e9, vous \u00eates g\u00e9niaux !"],"Works. Perfect. Thank you so much!":["\u00c7a fonctionne. Parfait. Merci beaucoup !"],"thank you! you guys are awesome":["Merci ! Vous \u00eates g\u00e9niaux"],"As always, you guys are GREAT!":["Comme toujours, vous \u00eates G\u00c9NIAUX !"],"Wouldn't have received this level of support anywhere else on my previous hosting providers!":["Je n'aurais pas re\u00e7u ce niveau de support ailleurs chez mes h\u00e9bergeurs pr\u00e9c\u00e9dents !"],"Thats why i love Kinsta, blazing fast and awesome support!":["C'est pour \u00e7a que j'aime Kinsta, c'est tr\u00e8s rapide et le support est g\u00e9nial !"],"have to say u guys have the best support":["Je dois dire que vous avez le meilleur support"],"Hey there! how can I help you?":["Bonjour ! Comment puis-je vous aider ?"],"Next Session":["Session suivante"],"Next session starts in":["La prochaine session commence dans"],"Register Now":["S'inscrire maintenant"],"Choose a timeslot":["Choisissez un cr\u00e9neau horaire"],"Previous Tab":["Onglet pr\u00e9c\u00e9dent"],"Next Tab":["Onglet suivant"],"Set and used by Google Ads for remarketing, personalization, and targeting advertisements to users who have visited kinsta.com. (%s)":["D\u00e9fini et utilis\u00e9 par Google Ads pour le remarketing, la personnalisation et le ciblage des publicit\u00e9s pour les utilisateurs qui ont visit\u00e9 kinsta.com. (%s)"],"Google Ads Settings":["Param\u00e8tres de Google Ads"],"Back":["Retour"]}}} );
+</script>
+<script type="text/javascript" id="kinsta-js-main-js-before">
+var singularState = {"postId":36498,"postSlug":"git-vs-github","postType":"base-de-connaissances","languages":["it","pt","fr","de","jp","nl","es","se","dk"],"currentLanguage":"fr"}
+var kinstaContactFormState = {"userId":36498,"userAge":1651560559,"recentPosts":[{"title":"25 meilleurs modules Elementor pour WordPress","thumbnail":"https:\/\/kinsta.com\/fr\/wp-content\/uploads\/sites\/4\/2022\/04\/meilleurs-modules-elementor-360x180.jpeg","permalink":"https:\/\/kinsta.com\/fr\/blog\/meilleurs-modules-elementor\/"},{"title":"Ma\u00eetriser Tailwind CSS avec son mode Just-in-Time (JIT)","thumbnail":"https:\/\/kinsta.com\/fr\/wp-content\/uploads\/sites\/4\/2022\/04\/tailwind-jit-360x180.jpg","permalink":"https:\/\/kinsta.com\/fr\/blog\/tailwind-jit\/"}],"nonce":"777c9a1897","isEnabled":true,"isFloatingEnabled":false,"isContactFormPage":false}
+var siteState = {"adminAjaxUrl":"https:\/\/kinsta.com\/fr\/wp-admin\/admin-ajax.php","restBaseUrl":"https:\/\/kinsta.com\/fr\/wp-json\/kinsta\/v1","restNonce":"777c9a1897","siteEnv":"production"}
+</script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/main.js.téléchargement" id="kinsta-js-main-js"></script>
+<script type="text/javascript" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/wp-embed.min.js.téléchargement" id="wp-embed-js"></script>
+<script id="download-post-form-js-translations">
+( function( domain, translations ) {
+    let localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+    localeData[""].domain = domain;
+    wp.i18n.setLocaleData( localeData, domain );
+} )( "DownloadPostForm", {"translation-revision-date":"2022-04-29 12:12","generator":"WP-CLI\/2.6.0","source":"5269.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"fr_FR","plural-forms":"nplurals=2; plural=(n > 1);"},"The download has started. If you have any problems downloading the PDF from your browser, click the download button to save the file.":["Le t\u00e9l\u00e9chargement a commenc\u00e9. Si vous avez des probl\u00e8mes pour t\u00e9l\u00e9charger le PDF \u00e0 partir de votre navigateur, cliquez sur le bouton de t\u00e9l\u00e9chargement pour enregistrer le fichier."],"Download PDF":["T\u00e9l\u00e9charger la PDF"],"In a hurry? Save this article as a PDF.":["Vous \u00eates press\u00e9 ? Enregistrez cet article en PDF."],"Tired of scrolling? Download a PDF version for easier offline reading and sharing with coworkers.":["Fatigu\u00e9 de faire d\u00e9filer les pages ? T\u00e9l\u00e9chargez une version PDF pour faciliter la lecture hors ligne et partager avec vos coll\u00e8gues."],"Download":["T\u00e9l\u00e9charger"],"An unexpected error has occured":["Une erreur inattendue s'est produite"],"Download a PDF version.":["T\u00e9l\u00e9charger une version PDF."],"Bummer!":["C'est la poisse !"],"Download now":["T\u00e9l\u00e9charger maintenant"]}}} );
+</script>
+<script id="kinsta-website-js-translations">
+( function( domain, translations ) {
+    let localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+    localeData[""].domain = domain;
+    wp.i18n.setLocaleData( localeData, domain );
+} )( "kinsta-website", {"translation-revision-date":"2022-04-05 12:11","generator":"WP-CLI\/2.6.0","source":"src\/dist\/7440.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"fr_FR","plural-forms":"nplurals=2; plural=(n > 1);"},"Signup":["Inscription"],"State":["\u00c9tat"],"form disk space option\u0004< 10GB":["< 10\u00a0Go"],"form disk space option\u000410GB - 20GB":["10\u00a0Go - 20\u00a0Go"],"form disk space option\u000420GB - 60GB":["20 Go - 60 Go"],"form disk space option\u000460GB - 100GB":["60 Go - 100 Go"],"form disk space option\u0004100+ GB":["+ de 100 Go"],"Email":["E-mail"],"Please enter a valid email address format (email@domain.end)":["Veuillez saisir un format d'adresse e-mail valide (email@domain.end)"],"This email address is already registered. You can <MyKinstaLogin>log in<\/MyKinstaLogin>, <MyKinstaResetPassword>reset your password<\/MyKinstaResetPassword> or sign up with a different email address.":["Cette adresse e-mail est d\u00e9j\u00e0 enregistr\u00e9e. Vous pouvez <MyKinstaLogin>vous connecter<\/MyKinstaLogin>, <MyKinstaResetPassword>r\u00e9initialiser votre mot de passe<\/MyKinstaResetPassword> ou vous inscrire avec une autre adresse e-mail."],"Please enter a valid email address":["Veuillez saisir une adresse e-mail valide"],"An unexpected error has occurred":["Une erreur inattendue s'est produite"],"You also agree to receive information from Kinsta related to our services, events, and promotions. You may unsubscribe at any time by following the instructions in the communications received.":["Vous acceptez \u00e9galement de recevoir des informations de Kinsta relatives \u00e0 nos services, \u00e9v\u00e9nements et promotions. Vous pouvez vous d\u00e9sabonner \u00e0 tout moment en suivant les instructions figurant dans les communications re\u00e7ues."],"form monthly visits option\u00040 - 25K":["0 - 25K"],"form monthly visits option\u000425K - 50K":["25K - 50K"],"form monthly visits option\u000450K - 250K":["50K - 250K"],"form monthly visits option\u0004250K - 1 Million":["250K - 1 Million"],"form monthly visits option\u00041 Million +":["+ de 1 Million"],"Name":["Nom"],"Please enter your full name":["Veuillez saisir votre nom complet"],"Includes at least %s characters":["Incluez au moins %s caract\u00e8res"],"Includes a number":["Incluez un nombre"],"Includes a lowercase letter":["Incluez une lettre minuscule"],"Includes an uppercase letter":["Incluez une lettre majuscule"],"By submitting this form: You agree to the processing of the submitted personal data in accordance with <a>Kinsta's Privacy Policy<\/a>, including the transfer of data to the United States.":["En envoyant ce formulaire vous acceptez le traitement des donn\u00e9es personnelles soumises conform\u00e9ment \u00e0 la <a>politique de confidentialit\u00e9 de Kinsta<\/a>, y compris le transfert de donn\u00e9es vers les \u00c9tats-Unis."],"EU VAT number":["Num\u00e9ro de TVA UE"],"VAT number":["Num\u00e9ro de TVA"],"By default, VAT (value-added tax) is added to the price. Enter a valid EU VAT number to deduct this from the total price.":["Par d\u00e9faut, la TVA (Taxe \u00e0 valeur ajout\u00e9e) est ajout\u00e9e au prix. Entrez un num\u00e9ro de TVA EU valide pour la d\u00e9duire du prix total."],"We could not verify the EU VAT number you entered":["Nous n'avons pas pu v\u00e9rifier le num\u00e9ro de TVA europ\u00e9en que vous avez saisi"],"We could not verify the VAT number you entered":["Nous n'avons pas pu v\u00e9rifier le num\u00e9ro de TVA que vous avez saisi"],"We could not verify the GSTIN number you entered":["Nous n'avons pas pu v\u00e9rifier le num\u00e9ro GSTIN que vous avez saisi"]}}} );
+</script>
+
+
+</main><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/js(5)" async="" defer=""></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/optimize.js.téléchargement" async="" defer=""></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/saved_resource" async="" defer=""></script><div><div dir="ltr" style="position: relative; z-index: 5500;"></div></div><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/3344.js.téléchargement" async="" defer=""></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/6635519.js(3).téléchargement" async="" defer=""></script><script src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/insight.min.js.téléchargement" async="" defer=""></script><img src="https://analytics.twitter.com/i/adsct?type=javascript&amp;version=2.3.2&amp;p_id=Twitter&amp;p_user_id=0&amp;txn_id=o0d8i&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;tw_iframe_status=0&amp;event_id=cc3f1ee0-2a14-4e13-b76f-4f823e5d3fae&amp;tw_document_href=https%3A%2F%2Fkinsta.com%2Ffr%2Fbase-de-connaissances%2Fgit-vs-github%2F" height="1" width="1" style="display: none;"><img src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/adsct" height="1" width="1" style="display: none;"><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon983267610618"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon282840400597" width="0" height="0" alt="" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/0"></div><iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/saved_resource(2).html"></iframe><iframe name="__privateStripeMetricsController2330" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *" src="./Git vs Github _ Quelle est la différence et comment débuter avec les deux_files/m-outer-08a68483638f1673180e789f690b2a14.html" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>

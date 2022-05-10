@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<html>
+    <body>
+        <script>
+            //document.write("Store a celsius temperature into a variable")
+            celsius_temperature=prompt("Renseignez la température...")
+            
+            while (isNaN(celsius_temperature)) {  
+                alert("Entrer un nombre")
+                celsius_temperature=prompt("Renseignez la température...")
+                              }
+
+            //console.log("")
+         
+            //document.write(celsius_temperature)
+           // document.write("Convert it to fahrenheit and console.log: F=c*9/5+32") 
+            fahrenheit_temperature=((celsius_temperature*9)/5)+32
+            conversion= celsius_temperature+ ' degre celcius egual ' + fahrenheit_temperature +' fahrenheit '
+            document.write(conversion)
+    
+           //console.log("I eat " + favorite_food + " at every " + favorite_meal)//execution console
+           //document.write("I eat " + favorite_food + " at every " + favorite_meal) //execution navigateur
+        </script>
+    </body>
+</html>

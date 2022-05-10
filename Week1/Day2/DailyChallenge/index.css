@@ -1,0 +1,32 @@
+.container{
+    position: absolute;
+    background-color: rgb(232, 225, 238);
+    margin:0px;
+}
+
+nav{
+    height:5%;
+    background-color: rgb(150, 219, 105);
+    width:100%;
+} 
+
+nav a{
+    text-decoration:none;
+    color:black;
+    width:auto;
+} 
+
+.links{
+    float:right;
+    color:black;
+    width:auto;
+} 
+
+
+footer{
+    margin-top: 0px;
+    height:5%;
+    background-color: rgb(150, 219, 105);
+    width:auto;
+} 
+

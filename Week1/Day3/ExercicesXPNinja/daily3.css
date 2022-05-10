@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content:space-around;
+    display:grid;
+    width: 180px;
+    margin-left: 40px;
+    padding: 0px;
+    border: 1px solid rgb(112, 94, 94);
+    
+
+     grid-template-areas: 
+                  "gauche .        .          .          .          droite"
+                  "gauche milieu   milieu    milieu      milieu     droite"
+                  "gauche milieu   milieu    milieu      milieu     droite"
+                  "gauche .        .          .          .          droite";  
+    
+}
+
+div.idem{
+    background-color: yellow ;
+    width: 20px;
+    height:20px;
+    margin: 5px;
+    border: 1px solid rgb(112, 94, 94);  
+    
+}
+
+div.milieu{ display: flex;
+            flex-direction:row; 
+            align-items: center;
+           /* background-color: blueviolet;*/
+            
+}
+
+/*
+div.gauche{ 
+    background-color: rgb(22, 58, 41);
+    
+}
+
+
+div.droite{ 
+    background-color: rgb(13, 224, 126);
+    
+}
+*/
+      

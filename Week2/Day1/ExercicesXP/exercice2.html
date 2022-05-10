@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            console.log("part1")
+            myWatchedSeries = ["black mirror", "money heist", "the big bang theory0"];
+            myWatchedSeriesLength=myWatchedSeries.length
+            console.log(myWatchedSeriesLength) // affichage
+    
+            myWatchedSeriesSentence = myWatchedSeries[0] + ', '+ myWatchedSeries[1] +', '+ 'and '+ myWatchedSeries[2]
+            console.log(myWatchedSeriesSentence)
+
+            //Console.log a sentence using both of the variables created above
+            console.log("I watched "+ myWatchedSeriesLength +' series : '+ myWatchedSeriesSentence)
+
+            //part 2
+            //Change the series “the big bang theory” to “friends”.
+            console.log("")
+            console.log("")
+            console.log("part2")
+            myWatchedSeries[2]="friends"
+            myWatchedSeriesSentence = myWatchedSeries[0] + ', '+ myWatchedSeries[1] +', '+ 'and '+ myWatchedSeries[2]
+            
+            console.log(myWatchedSeriesSentence)
+
+            //Add, at the end of the array, the name of another series you watched.
+            console.log("")
+            console.log("")
+            console.log("Add, at the end of the array, the name of another series you watched.")
+            myWatchedSeries.push("Prison Break")
+            console.log(myWatchedSeries)
+            myWatchedSeriesSentence = myWatchedSeries[0] + ', '+ myWatchedSeries[1] +',  '+ myWatchedSeries[2] +','+ 'and '+ myWatchedSeries[3]
+            
+            console.log(myWatchedSeriesSentence)
+
+            //Add, at the beginning of the array, the name of your favorite series.
+            console.log("")
+            console.log("")
+            console.log("Add, at the beginning of the array, the name of your favorite series")
+            myWatchedSeries.unshift("Invincibles") //ajouter le film invincibles à index 0
+            console.log(myWatchedSeries)
+
+            //Delete the series “black mirror”.
+            console.log("")
+            console.log("")
+            console.log("premiere methode:  pour supprimer black mirror")
+            supprimer_black_mirror_avant=myWatchedSeries.slice(0,1)//extraire les fims avant mirror. ca fait un film à partir de la position0
+            supprimer_black_mirror_apres=myWatchedSeries.slice(2)//extraire les fils apres mirror. tous les films a partir de index 2
+            supprimer_black_mirror_join=supprimer_black_mirror_avant.concat(supprimer_black_mirror_apres) // je concaterne
+            console.log(supprimer_black_mirror_join)
+
+            console.log("second methode:  pour supprimer black mirror")
+            myWatchedSeries.splice(1,1)
+            console.log(myWatchedSeries)
+
+            console.log("trier les elements")
+            myWatchedSeries.sort()
+
+            console.log("supprimer l'element de rang 0")
+            myWatchedSeries.plice(0,1)
+
+                     
+
+            //Console.log the third letter of the series “money heist”.
+            console.log("")
+            console.log("")
+            console.log("The third letter of the series “money heist")
+            index_money_heist= myWatchedSeries.indexOf("money heist")//recherche index du mot
+            third_letter=myWatchedSeries[index_money_heist][2] //ayant index on sait que n est à position 2
+            console.log(third_letter)
+            
+            // console.log the myWatchedSeries
+            console.log("")
+            console.log("")
+            console.log("Toutes les modifications")
+            console.log(myWatchedSeries)
+
+
+
+           //console.log("I eat " + favorite_food + " at every " + favorite_meal)//execution console
+           //document.write("I eat " + favorite_food + " at every " + favorite_meal) //execution navigateur
+        </script>
+    </body>
+</html>

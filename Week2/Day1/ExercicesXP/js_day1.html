@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let str="Hello Everyone, please say hello to the class";
+            console.log(str.indexOf('class'))//40
+            console.log(str.substring(18,24))//ease say
+            console.log(str.toUpperCase())
+
+            let addressNumber="516 FLOOR";
+            let addressStreet="25 damas";
+            let country="Cameroun";
+            let globalAddress= "I live in " +addressNumber+", "+ addressStreet+", "+country
+            //console.log(globalAddress)
+            document.write(globalAddress)//pour afficher dans le naviigateur
+
+            let birth_year=prompt('Entrer your birth year :')
+            let future_year=2040
+            alert("In " + future_year + " I will have "+ (future_year-birth_year))
+
+            let pets=['cat','dog','fish','rabbit','cow'] //creation array
+            console.log(pets)//affichage resultat
+            
+            pets.push("horse")//ajouter un element horse à la fin
+            console.log(pets)//affichage resultat
+
+            pets.splice(3,1)//supprimer un element à partir de la position 3
+            console.log(pets)//affichage resultat
+
+            pets.length//affichage resultat
+
+            pets2=pets.slice(3)//extraire les 3-1=2 derniers elements
+            console.log(pets2)//affichage resultat
+
+
+
+        </script>
+    </body>
+</html>
