@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            console.log(" exercice: This car will only let you drive if you are over 18.")
+            
+            console.log(" Step 1: we need you age")
+            age_given=Number(prompt("what is your age.."))
+
+            while (isNaN(age_given)) {  
+                      alert("Your age should be a number")
+                     age_given=Number(prompt("what is your age.."))
+                              }
+            
+            if (age_given<18) {
+                              //console.log("Sorry, you are too young to drive this car. Powering off")
+                              document.write("Sorry, you are too young to drive this car. Powering off")
+                            }
+            else if (age_given===18) {
+                            //  console.log("Congratulations on your first year of driving. Enjoy the ride!")
+                             document.write("Congratulations on your first year of driving. Enjoy the ride!")
+                           }
+            else {
+                    //console.log("Powering On. Enjoy the ride!")
+                    document.write("Powering On. Enjoy the ride!")
+                           }
+
+
+           //console.log("I eat " + favorite_food + " at every " + favorite_meal)//execution console
+           //document.write("I eat " + favorite_food + " at every " + favorite_meal) //execution navigateur
+        </script>
+    </body>
+</html>

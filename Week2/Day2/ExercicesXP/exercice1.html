@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            //console.log(" exercice 1 simple if/else statement")
+            document.write(" exercice 1 simple if/else statement")
+            
+            //console.log(" create 2 variables x and y. each of them should have a different numeric value")
+            document.write(" create 2 variables x and y. each of them should have a different numeric value")
+            
+            x=Number(prompt("Enter x value.."))
+
+            while (isNaN(x)) {  
+                                       alert("Your should enter a number")
+                                       x=Number(prompt("enter x value.."))
+                              }
+                             
+
+            y=Number(prompt("Enter y value.."))
+            while (isNaN(y)) {  
+                                      alert("Your should enter a number")
+                                      y=Number(prompt("enter y value.."))
+                                     }
+            
+            if (x<y) {
+                              //console.log("The number y="y+ "is bigger than the number x=" +x)
+                              document.write("The number y=" +y+ " is bigger than the number x=" +x)
+                            }
+            else if (y<x) {
+                             //console.log("The number x="x+ "is bigger than the number y=" +y)
+                             document.write("The number x="+x+ " is bigger than the number y=" +y)
+                           }
+            else {
+                    //console.log("The number y="y+ "and  the number x=" +x +' are eguals')
+                    document.write("The number y="+y+ "and  the number x=" +x +' are eguals')
+                    
+                           }
+
+
+           //console.log("I eat " + favorite_food + " at every " + favorite_meal)//execution console
+           //document.write("I eat " + favorite_food + " at every " + favorite_meal) //execution navigateur
+        </script>
+    </body>
+</html>
