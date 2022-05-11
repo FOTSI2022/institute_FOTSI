@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            
+            /*Create an array called colors where the value is a list of your five favorite colors.
+             Loop through the array and as you loop console.log a string like so: “My #1 choice is blue”, “My #2 choice is red” ect… .
+             Bonus: Change it to console.log “My 1st choice”, “My 2nd choice”, “My 3rd choice”, picking the correct suffix for each number.
+             Hint : create an array of suffixes to do the Bonus*/
+            
+            //Create an array called colors where the value is a list of your five favorite colors.
+             let colors = ["Green", "White", "Yellow", "Black"];
+            
+            //Loop through the array and as you loop console.log a string like so: “My #1 choice is blue”, “My #2 choice is red” ect… .
+            rang=1;
+            for (color of colors){
+                     console.log('My #'+rang+ ' color is '+color);
+                     rang++;
+                     }
+            
+            //Bonus: Change it to console.log “My 1st choice”, “My 2nd choice”, “My 3rd choice”, picking the correct suffix for each number.
+            let rang_array=["st", "nd", "rd", "th"];
+
+            for ( let i=1; i<=4; i++){
+                     console.log('My '+ i +''+ rang_array[i]+ ' color is '+colors[i]);
+                            }
+        </script>
+    </body>
+</html>

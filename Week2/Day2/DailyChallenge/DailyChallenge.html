@@ -5,7 +5,7 @@
         <script>
            //create a variable called sentence
 
-           let sentence = "This movie is not bad, I like it";
+           let sentence = "This movie is not bad , I like it";
            //let sentence ="This dinner is bad !"
            //let sentence ="This movie is boring !"
            //let sentence="This dinner is not that bad ! You cook well";
@@ -17,8 +17,8 @@
            //create a variable called wordBad where it value is the first appearence of the substring "bad"
            let wordBad=sentence.indexOf("bad");
            console.log(wordBad);
-
-           sentence2=sentence.split(/\b/); //transform in array                  
+          
+           sentence2=sentence.split(/\b/); //transform in array                 
            index_wordNot=sentence2.indexOf("not");//search index
            index_wordBad=sentence2.indexOf("bad");//search index
           
@@ -53,28 +53,6 @@
             else {
                   console.log('The sentence '+sentence+ ' doesnt have the word bad') //to publish  
                  }
-
-            
-           
-          
-                            
-                                            
-                                            
-                                             
-             
-            //                    sentenceNew=sentence.split()
-               //                  console.log("no one is online");
-                        //       }
-            //else if (users.length==1){
-              //                   console.log(users[0]+' is online');
-                          //     }
-            //else if (users.length==2){
-              //  console.log(users[0]+' and '+ users[0]+' are online');
-                            //   }
-            //else {
-              //    console.log(users[0]+' , '+ users[0]+' and ' + (users.length-2)+ ' people are online')
-            //}
-
                     
         </script>
     </body>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            //fibonacci  F0=0  F1=1  Fn=Fn-1 +Fn-2 pour n>=2
+            Fo=0;
+            F1=1;
+            Fn=0;
+            
+            n=Number(prompt('Enter a number'));
+            
+            
+            while (n>=0){
+                console.log(Fn);
+                Fn=Fo+F1
+                Fo=F1;
+                F1=Fn
+                n=n-1;
+            }
+        </script>
+    </body>
+</html>

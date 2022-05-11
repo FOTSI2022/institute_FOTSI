@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            let people = ["Greg", "Mary", "Devon", "James"];
+            
+            //Write code to remove “Greg” from the people array.
+            let people_without_greg = people.splice(0,1);
+            console.log(people);
+            
+            //Write code to replace “James” to “Jason”.
+            let people_James_Jason = people.splice(3,1,'Jason');
+            console.log(people);
+
+            //Write code to add your name to the end of the people array.
+            people.push('Elvis');
+            console.log(people);
+
+            //Write code that console.logs Mary’s index.
+            for ( person of people){
+                if (person=='Mary'){
+                    console.log(people.indexOf(person));
+                }
+            } 
+
+            //Write code to make a copy of the people array using the slice method. 
+            // slice extracts elements (indexstart, indexend) and save in a new array
+            let people1=people.slice(1,3);
+            let people2=people.slice(0,2);
+            let people3=people1.concat(people2);
+            //(people.slice(0,1)).concat(people.slice(4,1));
+            console.log(people3);
+
+            //Write code that gives the index of “Foo”. Why does it return -1 ? because not in the table
+            for ( person of people){
+                if (person=='Foo'){
+                    console.log(people.indexOf(person));
+                }
+                else{ console.log(people.indexOf('Foo'));
+
+                }
+            } 
+            
+            //Create a variable called last which value is the last element of the array.
+            last=people[(people.length)-1];
+            console.log(last);
+
+            //part 2
+            //Using a loop, iterate through the people array and console.log each person.
+            for ( person of people){              
+                    console.log(person);
+                }
+            //Using a loop, iterate through the people array and exit the loop after you console.log “Jason”
+            for ( person of people){              
+                    console.log(person);
+                    if (person=='Jason'){
+                        break;
+                    }
+                }
+
+        </script>
+    </body>
+</html>

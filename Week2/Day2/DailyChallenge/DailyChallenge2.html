@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+    <body>
+        <script>
+           //create a variable called sentence
+
+           let sentence = "This movie is not bad , I like it";
+           //let sentence ="This dinner is bad !"
+           //let sentence ="This movie is boring !"
+           //let sentence="This dinner is not that bad ! You cook well";
+           
+           //create a variable called wordNot where it value is the first appearence of the substring "not"
+           let wordNot=sentence.indexOf("not");
+           console.log(wordNot);
+
+           //create a variable called wordBad where it value is the first appearence of the substring "bad"
+           let wordBad=sentence.indexOf("bad");
+           console.log(wordBad);
+
+           let sentence2=sentence.split(' '); //transform in array                  
+           let index_wordNot=sentence2.indexOf("not");//search index
+           let index_wordBad=sentence2.indexOf("bad");//search index
+          
+           console.log("index of not is "+ index_wordNot);
+           console.log("index of bad is "+ index_wordBad);
+           let index_numbers_item= (wordBad-index_wordNot)+1; //numbers item to delete
+                                             
+           if (((index_wordNot>=0) && (index_wordBad>=0))&&(index_wordBad==index_wordNot+1)){ // we verify if the two words exist
+                                                    sentence2.splice(index_wordNot,index_numbers_item,'good');// insert good to replace not bad
+                                                    sentence3=sentence2.join(" ");// to rebuilt the sentence
+                                                    
+                                                    //console.log(sentence) //to publish original sentence
+                                                    console.log(sentence3) //to publish sentence in the table 
+                                                    //console.log(sentence3) //to publish sentente in the new form qfter splice
+                                                    //console.log(sentence4) //to publish sentente in the new form join     
+
+                                                        }
+            else if (((index_wordNot>=0) && (index_wordBad>=0))&&(index_wordBad>index_wordNot+1)){ // we verify if the word Not exist
+                                                      
+                                                    sentence2.splice(index_wordNot,index_numbers_item,'good');                                        
+                                                    sentence3=sentence2.join(" ");// to rebuilt the sentence
+                                                    console.log(sentence); //to publish
+                                                    console.log(sentence2); //to publish
+                                                    console.log(sentence3); //to publish     
+
+                                                               }
+            else if ((index_wordBad>=0) && (index_wordNot==-1)){ // we verify if the word Not exist
+    
+                                                             console.log(sentence) //to publish     
+
+                                                             }
+            else {
+                  console.log('The sentence '+sentence+ ' doesnt have the word bad') //to publish  
+                 }
+
+            
+           
+          
+                            
+                                            
+                                            
+                                             
+             
+            //                    sentenceNew=sentence.split()
+               //                  console.log("no one is online");
+                        //       }
+            //else if (users.length==1){
+              //                   console.log(users[0]+' is online');
+                          //     }
+            //else if (users.length==2){
+              //  console.log(users[0]+' and '+ users[0]+' are online');
+                            //   }
+            //else {
+              //    console.log(users[0]+' , '+ users[0]+' and ' + (users.length-2)+ ' people are online')
+            //}
+
+                    
+        </script>
+    </body>
+</html>
