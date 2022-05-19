@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                border: 2px solid white;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+                border: 5px solid red;
+            }
+            .Mercury{background-color: bisque};
+            .Venus{background-color: blueviolet};
+            .Earth{background-color: brown};
+            .Mars{background-color: aqua};
+            .Jupiter{background-color: beige};
+            .Saturn{background-color: blanchedalmond};
+            .Nepturne{background-color: rgba(rgb(60, 255, 0), green, blue, alpha)};
+            .Uranus{background-color: rgb(237, 237, 010)};
+        </style>
+    </head>
+    <body>
+
+    <section class="listPlanets"></section>
+     
+    <script src="...">
+           let solar_system=['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Nepturne','Uranus'];//create array
+
+          for (let planet in solar_system){
+                   let div=document.createElement('div'); //create div for planets
+                   div.classList.add('planet');//create class planet
+                   div.classList.add(planet);//create class planet
+                   
+                   let section=document.querySelector('.listPlanets')//ajout div à section
+                   section.appendChild(div);
+                                          }
+    </script>
+    </body>
+</html>

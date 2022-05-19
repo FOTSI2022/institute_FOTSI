@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM events</title>
+        <style>
+            .color{
+                background-color:red;
+                font-size:25px;
+
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form>
+            <input type="button" name="test" value="Click me detached form" onclick="inform()"> <!--you click me used a detached function!-->
+
+            <button onclick="alert('You clicked me')">Click me</button>
+
+            <button ondblclick="alert('You double clicked me')">double Click me</button>
+
+            <button onmouseover="alert('You onmoused me')">onmouse me</button>
+
+            <button onclick="changeBackground()">click to change the background color</button>
+             
+            <button>click to change the background color</button>
+         
+        </form>
+
+    <script src="...">
+        
+         function inform(){
+            alert("You clicked me by a detached script")
+        }
+
+        function changeBackground(){
+            document.body.classList.toggle('color') 
+              }
+   
+    </script>
+    </body>
+</html>

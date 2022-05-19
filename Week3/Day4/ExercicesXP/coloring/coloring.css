@@ -1,0 +1,48 @@
+.container{
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid rgb(41, 33, 33);
+    grid-template-columns: 1fr 2fr; /*2 colonnes la deuxième a deux fois la grandeur du premier*/
+    grid-gap:5px 5px; /* gerer l'espace ebtre les carreaux*/                 
+                  
+         }
+/*Gestion parite couleur*/ 
+
+.partie_color{  
+         display:grid;
+          border: 1px solid rgb(192, 13, 13);
+          /* grid-template-columns: 1fr 3fr;  2 lignes la deuxième a deux fois la grandeur du premier*/
+          grid-template-rows: 1fr 5fr; /*création de 2 lignes dont la deuxième a 7 fois la grandeur du premier*/
+          /*grid-template-rows: repeat(7,152px);   création de 7 lignes identiques de 152px de hauteur */
+          grid-gap:5px 5px;     
+                        
+      }
+
+
+.clear{ 
+    display:grid;
+    border-radius: 3px solid red;
+    text-align: center;
+    background-color: beige;
+                       
+    }
+
+.colors{ display:grid; 
+       background-color: blueviolet;
+       grid-template-columns: repeat(3,152px);  /*3 colonnes identiques*/
+       grid-template-rows: repeat(7,110px);  /*2 lignes la deuxième a deux fois la grandeur du premier*/  
+       grid-gap:5px 5px;     
+      
+                
+    }
+/*Gestion parite dessin*/
+.partie_dessin{
+      display: grid;  
+     /* border: 1px solid black;*/
+      grid-template-columns: repeat(60,1fr);
+      grid-template-rows: repeat(81,1fr);
+      grid-gap: 3px 3px;
+      background-color: aqua;
+                      
+     }

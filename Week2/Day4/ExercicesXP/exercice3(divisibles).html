@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+                      
+            /*Create a function call isDivisible() that takes no parameter.
+
+            In the function, loop through numbers 0 to 500.
+
+            Console.log all the numbers divisible by 23.
+
+            At the end, console.log the sum of all numbers that are divisible by 23.*/
+            
+            //declare the function
+              function isDivisible(){
+                                      let summ=0;          
+                                      for (let i=0; i<=500; i++){
+                                        if(i%23==0){
+                                                      console.log(i);
+                                                      summ=summ+i;
+                                                    }
+                         
+                                      }
+              console.log('THE SUM OF NUMBER DIVISIBLE BY 23 BETWEEN 0 AND 500 IS '+summ);
+                                    }                                     
+                                 
+            //call the function
+            isDivisible();
+
+            //BONUS
+            //declare the function
+            function isDivisible(divisor){
+                                      let summ=0;          
+                                      for (let i=0; i<=500; i++){
+                                        if(i%divisor==0){
+                                                      console.log(i);
+                                                      summ=summ+i;
+                                                    }
+                         
+                                      }
+              console.log('THE SUM OF NUMBER DIVISIBLE BY '+divisor+' BETWEEN 0 AND 500 IS '+summ);
+                                    }                                     
+                                 
+            //call the function
+            isDivisible(3);
+            isDivisible(45);
+            
+        </script>
+    </body>
+</html>

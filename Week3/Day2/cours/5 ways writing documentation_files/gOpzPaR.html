@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/avnermaman/fullembedgrid/gOpzPaR?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Event onchange VS oninput</title>
+  
+  
+  
+  
+<style>
+/* On Change */
+#result1{
+  border : 2px solid blue;
+  padding: 3px
+}
+
+
+
+/* On Input */
+#result2{
+  border : 2px solid red;
+  padding: 3px
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <label>ON CHANGE</label>
+<input type="text" id="input1">
+<span id="result1"></span>
+
+<br><br>
+
+<label>ON INPUT</label>
+<input type="text" id="input2">
+<span id="result2"></span>
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.téléchargement"></script>
+
+  
+      <script id="rendered-js">
+//On Change : event triggers when the element <u>has finished changing</u>.
+
+let newInput1 = document.getElementById('input1');
+
+newInput1.addEventListener("change", changeInput);
+
+function changeInput(event) {
+  document.getElementById('result1').textContent = event.target.value;
+}
+
+
+// OTHER POSSIBILITY
+// let newInput1 =  document.getElementById('input1')
+//   newInput1.onchange = function() {
+//   document.getElementById('result1').innerHTML = this.value;
+//   };
+
+// --------------------------------
+
+//On Input : event triggers every time after a value is modified by the user. 
+
+let newInput2 = document.getElementById('input2');
+newInput2.addEventListener("input", changeInput2);
+
+function changeInput2(event) {
+  document.getElementById('result2').textContent = event.target.value;
+}
+
+//OTHER POSSIBILITY
+
+// let newInput2 =  document.getElementById('input2')
+//   newInput2.oninput = function() {
+//    document.getElementById('result2').innerHTML = this.value;
+// };
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.téléchargement"></script>
+
+
+
+ 
+</body></html>

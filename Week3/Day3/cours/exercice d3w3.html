@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180# -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Developers Institute</title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developers Institute - Global Software Development Bootcamp">
+
+    <!-- Favicon -->
+    <link href="http://learn.di-learning.com/static/theme/images/favicon.png" rel="icon" type="image/png">
+
+    
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="./exercice d3w3_files/style.css">
+    <link rel="stylesheet" href="./exercice d3w3_files/night-mode.css">
+    <link rel="stylesheet" href="./exercice d3w3_files/framework.css">
+    <link rel="stylesheet" href="./exercice d3w3_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./exercice d3w3_files/font-awesome.min.css">
+
+
+    
+<link rel="stylesheet" href="./exercice d3w3_files/courses_app.css">
+<link rel="stylesheet" href="./exercice d3w3_files/prism.css">
+<link rel="stylesheet" href="./exercice d3w3_files/color-brewer.min.css">
+<link rel="stylesheet" href="./exercice d3w3_files/slider.css">   
+
+
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="./exercice d3w3_files/icons.css">
+
+    
+<!-- Syntax Highlighter -->
+<link rel="stylesheet" type="text/css" href="./exercice d3w3_files/shCore.css" media="all">
+<link rel="stylesheet" type="text/css" href="./exercice d3w3_files/shCoreMidnight.css" media="all">
+<style>
+    .gutter,
+    .toolbar {
+        display: none
+    }
+
+    .syntaxhighlighter {
+        padding: 15px 20px;
+    }
+
+    .syntaxhighlighter {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        padding-top: 18px !important;
+    }
+
+</style>
+
+
+    </head>
+
+<body style="">
+    <div id="wrapper">
+
+        
+<!-- To clear the header loaded in base -->
+
+
+        
+            
+
+<div class="side-nav uk-animation-slide-left-medium">
+
+    <div class="side-nav-bg"></div>
+
+    <!-- logo -->
+    <div class="logo uk-visible@s">
+        <ul>
+            <li>
+                <a href="http://learn.di-learning.com/courses"><img src="./exercice d3w3_files/logo_di.png" alt=""> <span class="tooltips"> My Courses</span> </a>
+            </li>
+        </ul>
+    </div>
+
+    <ul>
+        
+        <li><a href="http://learn.di-learning.com/calendar"> <i class="icon-feather-calendar"></i> <span class="tooltips">Calendar</span></a></li>
+        
+        
+        <li><a href="http://learn.di-learning.com/leaderboards"> <i class="icon-feather-star"></i> <span class="tooltips">Leaderboard</span></a></li>
+        
+        
+        <li><a href="http://slack.developers.institute/" target="_blank"> <i class="icon-feather-slack"></i> <span class="tooltips">Slack</span></a></li>
+        
+        <li><a href="http://blog.developers.institute/" target="_blank"> <i class="uil-file-alt"></i> <span class="tooltips">Blog</span></a></li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"> <i class="uil-books"></i> </a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>Learn More</h6></a>
+                                <a href="https://developers.institute/index.php/portfolios/coding-bootcamp-tlv/" target="_blank">Full Stack Python</a>
+                                <a href="https://developers.institute/index.php/portfolios/online-live-bootcamp/" target="_blank">Full Stack JavaScript</a>
+                                <a href="https://developers.institute/index.php/portfolios/summer-camp-2020/" target="_blank">Summer Camp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"><i class="uil-question-circle"></i></a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>About DI</h6></a>
+                                <a href="https://developers.institute/" target="_blank">Home page </a>
+                                <a href="https://developers.institute/en/our-coding-bootcamp-courses-tel-aviv-coding-bootcamp-full-stack/" target="_blank">Our Courses</a>
+                                <a href="https://developers.institute/index.php/dates-tuition/" target="_blank">Dates &amp; Tuition </a>
+                                <a href="https://developers.institute/index.php/blog/" target="_blank">Blog</a>
+                                <a href="http://learn.di-learning.com/terms">Terms &amp; Conditions</a>
+                                <a href="http://learn.di-learning.com/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+        
+        
+        
+<div class="page-content">
+    
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-3-4@m bg-white uk-first-column">
+            
+            <!-- video description contents -->
+            <div class="p-lg-5 p-3" style="width:80%; margin:auto;">
+                
+                <div style="margin-top:-27px; margin-bottom:23px;">
+                    
+<nav id="breadcrumbs">
+    <ul>
+        <li><a href="http://learn.di-learning.com/courses"><i class="icon-feather-home"></i></a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20">Full Stack Coding Bootcamp - Python - Yaounde</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11">DOM</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44">Learning DOM Animations</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180">Exercises XP</a></li>
+    </ul>
+</nav>
+
+                </div>
+                
+
+                <div style="display: flex;">
+                    <div style="width: 80%;">
+                        
+                        <h2>Exercises XP</h2>
+                        
+                    </div>
+                    
+                        
+                            <div section-id="44" style="width: 30%; display: flex; justify-content: flex-end; align-items: center;">
+                                
+                                    
+                                    <span class="btn btn-secondary border border-danger" id="chapter-submit" chapter-id="180" style="">Submit</span>
+                                    
+                                
+                            </div>
+                        
+                    
+                </div>
+                
+                <div style="width: 20%;">
+                    
+                </div>
+                
+
+                <hr class="my-2">
+                <div uk-toggle="cls: uk-flex uk-flex-between@m uk-flex-middle; mode: media; media: @m" class="uk-flex uk-flex-between@m uk-flex-middle"><div>
+            </div>
+        </div>
+
+        <div>
+            
+            
+
+            <div id="chapter-contents">
+
+                    
+
+                    
+
+                    
+                    <p class="lead"><!--STEP 1 - Restructure by Lise on April 16th 2021-->
+
+<!--STEP 2 - Review by chaim on April 16th 2021-->
+
+</p><div class="uk-grid-small uk-grid uk-grid-stack" uk-grid="">
+                            <div class="uk-width-auto uk-first-column">
+                                <span>Last updated : April 16th 2021 </span>
+                            </div>
+
+                        </div>
+
+<hr>
+<p><br></p>
+<h2><a name="What_we_will_learn:">What we will learn:</a></h2>
+<ul>
+<li>DOM Manipulation</li>
+<li>Animation with the DOM</li>
+</ul>
+<p><br></p>
+<hr>
+<h3><a name="Exercise_1:_Timer">Exercise 1: Timer</a></h3>
+<h4><a name="Instructions">Instructions</a></h4>
+<p>Using this HTML code:</p>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">p</span> {
+          <span class="hljs-attribute">background</span>: yellow;
+          <span class="hljs-attribute">color</span>: red;
+        }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"clear"</span>&gt;</span>Clear Interval<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<h5><a name="Part_I">Part I</a></h5>
+<ol>
+<li>In your Javascript file, using <code>setTimeout</code>, call a function after 2 seconds. </li>
+<li>The function will alert “Hello World”.</li>
+</ol>
+<p><br></p>
+<h5><a name="Part_II">Part II</a></h5>
+<ol>
+<li>In your Javascript file, using <code>setTimeout</code>, call a function after 2 seconds. </li>
+<li>The function will add a new paragraph <code>&lt;p&gt;Hello World&lt;/p&gt;</code> to the <code>&lt;div id="container"&gt;</code>.</li>
+</ol>
+<p><br></p>
+<h5><a name="Part_III">Part III</a></h5>
+<ol>
+<li>In your Javascript file, using <code>setInterval</code>, call a function every 2 seconds. </li>
+<li>The function will add a new paragraph <code>&lt;p&gt;Hello World&lt;/p&gt;</code> to the <code>&lt;div id="container"&gt;</code>.</li>
+<li>The interval will be cleared (ie. <code>clearInterval</code>), when the user will click on the button.</li>
+<li>Instead of clicking on the button, the interval will be cleared (ie. <code>clearInterval</code>) as soon as there will be 5 paragraphs inside the <code>&lt;div id="container"&gt;</code>.</li>
+</ol>
+<p><br></p>
+<hr>
+<h2><a name="Exercise_2_:_Move_the_box">Exercise 2 : Move the box</a></h2>
+<h4><a name="Instructions">Instructions</a></h4>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-id">#container</span> {
+          <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;
+          <span class="hljs-attribute">height</span>: <span class="hljs-number">400px</span>;
+          <span class="hljs-attribute">position</span>: relative;
+          <span class="hljs-attribute">background</span>: yellow;
+        }
+        <span class="hljs-selector-id">#animate</span> {
+          <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+          <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+          <span class="hljs-attribute">position</span>: absolute;
+          <span class="hljs-attribute">background-color</span>: red;
+        }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"myMove()"</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"animate"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<ol>
+<li>Copy the code above, to a structured HTML file.</li>
+<li>In your Javascript file, use <code>setInterval</code> to move the <code>&lt;div id="animate"&gt;</code> to the right side of the <code>&lt;div id="container"&gt;</code>, when the button is clicked on. </li>
+</ol>
+<p>The <code>&lt;div id="animate"&gt;</code> should move <code>1px</code> to the right every milisecond, until it reaches the end of the <code>&lt;div id="container"&gt;</code>.<br>
+<em>Hint</em> : use <code>clearInterval</code> as soon as the box reaches the right end side of the container<br>
+<em>Hint</em> : check out the demonstration in the Course Noted named <em>JS Functions</em></p>
+<p><img alt="Exercise2" src="./exercice d3w3_files/168036336-8580c062-5450-46b6-b738-91243276f7b5.gif" style="width:20%;border:2px solid black"></p>
+<p><br></p>
+<hr>
+<h3><a name="Exercise_3:_Drag_&amp;_Drop">Exercise 3: Drag &amp; Drop</a></h3>
+<h4><a name="Instructions">Instructions</a></h4>
+<!--**Tip** : Check out [this video](https://www.youtube.com/watch?v=C22hQKE_32c){: .hi-vis target="_blank"} on drag and drop-->
+
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-id">#target</span> {
+          <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+          <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+          <span class="hljs-attribute">position</span>: relative;
+          <span class="hljs-attribute">background</span>: yellow;
+        }
+        <span class="hljs-selector-id">#box</span> {
+          <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+          <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+          <span class="hljs-attribute">position</span>: absolute;
+          <span class="hljs-attribute">background-color</span>: red;
+        }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"target"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<ol>
+<li>Copy the code above, to a structured HTML file.</li>
+<li>In your Javascript file add the functionality which will allow you to drag the <code>box</code> and drop it into the <code>target</code>. Check out the Course Notes named <em>DOM animations</em>.</li>
+</ol>
+<p><br></p>
+<hr>
+<h2><a name="Submit_your_exercises_:">Submit your exercises :</a></h2>
+<p>Don’t forget to push to <a href="https://github.com/"><img alt="Github" src="./exercice d3w3_files/GitHub-Icon.png"></a></p>
+<div class="uk-alert-primary uk-alert" uk-alert=""> <p>Submit your exercises to DI Learning</p></div>
+
+<hr>
+<h2><a name="More_info">More info</a></h2>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Duration (approx)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt; 45 minutes</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<hr>
+<p>One Last Thing: <strong>Good luck!</strong></p>
+<hr><p></p><br>
+                    
+
+                    <div style="display: flex; justify-content: flex-end; align-items: center;">
+                        <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#breadcrumbs" class="btn btn-info mb-2">Back to Top</a>
+                    </div>
+
+                    <div>
+                        <hr>
+                        <h1><a name="Feedback">Feedback</a></h1>
+                        <p>Tell us what you thought about  the chapter: Exercises XP</p>
+                        <div id="feedback" class="cui-embed" style="height: 300px; width: 100%;" data-cui-uid="Gp6szZ" data-cui-avatar="https://images.typeform.com/images/KV5BWnKMavQp" data-cui-mode="widget" data-cui-pill-button-color="#000000" data-cui-injected="true"><iframe class="cui-embed-frame" id="cui-Gp6szZ" src="./exercice d3w3_files/Gp6szZ.html" frameborder="0" height="100%" width="100%" style="display: block; z-index: 2147483647;"></iframe></div><script src="./exercice d3w3_files/embed.js.téléchargement" async=""></script>
+                    </div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-expand@s uk-first-column">
+            <p>© 2020 <strong>Developers Institute</strong>. All Rights Reserved. </p>
+        </div>
+        <div class="uk-width-auto@s">
+            <nav class="footer-nav-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/developers.institute/" target="_blank"><i class="icon-brand-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/developers.institute/" target="_blank"><i class="icon-brand-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-qcXcEsoBSSpYvj5DqoMDQ/featured" target="_blank"><i class="icon-brand-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/devtlv" target="_blank"><i class="icon-brand-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+<div class="uk-width-1-4@m uk-overflow-hidden vidlist-3-container">
+    <div uk-sticky="" class="uk-sticky uk-active uk-sticky-fixed uk-sticky-below" style="position: fixed; top: 0px; width: 270px;">
+        <h5 class="bg-gradient-grey text-white py-4 p-3 mb-0">Learning DOM Animations</h5>
+        
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%; background:#17d292; font-size:1.2em; color: #949393; font-weight:bold;">
+                    <span style="padding-left: 15px;" id="progress-bar-text">0% Complete</span>
+                </div>
+            </div>
+        
+
+        <ul class="uk-child-width-expand mb-0 uk-tab" uk-switcher="animation: uk-animation-slide-right-small, uk-animation-slide-left-small" uk-tab="">
+            <li class="uk-active"></li>
+        </ul>
+
+        <ul class="uk-switcher uk-overflow-hidden" style="touch-action: pan-y pinch-zoom;">
+            <li class="uk-active">
+                <div class="vidlist-3-content" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content" style="padding: 0px; height: 100%; overflow: hidden;">
+                    <ul class="vidlist-3-section uk-accordion" uk-accordion="">
+
+                        
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"> Course Notes </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/178">
+                                            <div id="chapter_id_178" class="chapter-title">JS Functions</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_178" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/179">
+                                            <div id="chapter_id_179" class="chapter-title">DOM Animations</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_179" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/817">
+                                            <div id="chapter_id_817" class="chapter-title">Github Branches</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_817" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"> Exercises </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li class="chapter-active">
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180">
+                                                <div id="chapter_id_180" class="chapter-title">Exercises XP</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    <span class="badge badge-outline-warning">XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_180" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/181">
+                                                <div id="chapter_id_181" class="chapter-title">Exercises XP Gold</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">8 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Gold</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_181" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/182">
+                                                <div id="chapter_id_182" class="chapter-title">Exercises XP Ninja</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">12 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Ninja</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_182" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"> Online Learning </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/186">
+                                                <div id="chapter_id_186" class="chapter-title">DOM: Exercise Background generator</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_186" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/185">
+                                                <div id="chapter_id_185" class="chapter-title">Developer Fundamentals V</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_185" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/1590">
+                                                <div id="chapter_id_1590" class="chapter-title">Git + Github Part II</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_1590" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/44">
+                                                <div id="chapter_id_44" class="chapter-title">Git - Contributing To Open Source</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_44" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/45">
+                                                <div id="chapter_id_45" class="chapter-title">Git - Keeping Your Fork Up To Date</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_45" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/188">
+                                                <div id="chapter_id_188" class="chapter-title">Workout plan</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_188" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"> Daily Challenge </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_daily_challenge" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/187">
+                                                <div id="chapter_id_187" class="chapter-title">Daily challenge: Letters</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">10 XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_187" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_daily_challenge" href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/820">
+                                                <div id="chapter_id_820" class="chapter-title">Daily challenge: GitHub</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">10 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_820" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    <span class="badge badge-outline-warning" data-toggle="tooltip" title="Advanced"><i class="fa fa-diamond" aria-hidden="true"></i></span>
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        
+
+                        
+
+                        
+                    </ul>
+                </div></div></div><div class="simplebar-placeholder" style="width: 270px; height: 360px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); visibility: hidden;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); visibility: hidden;"></div></div></div>
+            </li>
+        </ul>
+    </div><div class="uk-sticky-placeholder" style="height: 448px; margin: 0px;"></div>
+</div>
+
+<!-- small device icon video sidebar -->
+<span class="btn-vidlist-3" uk-toggle="target: #wrapper; cls: is-open"></span>
+
+<script>
+    // Removes empty accordians in right sidebar
+    let accordion_contents = document.getElementsByClassName("uk-accordion-content");
+    //Can't loop through and remove elements from array without controlling for length change
+    for(let i = 0; i < accordion_contents.length; i++){
+        content = accordion_contents[i].getElementsByTagName("li")
+        if (!content.length) {
+            accordion_contents[i].parentNode.remove();
+            i--;  
+        }
+    }
+</script>
+
+<script>
+    // Update Markdown Tables to Bootstrap Tables - Jonathan
+    [].forEach.call(document.getElementsByTagName("table"), function (el) {el.className += "table table-striped table-bordered"});
+</script>
+
+<script>
+    // Auto Build TOC from H1 - H6 Components in 'chapter-contents' div - Jonathan
+    let make_toc = function(){
+        var toc = "";
+        var level = 0;
+
+        document.getElementById("chapter-contents").innerHTML =
+            document.getElementById("chapter-contents").innerHTML.replace(
+                /<h([\d])>([^<]+)<\/h([\d])>/gi,
+                function (str, openLevel, titleText, closeLevel) {
+                    if (openLevel != closeLevel) {
+                        return str;
+                    }
+
+                    if (openLevel > level) {
+                        toc += (new Array(openLevel - level + 1)).join("<ul>");
+                    } else if (openLevel < level) {
+                        toc += (new Array(level - openLevel + 1)).join("</ul>");
+                    }
+
+                    level = parseInt(openLevel);
+
+                    var anchor = titleText.replace(/ /g, "_");
+                    toc += "<li><a href=\"#" + anchor + "\">" + titleText
+                        + "</a></li>";
+
+                    return "<h" + openLevel + "><a name=\"" + anchor + "\">"
+                        + titleText + "</a></h" + closeLevel + ">";
+                }
+            );
+
+        if (level) {
+            toc += (new Array(level + 1)).join("</ul>");
+        }
+
+        document.getElementById("toc").innerHTML += toc;
+    };
+    window.setTimeout(function(){make_toc()}, 0)
+    
+</script>
+
+<script>
+    // Typeform element hijacks focus when it loads. No way to control it. 
+    // So we hide it until it has fully loaded, then display it.
+    let load_feedback = function(){
+        document.getElementById("feedback").removeAttribute("hidden")
+    }
+
+    // To trigger a click on the correct chapter. This will open the accordion to correct location.
+    let run_target = function(){
+        chapter_id="180"
+        if (chapter_id == "") {
+            let accordion = document.querySelector(".vidlist-3-section > li > a")
+            accordion.click()
+            return;
+        }
+        click_target = document.getElementById('chapter_id_'+chapter_id)
+        click_target.closest("li").classList.add('chapter-active');
+        click_target.closest(".uk-accordion-content").previousElementSibling.click();
+    }    
+
+    window.addEventListener('load',function(){
+        load_feedback()
+    })
+
+    // JMS HACK: DOMContentLoaded isn't reliable here. Probably because of this weird template renders.
+    // And load event is too slow for good UX.
+    // So... fudging it using a setTimeout 0.  Thoughts?
+    window.setTimeout(function(){run_target()}, 0)
+
+
+
+  /*
+  Checking Course
+  */
+  window.addEventListener('load',function(){
+
+    // Cookie is supposed to be added before every ajax request
+    // This happens in lib/js/script.js in the Ajax setup "beforSend"
+    // But its buggy and doesn't always send. I tested it by making the target view csrf exempt
+    //... so I'm explicitly adding the cookie in the ajax data body
+    function getCookie(name) {
+      var cookieValue = null;
+      if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = jQuery.trim(cookies[i]);
+          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            break;
+          }
+        }
+      }
+      return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+
+    configure_modal()
+
+    const submit_button = document.getElementById('chapter-submit');
+    if (submit_button) {
+        submit_button.addEventListener('click', ()=>{
+            modal_get_submission()
+        })
+    }
+
+    function configure_modal(){
+        const modal_id = 'submit_exercise'
+        const modal = build_modal({
+            header  : "<h5 class='modal-title'>Mandatory Exercise Submission</h5>", 
+            body    : "<strong>Code Url:</strong>\
+                       <input class='form-control' id='exercise_url' name='exercise_url' placeholder='Enter Github link to your code'> \
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Difficulty</strong>\
+                                <p class='text-muted'>Was this exercise at the appropriate level for your skillset?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='difficulty' name='difficulty' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Clarity</strong>\
+                                <p class='text-muted'>Were the instructions and language understandable?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='clarity' name='clarity' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Relevance</strong>\
+                                <p class='text-muted'>Did this exercise reinforce ideas from today's lesson?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='relevance' name='relevance' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Time Taken</strong>\
+                                <p class='text-muted'>Approximately how long did you spend on this exercise?</p>\
+                                <select class='form-control' id='time_taken' name='time_taken'>\
+                                    <option value='< 10'>Less than 10 minutes</option>\
+                                    <option value='10-20'>10 - 20 minutes</option>\
+                                    <option value='20-30'>20 - 30 minutes</option>\
+                                    <option value='30-40'>30 - 40 minutes</option>\
+                                    <option value='40-50'>40 - 50 minutes</option>\
+                                    <option value='50-60'>50 minutes to 1 hour</option>\
+                                    <option value='> 60'>More than 1 hour</option>\
+                                </select>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix  mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Comments</strong>\
+                                <p class='text-muted'>Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>\
+                                <div class='slider-container '>\
+                                    <textarea id='comment' name='comment' rows='4' maxlength='250' style='resize: none;' class='form-control'></textarea>\
+                                </div>\
+                            </div>\
+                        </div>",
+            footer  : "<button id='modal_btn_cancel' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>\
+                    <button id='modal_btn_submit' class='btn btn-success'>Submit</button>", 
+            new_id  : modal_id 
+        })
+
+        modal_get_submission = () => {
+            modal.modal('show');
+        }
+
+        isValidHttpUrl = (string) => {
+            let url;
+            try {
+                url = new URL(string);
+            } catch (_) {
+                return false;  
+            }
+
+            return url.protocol === "http:" || url.protocol === "https:";
+        }
+
+        const yes_callback = () => {
+            const token = 'SNivGZ9OX16KvVGcOU8lZ2UaUpIYyuNC3gA3BwCVF1kq82bRfqtVCqJH0FFYyQzo';
+            const chapter_id = $('#chapter-submit').attr('chapter-id')
+            const data = getAllInputValuesInModal(modal_id)
+            data['collection_id'] = "20";
+            data['course_id'] = "11";
+            data['section_id'] = "44";
+            data['chapter_id'] = "180";
+            data['csrfmiddlewaretoken'] = 'SNivGZ9OX16KvVGcOU8lZ2UaUpIYyuNC3gA3BwCVF1kq82bRfqtVCqJH0FFYyQzo';
+            if (!isValidHttpUrl(data['exercise_url'])) {
+                alert("Please enter a valid URL!")
+                return
+            }
+
+            $.ajax({
+                headers: { "X-CSRFToken": token },
+                url: "/courses/submit_chapter/",
+                type: 'POST',
+                data: JSON.stringify(data),
+                success: function (json) {
+                    console.log(json)
+                    submit_button.innerText = "Pending"
+                    submit_button.className='btn btn-warning'
+                    modal.modal('hide');
+                },
+                error: function (xhr, errMsg, err) {
+                    alert('Something went wrong!');
+                    console.log(errMsg, err);
+                }
+            })
+            
+        }
+
+
+        $("#modal_btn_submit").on("click", function(){
+            yes_callback();
+        });
+
+        $("#modal_btn_cancel").on("click", function(){
+            modal.modal('hide');
+        });
+
+    }
+    
+    $('#chapter-done').on('click', function () {
+      let chapter_id = $('#chapter-done').attr('chapter-id')
+      let section_id = $('#chapter-done').parent().attr('section-id')
+      
+      $.ajax({
+        url: '/courses/completed_chapter/',
+        type: 'POST',
+        data: {
+          'chapter_id': chapter_id,
+          'section_id': section_id,
+          csrfmiddlewaretoken: 'SNivGZ9OX16KvVGcOU8lZ2UaUpIYyuNC3gA3BwCVF1kq82bRfqtVCqJH0FFYyQzo'
+        },
+        success: function (data) {
+          checkOrUncheck(chapter_id);
+          updateProgressBar(data['progress']);
+        },
+        error: function (xhr, errMsg, err) {
+          alert('Whoops, something went wrong!\n\nRefresh the page and try again.');
+          console.log(errMsg, err);
+        }
+      })
+    })
+  
+    function updateProgressBar(progress){
+        const progress_bar = document.getElementsByClassName('progress-bar')[0]
+        progress_bar.style.width = progress+"%"
+        document.getElementById('progress-bar-text').innerText = progress+"% Complete"
+    }
+
+    function checkOrUncheck(chapter_id) {
+      let button = $('#chapter-done');
+      let badge = $('#status_chapter_id_' + chapter_id);
+      
+      if ($('#chapter-done').attr('done') == 1) {
+        button.removeClass('btn-success').addClass('btn-secondary').attr('done', '0').text('Not Completed');
+        badge.removeClass('badge-outline-success').addClass('badge-outline-secondary')
+      } else {
+        button.removeClass('btn-secondary').addClass('btn-success').attr('done', '1').text('Done');
+        badge.removeClass('badge-outline-secondary').addClass('badge-outline-success')
+      }
+    }
+
+    // Show the buttons when ready
+    $('#chapter-submit').show()
+    $('#chapter-done').show()
+  })
+  
+</script>
+
+
+
+        
+    
+        
+    <!-- To use a modal, simply include this filec and then call buildmodal, passing in your desired options for 
+    header, body, footer, borders_off and new_id (so that it doesn't clash with other modals) -->
+    
+    
+    <div class="modal fade" id="submit_exercise" tabindex="-1" data-backdrop="static" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Mandatory Exercise Submission</h5></div>
+                <div class="modal-body"><strong>Code Url:</strong>                       <input class="form-control" id="exercise_url" name="exercise_url" placeholder="Enter Github link to your code">                         <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Difficulty</strong>                                <p class="text-muted">Was this exercise at the appropriate level for your skillset?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="difficulty" name="difficulty" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Clarity</strong>                                <p class="text-muted">Were the instructions and language understandable?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="clarity" name="clarity" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Relevance</strong>                                <p class="text-muted">Did this exercise reinforce ideas from today's lesson?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="relevance" name="relevance" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Time Taken</strong>                                <p class="text-muted">Approximately how long did you spend on this exercise?</p>                                <select class="form-control" id="time_taken" name="time_taken">                                    <option value="&lt; 10">Less than 10 minutes</option>                                    <option value="10-20">10 - 20 minutes</option>                                    <option value="20-30">20 - 30 minutes</option>                                    <option value="30-40">30 - 40 minutes</option>                                    <option value="40-50">40 - 50 minutes</option>                                    <option value="50-60">50 minutes to 1 hour</option>                                    <option value="&gt; 60">More than 1 hour</option>                                </select>                            </div>                        </div>                        <div class="row clearfix  mt-4">                            <div class="col-12">                                <strong>Comments</strong>                                <p class="text-muted">Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>                                <div class="slider-container ">                                    <textarea id="comment" name="comment" rows="4" maxlength="250" style="resize: none;" class="form-control"></textarea>                                </div>                            </div>                        </div></div>
+                <div class="modal-footer"><button id="modal_btn_cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>                    <button id="modal_btn_submit" class="btn btn-success">Submit</button></div>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+      
+      build_modal = (options = {}) => {
+          current_id = ('current_id' in options) ? options['current_id'] : "modal"
+          new_id = options['new_id'] ? options['new_id'] : current_id
+          $("#"+current_id).attr('id', new_id)
+      
+          if ('fade' in options && !options['fade']) $("#"+new_id).removeClass('fade')
+      
+          if ('header' in options) $("#"+new_id + " " + ".modal-header").html(options['header'])
+          if ('body' in options) $("#"+new_id + " " + ".modal-body").html(options['body'])
+          if ('footer' in options) $("#"+new_id + " " + ".modal-footer").html(options['footer'])
+          if (options['borders_off']) {
+              $("#"+new_id + " " + ".modal-header").css('border-bottom', 'none')
+              $("#"+new_id + " " + ".modal-footer").css('border-top', 'none')
+          }
+          return $("#"+new_id)
+      }
+      
+      
+      // Helper function to get all data submitted in modal
+      getAllInputValuesInModal = (modal_id) =>  {
+          var obj = {};
+      
+          $('#'+modal_id + ' ' + ':input').each(function(){
+              var key = $(this).attr('id');
+              var type = $(this).prop("type");
+              // checked radios/checkboxes
+              if ((type == "checkbox" || type == "radio") && this.checked) {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+              // all other fields, except buttons
+              else if (type != "button" && type != "submit") {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+          });
+          return obj;
+      }
+      
+      </script>
+      
+
+
+    </div>
+
+
+
+    <style>
+        .flex-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .single-chart {
+            width: 33%;
+            justify-content: space-around;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            max-height: 250px;
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 3.8;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+        }
+
+        @keyframes progress {
+            0% {
+                stroke-dasharray: 0 100;
+            }
+        }
+
+        .circular-chart.orange .circle {
+            stroke: #ff9f00;
+        }
+
+        .circular-chart.green .circle {
+            stroke: #4CC790;
+        }
+
+        .circular-chart.blue .circle {
+            stroke: #3c9ee5;
+        }
+
+        .percentage {
+            fill: #666;
+            font-family: sans-serif;
+            font-size: 0.5em;
+            text-anchor: middle;
+        }
+    </style>
+
+    <!-- javaScripts (async defer )
+    ================================================== -->
+    <script src="./exercice d3w3_files/framework.js.téléchargement"></script>
+    <script src="./exercice d3w3_files/jquery-3.3.1.min.js.téléchargement"></script>
+    <script src="./exercice d3w3_files/simplebar.js.téléchargement"></script>
+    <script src="./exercice d3w3_files/main.js.téléchargement"></script>
+    <script src="./exercice d3w3_files/bootstrap-select.min.js.téléchargement"></script>
+    <script src="./exercice d3w3_files/bootstrap.min.js.téléchargement"></script> 
+    <script src="./exercice d3w3_files/script.js.téléchargement"></script> 
+
+    
+<script type="text/javascript" src="./exercice d3w3_files/shCore.js.téléchargement"></script>
+<script type="text/javascript" src="./exercice d3w3_files/shBrushJScript.js.téléchargement"></script>
+<script type="text/javascript" src="./exercice d3w3_files/shBrushXml.js.téléchargement"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
+
+<script src="./exercice d3w3_files/highlight.min.js.téléchargement"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</div></div><div id="backtotop" class="visible uk-animation-slide-bottom"><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/44/chapter/180#"></a></div></body></html>

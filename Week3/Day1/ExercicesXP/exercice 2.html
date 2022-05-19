@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <div id="container">Users:</div>
+        <ul class="list">
+            <li>John</li>
+            <li>Pete</li>
+        </ul>
+        <ul class="list">
+            <li>David</li>
+            <li>Sarah</li>
+            <li>Dan</li>
+        </ul>
+
+        <script>
+        
+        
+            //Retrieve the div and console ti
+            //let div_container=document.getElementById('container');// by id
+            //console.log(div_container);
+
+            let c=document.getElementsByTagName('div')[0]; //by tag
+            console.log(c);
+
+            //Change the name “Pete” to “Richard”.
+            let li=document.querySelectorAll('.list')[0].lastElementChild;
+            li.innerText='Richard';
+
+           //Change each first name of the two <ul>'s to your name.
+            let ul_list=document.getElementsByClassName('list');
+            for(let ul of ul_list){
+                console.log(ul.firstElementChild);
+                ul.firstElementChild.innerText='Elvis';
+            }
+
+            //Delete the <li> that contains the text node “Sarah”.
+                let sarah_node=document.getElementsByTagName('ul')[1].children[1];
+                ul_list[1].removeChild(sarah_node);
+
+            //bonus Add a class called student_list to both of the <ul>'s.
+            for (let ul of ul_list){
+                                     ul.classList.add('student_list');
+                                     // a .setattributes('href', google.com); // for head tag
+                                  }
+
+            //Add the classes university and attendance to the first <ul>.
+            //  ul_list[0].classList.add
+
+
+
+            //access to sarah
+            let l=document.getElementsByClassName('list')[0].children[1]; //access tto sarah
+            let n=document.querySelector('ul:nth-child(3)>li:nth-child(2)'); //deuxieme du deuxieme
+            let s=document.querySelector('ul:nth-child(2) li:nth-child(2)'); //deuxieme du premier child . premier =div
+
+            
+        </script>
+    </body>
+</html>

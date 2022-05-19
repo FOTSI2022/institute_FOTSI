@@ -1,0 +1,65 @@
+<html>
+<body>
+    <button id="btn">Click me</button>
+    <button id="btn1"> Hey Hey</button>
+    <button id="btn2"> Double click</button>
+    <button id="btn3"> Click</button>
+
+    <script>
+        let x = document.getElementById("btn")
+        let y = document.getElementById("btn1")
+        let z = document.getElementById("btn2")
+        let a = document.getElementById("btn3")
+
+        y.addEventListener("mouseover", RespondMouseOver);
+
+        x.addEventListener("dbclick", DoubleClick); 
+
+        z.addEventListener("mousemove", Respondmousemove); 
+
+        a.addEventListener("click", RespondClick); 
+
+        function RespondMouseOver(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn1">​Hey Hey​</button>​
+        } 
+
+        function DoubleClick(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn1">​Double click​</button>​
+        } 
+
+
+        function Respondmousemove(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn2">​Double</button>​
+            alert("mouse move")
+        } 
+        function RespondClick(e) { 
+            console.log("e", e) 
+            // all the properties of the event object
+            console.log("My mouse is over the btn named" + e.target.innerHTML)
+            console.log("e.type: ", e.type)
+            // e.type: mouseover
+            console.log("e.target: ", e.target)
+            // e.target:  <button id=​"btn3">​Double</button>​
+            alert("click here")
+        } 
+    </script>
+</body>
+</html>

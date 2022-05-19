@@ -1,0 +1,21 @@
+<body id="back">
+  <h1 id="one">Welcome</h1>
+  <p>This is the welcome message.</p>
+  <h2>Technology</h2>
+  <p>This is the technology section.</p>
+
+  <script>
+        let text = document.getElementById("one").innerHTML;
+        alert("The first heading is " + text); //output : "The first heading is Welcome"
+
+        let item = document.getElementById("one"); //to manage the css
+        item.style.background = "red";
+        item.style.display = "block";
+
+        let back = document.getElementById("back"); //to manage the css
+        back.style.background = "green";
+        back.style.display = "block";
+  </script>
+
+</body>
+</html>

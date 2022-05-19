@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>move train</title>
+        <style>
+            .carreJaune{
+                width:"800px";
+                height:"800px"; 
+                background-color:yellow;
+            }
+
+            .carreRouge{
+                width:50px;
+                height:50px; 
+                background-color:red;
+                position:relative;
+            }
+        </style>
+        
+    </head>
+    <body>
+       
+       <div class="carreJaune"><div class="carreRouge"></div></div>
+          
+        <script>
+            //move the red btn
+            let btn=document.querySelector('#btn')
+            let t
+            let square=doument.querySelector('.carreRouge')
+            let move_right=10
+            let move_down=10
+
+            let carreRouge = document.getElementById('carreRouge')
+            let carreRouge = document.getElementById('carreJaune')
+            let move = 50
+            btn.addEventListener("click",moveSquare)
+           function moveSquare(){
+               carreRouge.style.left=move+'px'
+               carreRouge.style.botton=move+'px'
+               move+=50
+
+               if(move>1200){ 
+                             clearInterval(timer)
+               }
+                            
+            };
+            timer=setInterval(carreRouge,500)
+        </script>
+    
+</html>

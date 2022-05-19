@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <!--We add required for making sure values registered are not empty-->
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button" type="Submit">Lib it!</button>
+    </form>
+    
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+       // document.getElementById('myAnchor').addEventListener("click",function(event){event.preventDefault()});
+        
+        let form=document.forms[0];
+        form.addEventListener('Submit', getvalue)
+        function getvalue(e){
+                e.preventDefault()
+                console.log(123)
+                let noun=document.getElementById('noun').value
+                let adjective=document.getElementById('adjective').value
+                let person_name=document.getElementById('person').value
+                let verb=document.getElementById('verb').value
+                let place=document.getElementById('place').value
+                console.log(noun, adjective, person_name, verb, place)
+                if(noun !='' & adjective !='' & person_name !='' & verb !='' & place!=''){
+                    let story=`My noun is ${noun}. I am ${adjective}. I know ${person_name} very well . He usually ${verb} go to the ${place}`//text
+                    let span=document.getElementById('story')//DOM
+                    span.innerHTML=story
+                }
+            // choiceOfHitory return a integer between min and max
+           /*function getRndInteger(min, max){
+                                return Math.floor(Math.random() * (max-min)+min); 
+                                            } 
+            choiceOfHitory=getRndInteger(1, 3);
+
+            if(choiceOfHitory==1){
+                console.log(`My noun is ${form.elements.noun.value}. I am ${form.elements.adjective.value}. I know ${form.elements.person.value} very well . He usually ${form.elements.verb.value} go to the ${form.elements.place.value})`)  
+                              }
+            else if(choiceOfHitory==2){
+                console.log(`My main noun is ${form.elements.noun.value}. My friend is ${form.elements.adjective.value}. I know  ${form.elements.person.value} long time a go . He usually ${form.elements.verb.value} go to the ${form.elements.place.value})`)
+                              }
+            else{ console.log(`My favorite noun is ${form.elements.noun.value}. My neighboor is ${form.elements.adjective.value}. I lived with him  ${form.elements.person.value} last . He  ${form.elements.verb.value} to the ${form.elements.place.value} every week)`)
+                              }             */                                          
+                
+                         }
+    </script>
+
+ </body>
+</html>

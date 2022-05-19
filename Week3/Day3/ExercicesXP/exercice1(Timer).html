@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <!--Beginning of question 1 
+            Part1: In your Javascript file, using setTimeout, call a function after 2 seconds.
+           The function will alert “Hello World”.
+        <div id="container">      
+       
+        </div>
+
+        <button id="clear">Clear Interval</button>
+        
+        <script>
+            
+           function salutation(){
+                document.write('Hello world');
+                };
+        
+                setTimeout(salutation,2000)
+        
+        </script>
+       End of question 1--> 
+
+
+         <!--Beginning of question 2  
+           --Part1: In your Javascript file, using setTimeout, call a function after 2 seconds.
+           The function will alert “Hello World”.
+
+           <div id="container">
+            <p   style="display:none;">Hello World!</p>
+        </div>
+
+        <button id="clear">Clear Interval</button>
+        
+        <script>
+            
+           function salutation(){
+                 document.querySelector('p').style.display='block';
+                                 };
+        
+                setTimeout(salutation,2000)
+        
+        </script>
+
+        End of question 2--> 
+
+         <!--Beginning of question 3  
+           --n your Javascript file, using setInterval, call a function every 2 seconds.
+The function will add a new paragraph <p>Hello World</p> to the <div id="container">.
+The interval will be cleared (ie. clearInterval), when the user will click on the button.
+Instead of clicking on the button, the interval will be cleared (ie. clearInterval) as soon as there will be 5 paragraphs inside the <div id="container">. End of question 3--> 
+
+           <div id="container">
+            <p>Hello World!</p>
+        </div>
+
+        <button id="clear" onclick="stopPara()">Clear Interval</button>
+        
+        <script>
+            
+            let timer = setInterval(paraPublish, 2000);// recupère id de setInterval
+                  
+            
+            function paraPublish(){
+                      let para=document.getElementsByTagName('p'); //array de paragraphs
+                      let para_length=para.length //nombre de paragraphe
+                      
+                      if (para_length==5){
+                                         return //code pour limiter le nombre de paragraphs à 5
+                                        }
+                      let new_para=document.createElement('p') //creation du nouveau p
+                      let salut ='Hello World!'; // creation du text de salutation
+                      new_para.innerHTML=salut //affectation du text à la balise
+                      document.querySelector('div').appendChild(new_para) // ajout du paragraphe au div
+                                     
+                                  }
+                                   
+                                                   
+           
+            // stopping paragraphs
+                     
+            function stopPara() {
+                           clearInterval(timer); //stop using timer
+            }
+
+        
+        </script>
+
+        
+   
+    </body>
+    </html>
+</html>

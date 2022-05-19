@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>99 bottles of beer</title>
+</head>
+
+<body>
+
+    <script>
+       
+        //create the function
+        function  bottleOfBeer(){ 
+                                 nber=Number(prompt('Please!!! give a number between 0 and 99'));
+                                 while (isNaN(nber)){
+                                                  console.log("Sorry Not a number, Goodbye");
+                                                  nber=Number(prompt('Please!!! give a number between 0 and 99'));
+                                                  }
+                                
+                                bottleConsum=0; // number of beer consum
+                                i=0; // to increase and decrease
+                                while (bottleConsum<=nber){
+                                                             //case i==0;
+                                                          if (i==0){
+                                                                  console.log((nber-i)+' bottles of beer on the wall');
+                                                                  console.log((nber-i)+' bottles of beer');
+                                                                  console.log('Take '+(i+1)+' down, pass it around');  
+                                                                  console.log((nber-i-1)+' bottles of beer on the wall');
+                                                                  console.log(' '); 
+                                                                  bottleConsum=1;   
+                                                                  }
+                                                          else {
+                                                                  console.log((nber-bottleConsum)+' bottles of beer on the wall');
+                                                                  console.log((nber-bottleConsum)+' bottles of beer');
+                                                                  
+                                                                  if (bottleConsum<nber){
+                                                                                         console.log('Take '+(nber-bottleConsum)+' down, pass them around');
+                                                                                        }
+
+                                                                  
+                                                                  bottleConsum=bottleConsum+(i+1); //quantity consum + quantity take down    
+                                                                  
+                                                                  if (bottleConsum>=nber){
+                                                                                         console.log('0 bottle of beer on the wall');
+                                                                                        }
+                                                                  else {
+                                                                       console.log((nber-bottleConsum)+' bottles of beer on the wall'); 
+                                                                       console.log(' '); 
+                                                                      }
+                                                                                                                                  
+                                                               } 
+                                                              i=i+1; //incremente i
+                                                        }
+                                                            
+                                }
+            bottleOfBeer(); //call the function
+        
+    </script>
+</body>
+
+</html>

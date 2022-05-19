@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform" onsubmit="getvalue()">
+        <!--We add required for making sure values registered are not empty-->
+        <label for="noun">Noun:</label><input type="text" id="noun" required><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective" required><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person" required><br>
+        <label for="verb">Verb:</label><input type="text" id="verb" required><br>
+        <label for="place">A place:</label><input type="text" id="place" required><br>
+        <button id="lib-button" value="Submit">Lib it!</button>
+    </form>
+    
+    <button onclick="getvalue()">change the story currently displayed</button>
+    
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+       // document.getElementById('myAnchor').addEventListener("click",function(event){event.preventDefault()});
+        
+        let form=document.forms[0];
+        //form.addEventListener('submit', getvalue)
+        function getvalue(){
+                
+            // choiceOfHitory return a integer between min and max
+            function getRndInteger(min, max){
+                                return Math.floor(Math.random() * (max-min)+min); 
+                                            } 
+            choiceOfHitory=getRndInteger(0, 4);
+
+            if(choiceOfHitory==1){
+                console.log(`My noun is ${form.elements.noun.value}. I am ${form.elements.adjective.value}. I know ${form.elements.person.value} very well . He usually ${form.elements.verb.value} go to the ${form.elements.place.value})`)  
+                              }
+            else if(choiceOfHitory==2){
+                console.log(`My main noun is ${form.elements.noun.value}. My friend is ${form.elements.adjective.value}. I know  ${form.elements.person.value} long time a go . He usually ${form.elements.verb.value} go to the ${form.elements.place.value})`)
+                              }
+            else{ console.log(`My favorite noun is ${form.elements.noun.value}. My neighboor is ${form.elements.adjective.value}. I lived with him  ${form.elements.person.value} last . He  ${form.elements.verb.value} to the ${form.elements.place.value} every week)`)
+                              }                                                       
+                
+                         }
+    </script>
+
+ </body>
+</html>

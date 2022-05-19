@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+     
+      <form id="libform">
+        <label for="mot">mot:</label><input type="text" id="mot" onkeyup="convertValue()"><br>
+        <button id="lib-button" type="Submit">
+       </form>
+      <h1 id="motSaisi"> 
+
+      </h1>
+      
+
+        <script>
+           //
+            let form=document.forms[0];
+            form.addEventListener('keyup', convertValue)
+
+        function convertValue(){
+                
+                console.log(123)
+                let mot=document.getElementById('mot').value
+                
+                console.log(mot)
+                let motCorrige=event.which
+                //a=65 z=90 event.which in keydown and keyup
+                if(65<=motCorrige<=90){
+                   // let motCorrige= mot//text
+                    let para=document.getElementById('motSaisi')//DOM
+                    para.innerHTML=motCorrige
+                }
+
+                             }
+        </script>
+    </body>
+    </html>

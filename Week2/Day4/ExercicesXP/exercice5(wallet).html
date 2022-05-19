@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+                /*
+                Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
+                 an item price
+                 and an array representing the amount of change in your pocket.
+                */
+                          
+            function changeEnough(itemPrice, amountOfChange){
+                     amount=amountOfChange[0]*0.25+amountOfChange[1]*0.10+amountOfChange[2]*0.05+amountOfChange[3]*0.03
+                                                              if(itemPrice<=amount){
+                                                                  return console.log('True');
+                                                              }
+                                                              else {
+                                                                  return console.log('False');
+                                                                }
+                                                            }                                     
+                                 
+            //call the function
+            changeEnough(4.25, [25, 20, 5, 0]);
+            changeEnough(14.11, [2,100,0,0]);
+            changeEnough(0.75, [0,0,20,5]);
+
+                       
+        </script>
+    </body>
+</html>

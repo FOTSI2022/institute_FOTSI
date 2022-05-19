@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159# -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Developers Institute</title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developers Institute - Global Software Development Bootcamp">
+
+    <!-- Favicon -->
+    <link href="http://learn.di-learning.com/static/theme/images/favicon.png" rel="icon" type="image/png">
+
+    
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="./DOM Tree_files/style.css">
+    <link rel="stylesheet" href="./DOM Tree_files/night-mode.css">
+    <link rel="stylesheet" href="./DOM Tree_files/framework.css">
+    <link rel="stylesheet" href="./DOM Tree_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./DOM Tree_files/font-awesome.min.css">
+
+
+    
+<link rel="stylesheet" href="./DOM Tree_files/courses_app.css">
+<link rel="stylesheet" href="./DOM Tree_files/prism.css">
+<link rel="stylesheet" href="./DOM Tree_files/color-brewer.min.css">
+<link rel="stylesheet" href="./DOM Tree_files/slider.css">   
+
+
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="./DOM Tree_files/icons.css">
+
+    
+<!-- Syntax Highlighter -->
+<link rel="stylesheet" type="text/css" href="./DOM Tree_files/shCore.css" media="all">
+<link rel="stylesheet" type="text/css" href="./DOM Tree_files/shCoreMidnight.css" media="all">
+<style>
+    .gutter,
+    .toolbar {
+        display: none
+    }
+
+    .syntaxhighlighter {
+        padding: 15px 20px;
+    }
+
+    .syntaxhighlighter {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        padding-top: 18px !important;
+    }
+
+</style>
+
+
+    </head>
+
+<body>
+    <div id="wrapper">
+
+        
+<!-- To clear the header loaded in base -->
+
+
+        
+            
+
+<div class="side-nav uk-animation-slide-left-medium">
+
+    <div class="side-nav-bg"></div>
+
+    <!-- logo -->
+    <div class="logo uk-visible@s">
+        <ul>
+            <li>
+                <a href="http://learn.di-learning.com/courses"><img src="./DOM Tree_files/logo_di.png" alt=""> <span class="tooltips"> My Courses</span> </a>
+            </li>
+        </ul>
+    </div>
+
+    <ul>
+        
+        <li><a href="http://learn.di-learning.com/calendar"> <i class="icon-feather-calendar"></i> <span class="tooltips">Calendar</span></a></li>
+        
+        
+        <li><a href="http://learn.di-learning.com/leaderboards"> <i class="icon-feather-star"></i> <span class="tooltips">Leaderboard</span></a></li>
+        
+        
+        <li><a href="http://slack.developers.institute/" target="_blank"> <i class="icon-feather-slack"></i> <span class="tooltips">Slack</span></a></li>
+        
+        <li><a href="http://blog.developers.institute/" target="_blank"> <i class="uil-file-alt"></i> <span class="tooltips">Blog</span></a></li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> <i class="uil-books"></i> </a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>Learn More</h6></a>
+                                <a href="https://developers.institute/index.php/portfolios/coding-bootcamp-tlv/" target="_blank">Full Stack Python</a>
+                                <a href="https://developers.institute/index.php/portfolios/online-live-bootcamp/" target="_blank">Full Stack JavaScript</a>
+                                <a href="https://developers.institute/index.php/portfolios/summer-camp-2020/" target="_blank">Summer Camp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"><i class="uil-question-circle"></i></a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>About DI</h6></a>
+                                <a href="https://developers.institute/" target="_blank">Home page </a>
+                                <a href="https://developers.institute/en/our-coding-bootcamp-courses-tel-aviv-coding-bootcamp-full-stack/" target="_blank">Our Courses</a>
+                                <a href="https://developers.institute/index.php/dates-tuition/" target="_blank">Dates &amp; Tuition </a>
+                                <a href="https://developers.institute/index.php/blog/" target="_blank">Blog</a>
+                                <a href="http://learn.di-learning.com/terms">Terms &amp; Conditions</a>
+                                <a href="http://learn.di-learning.com/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+        
+        
+        
+<div class="page-content">
+    
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-3-4@m bg-white uk-first-column">
+            
+            <!-- video description contents -->
+            <div class="p-lg-5 p-3" style="width:80%; margin:auto;">
+                
+                <div style="margin-top:-27px; margin-bottom:23px;">
+                    
+<nav id="breadcrumbs">
+    <ul>
+        <li><a href="http://learn.di-learning.com/courses"><i class="icon-feather-home"></i></a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20">Full Stack Coding Bootcamp - Python - Yaounde</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11">DOM</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42">Intro to DOM</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159">DOM Tree</a></li>
+    </ul>
+</nav>
+
+                </div>
+                
+
+                <div style="display: flex;">
+                    <div style="width: 80%;">
+                        
+                        <h2>DOM Tree</h2>
+                        
+                    </div>
+                    
+                        
+                            <div section-id="42" style="width: 30%; display: flex; justify-content: flex-end; align-items: center;">
+                                
+                                    
+                                    <span class="btn btn-secondary" id="chapter-done" chapter-id="159" done="0" style="">Not Completed</span>
+                                    
+                                
+                            </div>
+                        
+                    
+                </div>
+                
+                <div style="width: 20%;">
+                    
+                </div>
+                
+
+                <hr class="my-2">
+                <div uk-toggle="cls: uk-flex uk-flex-between@m uk-flex-middle; mode: media; media: @m" class="uk-flex uk-flex-between@m uk-flex-middle"><div>
+            </div>
+        </div>
+
+        <div>
+            
+            
+            <div id="toc">
+                <h3>Table of Contents</h3>
+            <ul><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#What_You_Will_Learn">What You Will Learn</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#What_is_DOM_in_JavaScript?">What is DOM in JavaScript?</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Accessing_DOM_nodes">Accessing DOM nodes</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Accessing_elements">Accessing elements</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Accessing__nodes_with_methods">Accessing  nodes with methods</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#1._getElementById,_innerHTML">1. getElementById, innerHTML</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#2._getElementsByTagName">2. getElementsByTagName</a></li></ul></ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Creating/Adding/Deleting_DOM_nodes">Creating/Adding/Deleting DOM nodes</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#1._Creating_elements:_createElement()">1. Creating elements: createElement()</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#2._Creating_text:_createTextNode()">2. Creating text: createTextNode()</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#3._Adding_element_:_appendChild()">3. Adding element : appendChild()</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#4._Accessing_/_Changing_the_HTML_content_of_an_element:_innerHTML">4. Accessing / Changing the HTML content of an element: innerHTML</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#5.__Deleting_elements:_removeChild()">5.  Deleting elements: removeChild()</a></li></ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Cache_selectors">Cache selectors</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Other_methods">Other methods</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#querySelectorAll()">querySelectorAll()</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#matches()">matches()</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#closest()">closest()</a></li></ul></ul></ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#Feedback">Feedback</a></li></ul></div>
+            <hr>
+            
+
+            <div id="chapter-contents">
+
+                    
+
+                    
+
+                    
+                    <p class="lead"><!--STEP 2 - Reviewed by Jason Q on April, 17th 2021-->
+
+</p><div class="uk-grid-small uk-grid uk-grid-stack" uk-grid="">
+ <div class="uk-width-auto uk-first-column">
+ <span>Last updated : April, 17th 2021 </span>
+ </div>
+
+ </div>
+
+<hr>
+<p><br></p>
+<h2><a name="What_You_Will_Learn">What You Will Learn</a></h2>
+<ul>
+<li>How to change the content of HTML elements</li>
+<li>How to change the style (CSS) of HTML elements</li>
+<li>How to react to HTML DOM events</li>
+<li>How to add and delete HTML elements</li>
+</ul>
+<p><br></p>
+<hr>
+<h3><a name="What_is_DOM_in_JavaScript?">What is DOM in JavaScript?</a></h3>
+<p>JavaScript can access all the elements in a web page using the Document Object Model (DOM). The web browser creates a DOM of the webpage when the page is loaded. The DOM model is created as a tree of objects like this:</p>
+<p><strong>How to use DOM and Events ?</strong></p>
+<p>Using DOM, JavaScript can perform multiple tasks. It can create new elements and attributes, change the existing features and characteristics and even remove existing elements and attributes. JavaScript can also react to current events and create recent events on the page.</p>
+<p><br></p>
+<hr>
+<h3><a name="Accessing_DOM_nodes">Accessing DOM nodes</a></h3>
+<!--A **document tree** is a node tree whose root is a document.-->
+
+<!--The **document element**  is the element whose parent is that document,-->
+
+<p>All elements of an HTML document are <strong>nodes</strong>, including the entire document and all the HTML tags contained within it. <br>
+DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children.<br>
+<code>&lt;html&gt;</code> is a node in the document tree. It has 2 children: <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> nodes.</p>
+<p><br></p>
+<hr>
+<h4><a name="Accessing_elements">Accessing elements</a></h4>
+<p><code>element.children[index]</code><br>
+<code>element.firstElementChild</code><br>
+<code>element.lastElementChild</code><br>
+<code>element.parentNode</code><br>
+<code>element.nextElementSibling</code><br>
+<code>element.previousElementSibling</code><br>
+<code>element.textContent</code></p>
+<p><br></p>
+<hr>
+<h5><span style="color: #27C76B">Exercise 1</span></h5>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Users:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>John<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Pete<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<div style="background-color:#C0F7D7; border-color:#27C76B; border-style:ridge; padding: 30px">
+<p>For each of the questions, find <b>2 WAYS</b> of accessing :
+</p><p> 1. The  <i>div</i> DOM node?</p>
+<p> 2. The <i>ul</i> DOM node?</p>
+<p> 3. The second <i>li</i> (with Pete)?</p>
+</div>
+
+<p><br></p>
+<p><br></p>
+<hr>
+<h4><a name="Accessing__nodes_with_methods">Accessing  nodes with methods</a></h4>
+<p><code>element.getElementById()</code><br>
+<code>element.getElementsByClassName()</code><br>
+<code>element.getElementsByTagName()</code><br>
+<code>element.querySelector()</code></p>
+<p><br></p>
+<hr>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Method</th>
+<th align="left">Searches by…</th>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>querySelector</code></td>
+<td align="left">CSS-selector</td>
+<td><br>Returns the <code>first</code> Element within the document that matches the <br> specified selector, or group of selectors. If no matches are found, <code>null</code> is returned.<br></td>
+</tr>
+<tr>
+<td><code>querySelectorAll</code></td>
+<td align="left">CSS-selector</td>
+<td><br>Returns all elements (a list) matching the given CSS selector.<br></td>
+</tr>
+<tr>
+<td><code>getElementById</code></td>
+<td align="left"><code>id</code></td>
+<td><br>Returns the element <strong>with the specific id</strong> <br></td>
+</tr>
+<tr>
+<td><code>getElementsByTagName</code></td>
+<td align="left">tag or ‘*’</td>
+<td><br>Returns an <strong>array of all the items with the same tag name</strong>. <br></td>
+</tr>
+<tr>
+<td><code>getElementsByClassName</code></td>
+<td align="left"><code>class</code></td>
+<td><br>Returns an <strong>array of all the items with the same class name</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<hr>
+<h5><a name="1._getElementById,_innerHTML">1. getElementById, innerHTML</a></h5>
+<p><code>getElementById</code>:  To access elements and attributes whose <code>id</code> is set.<br>
+<code>innerHTML</code>: To access the content of an element.</p>
+<p><br></p>
+<hr>
+<h5><span style="color:#0875A5"> Example:</span></h5>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>DOM!!!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"one"</span>&gt;</span>Welcome<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the welcome message.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Technology<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the technology section.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> text = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"one"</span>).innerHTML;
+        alert(<span class="hljs-string">"The first heading is "</span> + text); <span class="hljs-comment">//output : "The first heading is Welcome"</span>
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h5><a name="2._getElementsByTagName">2. getElementsByTagName</a></h5>
+<p><code>getElementsByTagName</code>: To access elements and attributes using tag name. </p>
+<p>This method will return an <strong>array of all the items with the same tag name</strong>.</p>
+<ul>
+<li><strong>elements</strong> is a collection of all the found elements in the order they appear with the given tag name.</li>
+<li><strong>name</strong> is a string representing the name of the elements. The special string <code>“*”</code>represents all elements.</li>
+</ul>
+<p><br></p>
+<hr>
+<h5><span style="color:#0875A5"> Example:</span></h5>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>DOM!!!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the welcome message.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Technology<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"second"</span>&gt;</span>This is the technology section.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">let</span> paragraphs = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"p"</span>);
+    alert(<span class="hljs-string">"Content in the second paragraph is "</span> + paragraphs[<span class="hljs-number">1</span>].innerHTML);
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"second"</span>).innerHTML = <span class="hljs-string">"The orginal message is changed."</span>;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><b>Don’t forget the “s” letter!</b></p>
+<p>The “s” letter is absent in <code>getElementById</code>, because it returns a single element. But <code>getElementsByTagName</code> returns a collection of elements, so there’s “s” inside.</p>
+<p>It returns a collection, not an element!</p>
+<p>Another widespread novice mistake is to write:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// doesn't work</span>
+<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'input'</span>).value = <span class="hljs-number">5</span>;
+</code></pre>
+
+<p><br></p>
+<p>That won’t work because it takes a collection of inputs and assigns it to it rather than to elements inside it.</p>
+<p>We should either iterate over the collection or get an element by its index, and then assign, like this:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// should work (if there's an input)</span>
+<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'input'</span>)[<span class="hljs-number">0</span>].value = <span class="hljs-number">5</span>;
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="Creating/Adding/Deleting_DOM_nodes">Creating/Adding/Deleting DOM nodes</a></h3>
+<h4><a name="1._Creating_elements:_createElement()">1. Creating elements: createElement()</a></h4>
+<pre><code class="javascript hljs">  Syntax : <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'tag'</span>)
+  <span class="hljs-keyword">let</span> newDiv = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>)  
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="2._Creating_text:_createTextNode()">2. Creating text: createTextNode()</a></h4>
+<pre><code class="javascript hljs">Syntax : <span class="hljs-built_in">document</span>.createTextNode(<span class="hljs-string">'text'</span>)  
+<span class="hljs-keyword">let</span> newTextNode = <span class="hljs-built_in">document</span>.createTextNode(<span class="hljs-string">'Here I am'</span>);
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="3._Adding_element_:_appendChild()">3. Adding element : appendChild()</a></h4>
+<p>Adding an element as the last child of the node parent</p>
+<pre><code class="javascript hljs">Syntax: <span class="hljs-string">`element.appendChild`</span>
+newDiv.appendChild(newTextNode);
+<span class="hljs-built_in">document</span>.body.appendChild(newDiv);
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="4._Accessing_/_Changing_the_HTML_content_of_an_element:_innerHTML">4. Accessing / Changing the HTML content of an element: innerHTML</a></h4>
+<pre><code class="javascript hljs"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"header"</span>).textContent = <span class="hljs-string">"Hello World!"</span>;
+<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"div"</span>)[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="5.__Deleting_elements:_removeChild()">5.  Deleting elements: removeChild()</a></h4>
+<pre><code class="javascript hljs"><span class="hljs-keyword">let</span> parentElem = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"main"</span>);
+<span class="hljs-keyword">let</span> childElem = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"hint"</span>);
+parentElem.removeChild(childElem);
+</code></pre>
+
+<p><br></p>
+<hr>
+<h5><span style="color:#0875A5"> Some more examples:</span></h5>
+<pre><code class="javascript hljs"><span class="hljs-comment">// getElementById('id')</span>
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'demo'</span>);
+
+<span class="hljs-comment">// getElementsByClassName('class')</span>
+<span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">'demo'</span>);
+
+<span class="hljs-comment">// getElementsByTagName('tag')</span>
+<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'p'</span>);
+
+<span class="hljs-comment">// querySelector('css selector')</span>
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'#demo-query'</span>);
+
+<span class="hljs-comment">// querySelectorAll('css selector')</span>
+    <span class="hljs-keyword">let</span> demoQueryAll = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'.demo-query-all'</span>);
+
+    demoQueryAll.forEach(<span class="hljs-function"><span class="hljs-params">query</span> =&gt;</span> {
+      query.style.border = <span class="hljs-string">'1px solid green'</span>;
+    });
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="Cache_selectors">Cache selectors</a></h3>
+<p>If you are working several times with one element, you should put it in a variable. For example:</p>
+<pre><code class="javascript hljs"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"menu"</span>).style.background = <span class="hljs-string">"red"</span>;
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"menu"</span>).style.display = <span class="hljs-string">"block"</span>;
+</code></pre>
+
+<p><br></p>
+<p>In the process above, the element is searched twice in the DOM tree. If the DOM is complex, this is a heavy operation.</p>
+<p>Therefore, add this element to a variable (cache it):</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">let</span> item = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"menu"</span>);
+item.style.background = <span class="hljs-string">"red"</span>;
+item.style.display = <span class="hljs-string">"block"</span>;
+</code></pre>
+
+<p><br></p>
+<p>In the process above, the element is searched once in the DOM tree. It’s faster and more efficient.</p>
+<p><br></p>
+<hr>
+<h3><a name="Other_methods">Other methods</a></h3>
+<h4><a name="querySelectorAll()">querySelectorAll()</a></h4>
+<p><span style="color:#0875A5"> <b>querySelectorAll()</b> examples:</span></p>
+<p>By far, the most versatile method, <code>elem.querySelectorAll(css)</code> returns all elements inside elem matching the given CSS selector.<br>
+This method is indeed powerful because any CSS selector can be used.</p>
+<p>Here we look for all <code>&lt;li&gt;</code>  elements that are last children:</p>
+<pre><code class="html hljs xml">    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>The<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>has<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>passed<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      <span class="hljs-keyword">let</span> elements = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'ul &gt; li:last-child'</span>);
+
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> elem <span class="hljs-keyword">of</span> elements) {
+        alert(elem.innerHTML); <span class="hljs-comment">// "test", "passed"</span>
+      }
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<p>We can use <strong>pseudo-classes</strong> as well.</p>
+<p>Pseudo-classes in the CSS selector like <code>:hover</code> and <code>:active</code> are also supported. <br>
+For instance, <code>document.querySelectorAll(':hover')</code> will return the collection with elements that the pointer is hovering on now (in nesting order: from the outermost  to the most nested one).</p>
+<p><br></p>
+<hr>
+<h4><a name="matches()">matches()</a></h4>
+<p><span style="color:#0875A5"> <b>matches()</b> examples:</span></p>
+<p>The <code>elem.matches(css)</code> does not look for anything; it only checks if an element matches the given CSS-selector. It returns true or false.<br>
+This method comes in handy when we are iterating over elements (like in an array ) and, trying to filter out those that interest us.</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://example.com/file.zip"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://ya.ru"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-comment">// can be any collection instead of document.body.children</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> elem <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.body.children) {
+    <span class="hljs-keyword">if</span> (elem.matches(<span class="hljs-string">'a[href$="zip"]'</span>)) {
+      <span class="hljs-comment">// check if it ends with "zip"</span>
+      alert(<span class="hljs-string">"The archive reference: "</span> + elem.href );
+    }
+  }
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="closest()">closest()</a></h4>
+<p><span style="color:#0875A5"> <b>closest</b> examples:</span></p>
+<p>Ancestors of an element are the parent, grandparent, great grandparent, and so on. The ancestors together form the chain of parents from the component to the top.</p>
+<pre><code class="html hljs xml">
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">!</span> <span class="hljs-attr">--</span> <span class="hljs-attr">The</span> <span class="hljs-attr">parent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">div</span> <span class="hljs-attr">Grandparent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">ul</span> <span class="hljs-attr">Great-Grandparent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">li</span> <span class="hljs-attr">--</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">!</span> <span class="hljs-attr">--</span> <span class="hljs-attr">The</span> <span class="hljs-attr">Parent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">ul</span> <span class="hljs-attr">Grandparent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">li--</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">!</span> <span class="hljs-attr">--The</span> <span class="hljs-attr">Parent</span> <span class="hljs-attr">of</span> <span class="hljs-attr">li</span> <span class="hljs-attr">--</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Child<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Chil<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+
+</code></pre>
+
+<p>The method <code>elem.closest(css)</code> looks at the nearest ancestor that matches the CSS-selector. The element itself is also included in the search.</p>
+<p>In other words, the method closest goes up from the element and checks each of the parents. If it matches the selector, then the search stops, and the ancestor is returned.</p>
+<pre><code class="html hljs xml">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Contents<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"contents"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"book"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chapter"</span>&gt;</span>Chapter 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chapter"</span>&gt;</span>Chapter 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      <span class="hljs-keyword">let</span> chapter = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.chapter'</span>); <span class="hljs-comment">// LI</span>
+
+      alert(chapter.closest(<span class="hljs-string">'.book'</span>)); <span class="hljs-comment">// UL</span>
+      alert(chapter.closest(<span class="hljs-string">'.contents'</span>)); <span class="hljs-comment">// DIV</span>
+
+      alert(chapter.closest(<span class="hljs-string">'h1'</span>)); <span class="hljs-comment">// null (because h1 is not an ancestor)</span>
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><span style="color: #27C76B">Exercise 2</span></h4>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span>Users:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>John<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Pete<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Sarah<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Dan<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<div style="background-color:#C0F7D7; border-color:#27C76B; border-style:ridge; padding: 30px">
+<p>For each of the questions, find <b>2 WAYS</b> to access :
+</p><p> 1. The <i>div</i> node</p>
+<p> 2. The <i>ul</i> nodes, and render all of it's children one by one</p>
+<p> 3. The first <i>li</i> of each <i>ul</i> </p>
+</div>
+
+<p><br></p><p></p><br>
+                    
+
+                    <div style="display: flex; justify-content: flex-end; align-items: center;">
+                        <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#breadcrumbs" class="btn btn-info mb-2">Back to Top</a>
+                    </div>
+
+                    <div>
+                        <hr>
+                        <h1><a name="Feedback">Feedback</a></h1>
+                        <p>Tell us what you thought about  the chapter: DOM Tree</p>
+                        <div id="feedback" class="cui-embed" style="height: 300px; width: 100%;" data-cui-uid="Gp6szZ" data-cui-avatar="https://images.typeform.com/images/KV5BWnKMavQp" data-cui-mode="widget" data-cui-pill-button-color="#000000" data-cui-injected="true"><iframe class="cui-embed-frame" id="cui-Gp6szZ" src="./DOM Tree_files/Gp6szZ.html" frameborder="0" height="100%" width="100%" style="display: block; z-index: 2147483647;"></iframe></div><script src="./DOM Tree_files/embed.js.téléchargement" async=""></script>
+                    </div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-expand@s uk-first-column">
+            <p>© 2020 <strong>Developers Institute</strong>. All Rights Reserved. </p>
+        </div>
+        <div class="uk-width-auto@s">
+            <nav class="footer-nav-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/developers.institute/" target="_blank"><i class="icon-brand-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/developers.institute/" target="_blank"><i class="icon-brand-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-qcXcEsoBSSpYvj5DqoMDQ/featured" target="_blank"><i class="icon-brand-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/devtlv" target="_blank"><i class="icon-brand-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+<div class="uk-width-1-4@m uk-overflow-hidden vidlist-3-container">
+    <div uk-sticky="" class="uk-sticky uk-active uk-sticky-fixed uk-sticky-below" style="position: fixed; top: 0px; width: 270px;">
+        <h5 class="bg-gradient-grey text-white py-4 p-3 mb-0">Intro to DOM</h5>
+        
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%; background:#17d292; font-size:1.2em; color: #949393; font-weight:bold;">
+                    <span style="padding-left: 15px;" id="progress-bar-text">0% Complete</span>
+                </div>
+            </div>
+        
+
+        <ul class="uk-child-width-expand mb-0 uk-tab" uk-switcher="animation: uk-animation-slide-right-small, uk-animation-slide-left-small" uk-tab="">
+            <li class="uk-active"></li>
+        </ul>
+
+        <ul class="uk-switcher uk-overflow-hidden" style="touch-action: pan-y pinch-zoom;">
+            <li class="uk-active">
+                <div class="vidlist-3-content" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: -14px; bottom: 0px;"><div class="simplebar-content" style="padding: 0px; height: 100%; overflow: hidden scroll;">
+                    <ul class="vidlist-3-section uk-accordion" uk-accordion="">
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> Coding Daily Digest </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/893">
+                                            <div id="chapter_id_893" class="chapter-title">What is DOM ?</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                <span class="badge badge-outline-primary">5 XP</span>
+                                                
+                                                
+                                                <span id="status_chapter_id_893" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> Course Notes </a>
+                            <div class="uk-accordion-content" aria-hidden="false">
+                                <ul class="vidlist-3">
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/158">
+                                            <div id="chapter_id_158" class="chapter-title">DOM Basics</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_158" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="chapter-active">
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159">
+                                            <div id="chapter_id_159" class="chapter-title">DOM Tree</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_159" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/160">
+                                            <div id="chapter_id_160" class="chapter-title">DOM  attributes</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_160" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/889">
+                                            <div id="chapter_id_889" class="chapter-title">DOM - Cheatsheet</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_889" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> Exercises </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/161">
+                                                <div id="chapter_id_161" class="chapter-title">Exercises XP</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    <span class="badge badge-outline-warning">XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_161" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/162">
+                                                <div id="chapter_id_162" class="chapter-title">Exercises XP Gold</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">8 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Gold</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_162" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/163">
+                                                <div id="chapter_id_163" class="chapter-title">Exercises XP Ninja</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">12 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Ninja</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_163" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> Online Learning </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/157">
+                                                <div id="chapter_id_157" class="chapter-title">DOM: Document Object Model</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_157" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/164">
+                                                <div id="chapter_id_164" class="chapter-title">DOM Selectors</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_164" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/168">
+                                                <div id="chapter_id_168" class="chapter-title">Workout plan</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_168" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"> Daily Challenge </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_daily_challenge" href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/167">
+                                                <div id="chapter_id_167" class="chapter-title">Daily challenge: Planets</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">10 XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_167" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        
+
+                        
+
+                        
+                    </ul>
+                </div></div></div><div class="simplebar-placeholder" style="width: 270px; height: 541px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); visibility: hidden;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 239px; transform: translate3d(0px, 0px, 0px); visibility: visible;"></div></div></div>
+            </li>
+        </ul>
+    </div><div class="uk-sticky-placeholder" style="height: 448px; margin: 0px;"></div>
+</div>
+
+<!-- small device icon video sidebar -->
+<span class="btn-vidlist-3" uk-toggle="target: #wrapper; cls: is-open"></span>
+
+<script>
+    // Removes empty accordians in right sidebar
+    let accordion_contents = document.getElementsByClassName("uk-accordion-content");
+    //Can't loop through and remove elements from array without controlling for length change
+    for(let i = 0; i < accordion_contents.length; i++){
+        content = accordion_contents[i].getElementsByTagName("li")
+        if (!content.length) {
+            accordion_contents[i].parentNode.remove();
+            i--;  
+        }
+    }
+</script>
+
+<script>
+    // Update Markdown Tables to Bootstrap Tables - Jonathan
+    [].forEach.call(document.getElementsByTagName("table"), function (el) {el.className += "table table-striped table-bordered"});
+</script>
+
+<script>
+    // Auto Build TOC from H1 - H6 Components in 'chapter-contents' div - Jonathan
+    let make_toc = function(){
+        var toc = "";
+        var level = 0;
+
+        document.getElementById("chapter-contents").innerHTML =
+            document.getElementById("chapter-contents").innerHTML.replace(
+                /<h([\d])>([^<]+)<\/h([\d])>/gi,
+                function (str, openLevel, titleText, closeLevel) {
+                    if (openLevel != closeLevel) {
+                        return str;
+                    }
+
+                    if (openLevel > level) {
+                        toc += (new Array(openLevel - level + 1)).join("<ul>");
+                    } else if (openLevel < level) {
+                        toc += (new Array(level - openLevel + 1)).join("</ul>");
+                    }
+
+                    level = parseInt(openLevel);
+
+                    var anchor = titleText.replace(/ /g, "_");
+                    toc += "<li><a href=\"#" + anchor + "\">" + titleText
+                        + "</a></li>";
+
+                    return "<h" + openLevel + "><a name=\"" + anchor + "\">"
+                        + titleText + "</a></h" + closeLevel + ">";
+                }
+            );
+
+        if (level) {
+            toc += (new Array(level + 1)).join("</ul>");
+        }
+
+        document.getElementById("toc").innerHTML += toc;
+    };
+    window.setTimeout(function(){make_toc()}, 0)
+    
+</script>
+
+<script>
+    // Typeform element hijacks focus when it loads. No way to control it. 
+    // So we hide it until it has fully loaded, then display it.
+    let load_feedback = function(){
+        document.getElementById("feedback").removeAttribute("hidden")
+    }
+
+    // To trigger a click on the correct chapter. This will open the accordion to correct location.
+    let run_target = function(){
+        chapter_id="159"
+        if (chapter_id == "") {
+            let accordion = document.querySelector(".vidlist-3-section > li > a")
+            accordion.click()
+            return;
+        }
+        click_target = document.getElementById('chapter_id_'+chapter_id)
+        click_target.closest("li").classList.add('chapter-active');
+        click_target.closest(".uk-accordion-content").previousElementSibling.click();
+    }    
+
+    window.addEventListener('load',function(){
+        load_feedback()
+    })
+
+    // JMS HACK: DOMContentLoaded isn't reliable here. Probably because of this weird template renders.
+    // And load event is too slow for good UX.
+    // So... fudging it using a setTimeout 0.  Thoughts?
+    window.setTimeout(function(){run_target()}, 0)
+
+
+
+  /*
+  Checking Course
+  */
+  window.addEventListener('load',function(){
+
+    // Cookie is supposed to be added before every ajax request
+    // This happens in lib/js/script.js in the Ajax setup "beforSend"
+    // But its buggy and doesn't always send. I tested it by making the target view csrf exempt
+    //... so I'm explicitly adding the cookie in the ajax data body
+    function getCookie(name) {
+      var cookieValue = null;
+      if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = jQuery.trim(cookies[i]);
+          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            break;
+          }
+        }
+      }
+      return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+
+    configure_modal()
+
+    const submit_button = document.getElementById('chapter-submit');
+    if (submit_button) {
+        submit_button.addEventListener('click', ()=>{
+            modal_get_submission()
+        })
+    }
+
+    function configure_modal(){
+        const modal_id = 'submit_exercise'
+        const modal = build_modal({
+            header  : "<h5 class='modal-title'>Mandatory Exercise Submission</h5>", 
+            body    : "<strong>Code Url:</strong>\
+                       <input class='form-control' id='exercise_url' name='exercise_url' placeholder='Enter Github link to your code'> \
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Difficulty</strong>\
+                                <p class='text-muted'>Was this exercise at the appropriate level for your skillset?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='difficulty' name='difficulty' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Clarity</strong>\
+                                <p class='text-muted'>Were the instructions and language understandable?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='clarity' name='clarity' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Relevance</strong>\
+                                <p class='text-muted'>Did this exercise reinforce ideas from today's lesson?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='relevance' name='relevance' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Time Taken</strong>\
+                                <p class='text-muted'>Approximately how long did you spend on this exercise?</p>\
+                                <select class='form-control' id='time_taken' name='time_taken'>\
+                                    <option value='< 10'>Less than 10 minutes</option>\
+                                    <option value='10-20'>10 - 20 minutes</option>\
+                                    <option value='20-30'>20 - 30 minutes</option>\
+                                    <option value='30-40'>30 - 40 minutes</option>\
+                                    <option value='40-50'>40 - 50 minutes</option>\
+                                    <option value='50-60'>50 minutes to 1 hour</option>\
+                                    <option value='> 60'>More than 1 hour</option>\
+                                </select>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix  mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Comments</strong>\
+                                <p class='text-muted'>Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>\
+                                <div class='slider-container '>\
+                                    <textarea id='comment' name='comment' rows='4' maxlength='250' style='resize: none;' class='form-control'></textarea>\
+                                </div>\
+                            </div>\
+                        </div>",
+            footer  : "<button id='modal_btn_cancel' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>\
+                    <button id='modal_btn_submit' class='btn btn-success'>Submit</button>", 
+            new_id  : modal_id 
+        })
+
+        modal_get_submission = () => {
+            modal.modal('show');
+        }
+
+        isValidHttpUrl = (string) => {
+            let url;
+            try {
+                url = new URL(string);
+            } catch (_) {
+                return false;  
+            }
+
+            return url.protocol === "http:" || url.protocol === "https:";
+        }
+
+        const yes_callback = () => {
+            const token = 'CDRkFQM6fdx5kYBPFXXcDrHDd2TkyNusZR5mzqgNps3jPDQjOR9wuuNHwsNnA3wT';
+            const chapter_id = $('#chapter-submit').attr('chapter-id')
+            const data = getAllInputValuesInModal(modal_id)
+            data['collection_id'] = "20";
+            data['course_id'] = "11";
+            data['section_id'] = "42";
+            data['chapter_id'] = "159";
+            data['csrfmiddlewaretoken'] = 'CDRkFQM6fdx5kYBPFXXcDrHDd2TkyNusZR5mzqgNps3jPDQjOR9wuuNHwsNnA3wT';
+            if (!isValidHttpUrl(data['exercise_url'])) {
+                alert("Please enter a valid URL!")
+                return
+            }
+
+            $.ajax({
+                headers: { "X-CSRFToken": token },
+                url: "/courses/submit_chapter/",
+                type: 'POST',
+                data: JSON.stringify(data),
+                success: function (json) {
+                    console.log(json)
+                    submit_button.innerText = "Pending"
+                    submit_button.className='btn btn-warning'
+                    modal.modal('hide');
+                },
+                error: function (xhr, errMsg, err) {
+                    alert('Something went wrong!');
+                    console.log(errMsg, err);
+                }
+            })
+            
+        }
+
+
+        $("#modal_btn_submit").on("click", function(){
+            yes_callback();
+        });
+
+        $("#modal_btn_cancel").on("click", function(){
+            modal.modal('hide');
+        });
+
+    }
+    
+    $('#chapter-done').on('click', function () {
+      let chapter_id = $('#chapter-done').attr('chapter-id')
+      let section_id = $('#chapter-done').parent().attr('section-id')
+      
+      $.ajax({
+        url: '/courses/completed_chapter/',
+        type: 'POST',
+        data: {
+          'chapter_id': chapter_id,
+          'section_id': section_id,
+          csrfmiddlewaretoken: 'CDRkFQM6fdx5kYBPFXXcDrHDd2TkyNusZR5mzqgNps3jPDQjOR9wuuNHwsNnA3wT'
+        },
+        success: function (data) {
+          checkOrUncheck(chapter_id);
+          updateProgressBar(data['progress']);
+        },
+        error: function (xhr, errMsg, err) {
+          alert('Whoops, something went wrong!\n\nRefresh the page and try again.');
+          console.log(errMsg, err);
+        }
+      })
+    })
+  
+    function updateProgressBar(progress){
+        const progress_bar = document.getElementsByClassName('progress-bar')[0]
+        progress_bar.style.width = progress+"%"
+        document.getElementById('progress-bar-text').innerText = progress+"% Complete"
+    }
+
+    function checkOrUncheck(chapter_id) {
+      let button = $('#chapter-done');
+      let badge = $('#status_chapter_id_' + chapter_id);
+      
+      if ($('#chapter-done').attr('done') == 1) {
+        button.removeClass('btn-success').addClass('btn-secondary').attr('done', '0').text('Not Completed');
+        badge.removeClass('badge-outline-success').addClass('badge-outline-secondary')
+      } else {
+        button.removeClass('btn-secondary').addClass('btn-success').attr('done', '1').text('Done');
+        badge.removeClass('badge-outline-secondary').addClass('badge-outline-success')
+      }
+    }
+
+    // Show the buttons when ready
+    $('#chapter-submit').show()
+    $('#chapter-done').show()
+  })
+  
+</script>
+
+
+
+        
+    
+        
+    <!-- To use a modal, simply include this filec and then call buildmodal, passing in your desired options for 
+    header, body, footer, borders_off and new_id (so that it doesn't clash with other modals) -->
+    
+    
+    <div class="modal fade" id="submit_exercise" tabindex="-1" data-backdrop="static" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Mandatory Exercise Submission</h5></div>
+                <div class="modal-body"><strong>Code Url:</strong>                       <input class="form-control" id="exercise_url" name="exercise_url" placeholder="Enter Github link to your code">                         <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Difficulty</strong>                                <p class="text-muted">Was this exercise at the appropriate level for your skillset?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="difficulty" name="difficulty" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Clarity</strong>                                <p class="text-muted">Were the instructions and language understandable?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="clarity" name="clarity" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Relevance</strong>                                <p class="text-muted">Did this exercise reinforce ideas from today's lesson?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="relevance" name="relevance" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Time Taken</strong>                                <p class="text-muted">Approximately how long did you spend on this exercise?</p>                                <select class="form-control" id="time_taken" name="time_taken">                                    <option value="&lt; 10">Less than 10 minutes</option>                                    <option value="10-20">10 - 20 minutes</option>                                    <option value="20-30">20 - 30 minutes</option>                                    <option value="30-40">30 - 40 minutes</option>                                    <option value="40-50">40 - 50 minutes</option>                                    <option value="50-60">50 minutes to 1 hour</option>                                    <option value="&gt; 60">More than 1 hour</option>                                </select>                            </div>                        </div>                        <div class="row clearfix  mt-4">                            <div class="col-12">                                <strong>Comments</strong>                                <p class="text-muted">Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>                                <div class="slider-container ">                                    <textarea id="comment" name="comment" rows="4" maxlength="250" style="resize: none;" class="form-control"></textarea>                                </div>                            </div>                        </div></div>
+                <div class="modal-footer"><button id="modal_btn_cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>                    <button id="modal_btn_submit" class="btn btn-success">Submit</button></div>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+      
+      build_modal = (options = {}) => {
+          current_id = ('current_id' in options) ? options['current_id'] : "modal"
+          new_id = options['new_id'] ? options['new_id'] : current_id
+          $("#"+current_id).attr('id', new_id)
+      
+          if ('fade' in options && !options['fade']) $("#"+new_id).removeClass('fade')
+      
+          if ('header' in options) $("#"+new_id + " " + ".modal-header").html(options['header'])
+          if ('body' in options) $("#"+new_id + " " + ".modal-body").html(options['body'])
+          if ('footer' in options) $("#"+new_id + " " + ".modal-footer").html(options['footer'])
+          if (options['borders_off']) {
+              $("#"+new_id + " " + ".modal-header").css('border-bottom', 'none')
+              $("#"+new_id + " " + ".modal-footer").css('border-top', 'none')
+          }
+          return $("#"+new_id)
+      }
+      
+      
+      // Helper function to get all data submitted in modal
+      getAllInputValuesInModal = (modal_id) =>  {
+          var obj = {};
+      
+          $('#'+modal_id + ' ' + ':input').each(function(){
+              var key = $(this).attr('id');
+              var type = $(this).prop("type");
+              // checked radios/checkboxes
+              if ((type == "checkbox" || type == "radio") && this.checked) {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+              // all other fields, except buttons
+              else if (type != "button" && type != "submit") {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+          });
+          return obj;
+      }
+      
+      </script>
+      
+
+
+    </div>
+
+
+
+    <style>
+        .flex-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .single-chart {
+            width: 33%;
+            justify-content: space-around;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            max-height: 250px;
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 3.8;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+        }
+
+        @keyframes progress {
+            0% {
+                stroke-dasharray: 0 100;
+            }
+        }
+
+        .circular-chart.orange .circle {
+            stroke: #ff9f00;
+        }
+
+        .circular-chart.green .circle {
+            stroke: #4CC790;
+        }
+
+        .circular-chart.blue .circle {
+            stroke: #3c9ee5;
+        }
+
+        .percentage {
+            fill: #666;
+            font-family: sans-serif;
+            font-size: 0.5em;
+            text-anchor: middle;
+        }
+    </style>
+
+    <!-- javaScripts (async defer )
+    ================================================== -->
+    <script src="./DOM Tree_files/framework.js.téléchargement"></script>
+    <script src="./DOM Tree_files/jquery-3.3.1.min.js.téléchargement"></script>
+    <script src="./DOM Tree_files/simplebar.js.téléchargement"></script>
+    <script src="./DOM Tree_files/main.js.téléchargement"></script>
+    <script src="./DOM Tree_files/bootstrap-select.min.js.téléchargement"></script>
+    <script src="./DOM Tree_files/bootstrap.min.js.téléchargement"></script> 
+    <script src="./DOM Tree_files/script.js.téléchargement"></script> 
+
+    
+<script type="text/javascript" src="./DOM Tree_files/shCore.js.téléchargement"></script>
+<script type="text/javascript" src="./DOM Tree_files/shBrushJScript.js.téléchargement"></script>
+<script type="text/javascript" src="./DOM Tree_files/shBrushXml.js.téléchargement"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
+
+<script src="./DOM Tree_files/highlight.min.js.téléchargement"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</div></div><div id="backtotop" class="visible uk-animation-slide-bottom"><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/42/chapter/159#"></a></div></body></html>

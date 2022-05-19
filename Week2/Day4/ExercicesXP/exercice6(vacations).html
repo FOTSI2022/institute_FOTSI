@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+                /*
+                Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
+                 an item price
+                 and an array representing the amount of change in your pocket.
+                */
+                          
+            function hotelCost(){
+                                 
+                                 do{
+                                     numberNight=Number(prompt("What is the number of night?"));
+                                     }
+                                   
+                                 while((numberNight<=0) || ((typeof(numberNight))=='string'));
+                                  
+                                console.log('The total price of the hotel is '+(140*numberNight)+'$ for '+numberNight+' nights');
+                                }
+                    //call the function
+                    hotelCost();
+            /*Define a function called planeRideCost().
+                It should ask the user for their destination.
+                If the user doesn’t answer or if the answer is not a string, ask again.
+                The function should return a different price depending on the location.
+                “London”: 183$
+                “Paris” : 220$
+                All other destination : 300$
+              */
+              function planeRideCost(){
+                                 let present= true;
+                                 destinations={'London':180,
+                                               'Paris':220,
+                                               'All destinations':300
+                                              }
+                                  do{
+                                     destination=String(prompt("Quel est votre destination?"));
+                                     }
+                                   
+                                     for (i in destinations){
+                                                            if(i==destination){
+                                                                            present= false;
+                                                                              }
+                                                          }
+                                 while (present);
+                                  
+                                console.log(destination+' : 180$');
+                                }
+                    //call the function
+                    planeRideCost();
+                
+                /*Define a function called rentalCarCost().
+                 It should ask the user for the number of days they would like to rent the car.
+                 If the user doesn’t answer or if the answer is not a number, ask again.
+                Calculate the cost to rent the car. The car costs $40 everyday.
+                If the user rents a car for more than 10 days, they get a 5% discount.
+                The function should return the total price of the car rental.*/
+                function rentalCarCost(){
+                                 
+                                   do{
+                                     numberDay=Number(prompt("What is the number of days to rent by car?"));
+                                     }
+                                   
+                                 while((numberNight<=0) || ((typeof(numberNight))=='string'));
+                                  
+                                 if (numberDay>10){
+                                                    car_cost=((numberDay*140)-(numberDay*140*5/100))
+                                                  }
+                                            else{
+                                                    car_cost=(numberDay*140)
+                                                  }
+                                 console.log('The total price of the car rental is '+car_cost+'$ for '+numberDay+' days');
+                                }
+                    //call the function
+                    rentalCarCost();
+
+                    /*Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
+                   Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.
+                  Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside the function totalVacationCost().*/
+                       
+        </script>
+    </body>
+</html>

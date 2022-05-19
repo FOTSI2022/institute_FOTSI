@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Change the article</title>
+             
+    </head>
+    <body id="container">
+        <article>
+                <h1 id="H1"> Some Facts </h1>
+                <h2 id="H2"> The Chocolate </h2>
+                <h3 id="H3"> History of the chocolate </h3>
+                <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+                Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+                <p> After the European discovery of the Americas, chocolate became 
+                very popular in the wider world, and its demand exploded. </p>
+                <p> Chocolate has since become a popular food product that millions enjoy every day, 
+                thanks to its unique, rich, and sweet taste.</p> 
+                <p> But what effect does eating chocolate have on our health?</p> 
+        </article>
+        <!--Add a <button> to the HTML file, that when clicked on, should make the text of all the paragraphs, bold.-->
+        <button id='btnParaBold' onClick="paraBold()"> Make paragraphs Bold</button>
+
+        <script>
+           /* In a JS file, write a JavaScript function to get the values of First and Last name of the following form 
+            let form=document.forms[0];
+            function getvalue(){
+                alert(`Your name is ${form.elements.fname.value} and your last name is ${form.elements.lname.value} )`)  
+                              }*/
+            /* Using a DOM property, retrieve the h1 and console.log it.*/
+            let H1h = document.querySelector('h1');
+            console.log(H1h.innerText);
+
+            /*Using DOM methods, remove the last paragraph in the <article> tag.*/
+            let para = document.getElementsByTagName('p');
+            console.log(para);
+            para[3].remove();
+            console.log(para);
+            console.log(para[2].innerText); //verify
+
+            /*Add a event listener which will change the background color of the h2 to red, when it’s clicked on.*/
+            let a=document.getElementById("H2")
+                 a.addEventListener("click", change_background)
+
+                 function change_background(){
+                             a.style.backgroundColor='red';
+                            }
+
+            /* Add an event listener which will hide the h3 when it’s clicked on (use the display:none property).*/
+
+            let b=document.getElementById("H3")
+                 b.addEventListener("click", hideTile)
+
+                 function hideTile(){
+                             b.style.display='none';
+                            }
+           
+            /* Add a <button> to the HTML file, that when clicked on, should make the text of all the paragraphs, bold.*/
+                //let c=document.body.getElementsClassNameTag('p')
+                let c=document.querySelectorAll('p')  // return a array
+                
+                function  paraBold(){
+                              for (let ci of c){
+                                ci.style.fontWeight='bold';
+                                   }
+                             
+                                 }
+               
+            /*BONUS : When you hover on the h1, set the font size to a random pixel size between 0 to 100.(Check out this documentation)*/
+             
+            let d=document.getElementById("H1")
+                d.addEventListener("mouseover", mouseHoverChange)
+
+                 function mouseHoverChange(){
+                            taillePolice=Math.floor((Math.random() * 100));
+                             d.style.fontSize = taillePolice+'px';
+                            }
+
+            /*BONUS : When you hover on the h1, set the font size to a random pixel size between 0 to 100.(Check out this documentation)*/
+             
+            let f=document.getElementById("H2")
+                f.addEventListener("mouseover", mouseHoverh2)
+
+                 function mouseHoverh2(){
+                            f.style.class = w3-animate-bottom;
+
+                            }
+
+               
+
+           
+        </script>
+    
+</html>

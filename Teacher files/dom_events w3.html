@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM events</title>
+        <style>
+            .color{
+                background-color: coral;
+                font-size: 25px;
+                padding: 40px;
+            
+            }
+            p:last-child{
+                justify-self: start;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Example with button linked to events using inline event handler,on+click, mouseover etc -->
+        <button onclick="alert('You clicked me')">Click me</button>
+        <button onmouseover="alert('You hover me')">Hover me</button>
+        <button ondblclick="createpara()">Double Click to create a paragraph that say hi</button>
+        <button id="changeBack">Click here to change the background color</button>
+
+        <table id="sampleTable" border="1"> 
+            <tr>
+                <td>Row1 cell1</td> 
+                <td>Row1 cell2</td>
+            </tr> 
+            <tr>
+                <td>Row2 cell1</td> 
+                <td>Row2 cell2</td>
+            </tr> 
+        </table>
+         <!-- button with an online event handler to call the function to insert a new row to the table -->   
+        <input type="button" onclick="insertRow()" value="Insert row">  
+        <!-- button with an event handler to alert the text of the next sibling of the element -->
+        <button onclick="alert(this.nextElementSibling.innerText)">Helooooooooooo</button><!--'this' refers to the element itself-->
+        <p>This is just a paragraph</p>
+
+        <button id="btn">Click me</button>
+        <button id="btn1">Hey Hey</button>
+
+        <form id="form1" > 
+            <label>First name: </label><input type="text" name="fname" value="David"><br> 
+            <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+            <input type="submit" value="Submit"> 
+        </form> 
+
+
+        <script type="text/javascript">
+            //Accessing the form and the inputs
+            let form = document.forms[0]
+            form.addEventListener('submit', getvalue)
+            function getvalue(e){
+                e.preventDefault() //to prevent the browser from refreshing the page
+                //The first input correspond to form.elements.fname | and to get the value of an input we use the .value property
+                console.log(`Your name is ${form.elements.fname.value} and your last name is ${form.elements.lname.value}`)
+                
+            }
+            //Trigger a double click event
+            document.querySelector('#changeBack').ondblclick = function(){
+                document.body.classList.toggle('color') //OR document.body.style.background = 'coral'
+            }
+            //Function to create a new paragraph 
+            function createpara(){
+                let p = document.createElement('p')
+                let name = prompt('Enter your name:')
+                let txt = document.createTextNode(`Hello ${name} and welcome`) //using the user prompt in the text of our new text node
+                p.appendChild(txt) //put the text inside our paragraph
+                document.body.appendChild(p) //put our paragraph in the html body
+            }
+
+            //Function to create a new row inside our table
+            function insertRow(){
+                //create a new tr, td and a text node; append the text node to the td then the td to the tr and 
+                //finally append the tr to the table id sampleTable
+                let new_row = document.createElement('tr')
+                let new_cell1 = document.createElement('td')
+                let new_cell2 = document.createElement('td')
+                let cell_text1 = document.createTextNode('Row Cell 1')
+                let cell_text2 = document.createTextNode('Row Cell 2')
+                new_cell1.appendChild(cell_text1)
+                new_cell2.appendChild(cell_text2)
+                new_row.appendChild(new_cell1)
+                new_row.appendChild(new_cell2)
+                document.querySelector('#sampleTable').appendChild(new_row)
+            }
+
+            //Getting our two buttons with their id
+            let x = document.getElementById("btn")
+            let y = document.getElementById("btn1")
+            //Syntax : element.addEventListener(event_name, function_to_execute_when_the_event_occurs)
+            //Adding two event handlers to the button node y | means: linking our button element to 2 events click and mouseover
+            y.addEventListener("click", RespondClick);
+            y.addEventListener("mouseover", RespondMouseOver);
+            //Adding 3 event handlers to the button node x
+            x.addEventListener("click", RespondClick); 
+            x.addEventListener("mouseover", RespondMouseOver); 
+            x.addEventListener("mouseout", RespondMouseOut); 
+
+            function RespondClick() { 
+                alert("Button Clicked")
+            } 
+
+            function RespondMouseOver() { 
+                alert("My mouse is over the btn")
+            } 
+
+            function RespondMouseOut() { 
+                alert("My mouse is out of the btn")
+            }     
+
+        </script>
+    </body>
+</html>

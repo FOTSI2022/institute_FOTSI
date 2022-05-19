@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169 -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Developers Institute</title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developers Institute - Global Software Development Bootcamp">
+
+    <!-- Favicon -->
+    <link href="http://learn.di-learning.com/static/theme/images/favicon.png" rel="icon" type="image/png">
+
+    
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="./DOM events_files/style.css">
+    <link rel="stylesheet" href="./DOM events_files/night-mode.css">
+    <link rel="stylesheet" href="./DOM events_files/framework.css">
+    <link rel="stylesheet" href="./DOM events_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./DOM events_files/font-awesome.min.css">
+
+
+    
+<link rel="stylesheet" href="./DOM events_files/courses_app.css">
+<link rel="stylesheet" href="./DOM events_files/prism.css">
+<link rel="stylesheet" href="./DOM events_files/color-brewer.min.css">
+<link rel="stylesheet" href="./DOM events_files/slider.css">   
+
+
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="./DOM events_files/icons.css">
+
+    
+<!-- Syntax Highlighter -->
+<link rel="stylesheet" type="text/css" href="./DOM events_files/shCore.css" media="all">
+<link rel="stylesheet" type="text/css" href="./DOM events_files/shCoreMidnight.css" media="all">
+<style>
+    .gutter,
+    .toolbar {
+        display: none
+    }
+
+    .syntaxhighlighter {
+        padding: 15px 20px;
+    }
+
+    .syntaxhighlighter {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        padding-top: 18px !important;
+    }
+
+</style>
+
+
+    </head>
+
+<body>
+    <div id="wrapper">
+
+        
+<!-- To clear the header loaded in base -->
+
+
+        
+            
+
+<div class="side-nav uk-animation-slide-left-medium">
+
+    <div class="side-nav-bg"></div>
+
+    <!-- logo -->
+    <div class="logo uk-visible@s">
+        <ul>
+            <li>
+                <a href="http://learn.di-learning.com/courses"><img src="./DOM events_files/logo_di.png" alt=""> <span class="tooltips"> My Courses</span> </a>
+            </li>
+        </ul>
+    </div>
+
+    <ul>
+        
+        <li><a href="http://learn.di-learning.com/calendar"> <i class="icon-feather-calendar"></i> <span class="tooltips">Calendar</span></a></li>
+        
+        
+        <li><a href="http://learn.di-learning.com/leaderboards"> <i class="icon-feather-star"></i> <span class="tooltips">Leaderboard</span></a></li>
+        
+        
+        <li><a href="http://slack.developers.institute/" target="_blank"> <i class="icon-feather-slack"></i> <span class="tooltips">Slack</span></a></li>
+        
+        <li><a href="http://blog.developers.institute/" target="_blank"> <i class="uil-file-alt"></i> <span class="tooltips">Blog</span></a></li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> <i class="uil-books"></i> </a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>Learn More</h6></a>
+                                <a href="https://developers.institute/index.php/portfolios/coding-bootcamp-tlv/" target="_blank">Full Stack Python</a>
+                                <a href="https://developers.institute/index.php/portfolios/online-live-bootcamp/" target="_blank">Full Stack JavaScript</a>
+                                <a href="https://developers.institute/index.php/portfolios/summer-camp-2020/" target="_blank">Summer Camp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"><i class="uil-question-circle"></i></a>
+            <div class="side-menu-slide">
+                <div class="side-menu-slide-content">
+                    <ul uk-accordion="" class="uk-accordion">
+                        <li style="padding-top: 15px;">
+                                <a><h6>About DI</h6></a>
+                                <a href="https://developers.institute/" target="_blank">Home page </a>
+                                <a href="https://developers.institute/en/our-coding-bootcamp-courses-tel-aviv-coding-bootcamp-full-stack/" target="_blank">Our Courses</a>
+                                <a href="https://developers.institute/index.php/dates-tuition/" target="_blank">Dates &amp; Tuition </a>
+                                <a href="https://developers.institute/index.php/blog/" target="_blank">Blog</a>
+                                <a href="http://learn.di-learning.com/terms">Terms &amp; Conditions</a>
+                                <a href="http://learn.di-learning.com/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+        
+        
+        
+<div class="page-content">
+    
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-3-4@m bg-white uk-first-column">
+            
+            <!-- video description contents -->
+            <div class="p-lg-5 p-3" style="width:80%; margin:auto;">
+                
+                <div style="margin-top:-27px; margin-bottom:23px;">
+                    
+<nav id="breadcrumbs">
+    <ul>
+        <li><a href="http://learn.di-learning.com/courses"><i class="icon-feather-home"></i></a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20">Full Stack Coding Bootcamp - Python - Yaounde</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11">DOM</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43">Learning DOM Events</a></li>
+        <li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169">DOM Events</a></li>
+    </ul>
+</nav>
+
+                </div>
+                
+
+                <div style="display: flex;">
+                    <div style="width: 80%;">
+                        
+                        <h2>DOM Events</h2>
+                        
+                    </div>
+                    
+                        
+                            <div section-id="43" style="width: 30%; display: flex; justify-content: flex-end; align-items: center;">
+                                
+                                    
+                                    <span class="btn btn-secondary" id="chapter-done" chapter-id="169" done="0" style="">Not Completed</span>
+                                    
+                                
+                            </div>
+                        
+                    
+                </div>
+                
+                <div style="width: 20%;">
+                    
+                </div>
+                
+
+                <hr class="my-2">
+                <div uk-toggle="cls: uk-flex uk-flex-between@m uk-flex-middle; mode: media; media: @m" class="uk-flex uk-flex-between@m uk-flex-middle"><div>
+            </div>
+        </div>
+
+        <div>
+            
+            
+            <div id="toc">
+                <h3>Table of Contents</h3>
+            <ul><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#What_you_will_learn:">What you will learn:</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#Useful_Resources">Useful Resources</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#DOM_Events">DOM Events</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#I._Two_ways_of_writing_Event_handlers">I. Two ways of writing Event handlers</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#1._Inline_Event_Handler_:__set_in_HTML_with_an_attribute_onevent">1. Inline Event Handler :  set in HTML with an attribute onevent</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#2._DOM_property:_set_a_handler_using_a_DOM_property_onevent.">2. DOM property: set a handler using a DOM property onevent.</a></li><ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#Some_Event_Handler">Some Event Handler</a></li></ul></ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#II._this_keyword">II. this keyword</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#III._addEventListener():_multiple_events_on_the_same_element">III. addEventListener(): multiple events on the same element</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#IV._Event_object">IV. Event object</a></li><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#V._Event_Propagation">V. Event Propagation</a></li></ul></ul><li><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#Feedback">Feedback</a></li></ul></div>
+            <hr>
+            
+
+            <div id="chapter-contents">
+
+                    
+
+                    
+
+                    
+                    <p class="lead"></p><h2><a name="What_you_will_learn:">What you will learn:</a></h2>
+<ul>
+<li>Event Handlers with JS and the DOM</li>
+</ul>
+<p><br></p>
+<hr>
+<h2><a name="Useful_Resources">Useful Resources</a></h2>
+<ul>
+<li><a class="hi-vis" href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_addeventlistener_remove" target="_blank">removeEventListener Example</a></li>
+</ul>
+<p><br></p>
+<hr>
+<h3><a name="DOM_Events">DOM Events</a></h3>
+<h3><a name="I._Two_ways_of_writing_Event_handlers">I. Two ways of writing Event handlers</a></h3>
+<p>An event handler is a function that runs in case of an event.</p>
+<p><br></p>
+<h4><a name="1._Inline_Event_Handler_:__set_in_HTML_with_an_attribute_onevent">1. Inline Event Handler :  set in HTML with an attribute onevent</a></h4>
+<pre><code class="html hljs xml">    <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"test"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Click me"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"inform()"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inform</span>(<span class="hljs-params"></span>)</span>{
+            alert(<span class="hljs-string">"You clicked me"</span>)
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><a name="2._DOM_property:_set_a_handler_using_a_DOM_property_onevent.">2. DOM property: set a handler using a DOM property onevent.</a></h4>
+<pre><code class="html hljs xml">    <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"test"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Click me"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+       <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'button'</span>).onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            alert(<span class="hljs-string">'Click!'</span>);
+        };
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h5><a name="Some_Event_Handler">Some Event Handler</a></h5>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onclick()</code></td>
+<td>invoke JavaScript upon clicking (a link, or form boxes)<br></td>
+</tr>
+<tr>
+<td><code>onload()</code></td>
+<td>invoke JavaScript after the page or an image has finished loading.<br></td>
+</tr>
+<tr>
+<td><code>onmouseover()</code></td>
+<td>invoke JavaScript if the mouse passes by some link <br></td>
+</tr>
+<tr>
+<td><code>onmouseout()</code></td>
+<td>invoke JavaScript if the mouse goes pass some link <br></td>
+</tr>
+<tr>
+<td><code>onunload()</code></td>
+<td>invoke JavaScript right after someone leaves this page. <br></td>
+</tr>
+</tbody>
+</table>
+<p><a class="hi-vis" href="https://www.javatpoint.com/understanding-html-dom-events" target="_blank">More EventHandlers</a></p>
+<p><br></p>
+<hr>
+<h5><span style="color: #27C76B">Exercise 1 </span></h5>
+<div style="background-color:#C0F7D7; border-color:#27C76B; border-style:ridge; padding: 30px">
+<p>Create a structured HTML file, and add the code below in the body.</p> <p>In a JS file, write a JavaScript function to add rows to a table. Use the code below as a base</p></div>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sampleTable"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"1"</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Row1 cell1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Row1 cell2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Row2 cell1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Row2 cell2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"insertRow()"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Insert row"</span>&gt;</span>  
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="II._this_keyword">II. this keyword</a></h3>
+<p>The value of <code>this</code> inside a handler is the element. The one which has the handler on it.</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"alert(this.innerHTML)"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="III._addEventListener():_multiple_events_on_the_same_element">III. addEventListener(): multiple events on the same element</a></h3>
+<p>The <code>addEventListener</code> event listens to DOM events that’s trigger and runs the callback function that you pass into it when the event happens.</p>
+<p><strong><code>element.addEventListener(DOM events, callback function);</code></strong></p>
+<p>The callback function has one argument which contains the details of the event that was triggered : the <code>event object</code> that we will see soon. </p>
+<p>The <code>removeEventListener()</code> method removes an event handler that has been attached with the addEventListener() method.</p>
+<p>Note: To remove event handlers, the function specified with the <code>addEventListener()</code> method must be an external function. </p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn1"</span>&gt;</span>Hey Hey<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn"</span>)
+        <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn1"</span>)
+
+        y.addEventListener(<span class="hljs-string">"click"</span>, RespondClick);
+        y.addEventListener(<span class="hljs-string">"mouseover"</span>, RespondMouseOver);
+
+        x.addEventListener(<span class="hljs-string">"click"</span>, RespondClick); 
+        x.addEventListener(<span class="hljs-string">"mouseover"</span>, RespondMouseOver); 
+        x.addEventListener(<span class="hljs-string">"mouseout"</span>, RespondMouseOut); 
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">RespondClick</span>(<span class="hljs-params"></span>) </span>{ 
+            alert(<span class="hljs-string">"Button Clicked"</span>)
+        } 
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">RespondMouseOver</span>(<span class="hljs-params"></span>) </span>{ 
+            alert(<span class="hljs-string">"My mouse is over the btn"</span>)
+        } 
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">RespondMouseOut</span>(<span class="hljs-params"></span>) </span>{ 
+            alert(<span class="hljs-string">"My mouse is out of the btn"</span>)
+        }     
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="IV._Event_object">IV. Event object</a></h3>
+<p>When an event happens, the browser creates an event object, puts details into it and passes it as an argument to the handler.</p>
+<p>Event Object properties</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>e</code></td>
+<td align="right">The object containing the event properties<br></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td align="right">The event that occurred (click, focus, blur, etc.)<br></td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td align="right">The element to which the event occurred<br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn1"</span>&gt;</span>Hey Hey<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn"</span>)
+        <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn1"</span>)
+
+        y.addEventListener(<span class="hljs-string">"mouseover"</span>, RespondMouseOver);
+
+        x.addEventListener(<span class="hljs-string">"mouseover"</span>, RespondMouseOver); 
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">RespondMouseOver</span>(<span class="hljs-params">e</span>) </span>{ 
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"e"</span>, e) 
+            <span class="hljs-comment">// all the properties of the event object</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"My mouse is over the btn named"</span> + e.target.innerHTML)
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"e.type: "</span>, e.type)
+            <span class="hljs-comment">// e.type: mouseover</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"e.target: "</span>, e.target)
+            <span class="hljs-comment">// e.target:  &lt;button id=​"btn1"&gt;​Hey Hey​&lt;/button&gt;​</span>
+        } 
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h5><span style="color: #27C76B">Exercise 2 </span></h5>
+<div style="background-color:#C0F7D7; border-color:#27C76B; border-style:ridge; padding: 30px">
+<p>Add a few event listener to the button. The event listeners should change the style of the button</p></div>
+
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"jsstyle"</span>&gt;</span>Style<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> 
+</code></pre>
+
+<p><br></p>
+<hr>
+<h3><a name="V._Event_Propagation">V. Event Propagation</a></h3>
+<p><code>addEventListener</code> takes 3 arguments as follows:</p>
+<ol>
+<li>Name of an event.</li>
+<li>The callback function to run some code when the specified event is triggered.</li>
+<li>Optional: the Boolean value of capture. (Set to false by default).</li>
+</ol>
+<p><strong><code>element.addEventListener(DOM events, callback function, boolean value);</code></strong></p>
+<p><strong><u>Event Propagation</u></strong> : relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered a listener for the same event (a click, for example).</p>
+<p><br></p>
+<hr>
+<h4><u>Event Bubbling</u> : the event is first captured and handled by the innermost element and then propagated to outer elements.</h4>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">div</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid blue}
+        <span class="hljs-selector-tag">button</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid red}
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"section"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+       <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn"</span>)
+       <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"div"</span>)
+       <span class="hljs-keyword">let</span> z = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"section"</span>)
+
+       x.addEventListener(<span class="hljs-string">"click"</span>, XRespondClick); 
+       y.addEventListener(<span class="hljs-string">"click"</span>, YRespondClick); 
+       z.addEventListener(<span class="hljs-string">"click"</span>, ZRespondClick); 
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">XRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"BTN is Clicked"</span>)
+       }    
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">YRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"DIV is Clicked"</span>)
+       }    
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ZRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"SECTION is Clicked"</span>)
+       }  
+
+        <span class="hljs-comment">//Result if I click on the button</span>
+        <span class="hljs-comment">// Alert : BTN is Clicked</span>
+        <span class="hljs-comment">// Alert : DIV is Clicked</span>
+        <span class="hljs-comment">// Alert : SECTION is Clicked</span>
+        <span class="hljs-comment">// --&gt; The event is triggered from the element that its clicked to the top</span>
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<div><img src="./DOM events_files/1_rG3JcxeSnztEtmkEVzo4Hg.png" alt="bubbling" width="400"></div>
+
+<p><br></p>
+<hr>
+<h4><u>Event capturing</u>:  the event is first captured by the outermost element and propagated to the inner elements.</h4>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">div</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid blue}
+        <span class="hljs-selector-tag">button</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid red}
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"section"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+       <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn"</span>)
+       <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"div"</span>)
+       <span class="hljs-keyword">let</span> z = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"section"</span>)
+
+       x.addEventListener(<span class="hljs-string">"click"</span>, XRespondClick, <span class="hljs-literal">true</span>); 
+       y.addEventListener(<span class="hljs-string">"click"</span>, YRespondClick, <span class="hljs-literal">true</span>); 
+       z.addEventListener(<span class="hljs-string">"click"</span>, ZRespondClick, <span class="hljs-literal">true</span>); 
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">XRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"BTN is Clicked"</span>)
+       }    
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">YRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"DIV is Clicked"</span>)
+       }    
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ZRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"SECTION is Clicked"</span>)
+       }  
+
+        <span class="hljs-comment">//Result if I click on the button</span>
+        <span class="hljs-comment">// Alert : SECTION is Clicked</span>
+        <span class="hljs-comment">// Alert : DIV is Clicked</span>
+        <span class="hljs-comment">// Alert : BTN is Clicked</span>
+        <span class="hljs-comment">// --&gt; The event is triggered from the top to the element that what clicked </span>
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><u>Stop the bubbling</u> event.stopPropagation()</h4>
+<pre><code class="html hljs xml">   <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">div</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid blue}
+        <span class="hljs-selector-tag">button</span> { <span class="hljs-attribute">border </span>: <span class="hljs-number">2px</span> solid red}
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"section"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btn"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+       <span class="hljs-keyword">let</span> x = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"btn"</span>)
+       <span class="hljs-keyword">let</span> y = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"div"</span>)
+       <span class="hljs-keyword">let</span> z = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"section"</span>)
+
+       x.addEventListener(<span class="hljs-string">"click"</span>, XRespondClick); 
+       y.addEventListener(<span class="hljs-string">"click"</span>, YRespondClick); 
+       z.addEventListener(<span class="hljs-string">"click"</span>, ZRespondClick); 
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">XRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"BTN is Clicked"</span>)
+           e.stopPropagation()
+       }    
+
+       <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">YRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"DIV is Clicked"</span>)
+       }    
+
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ZRespondClick</span>(<span class="hljs-params">e</span>) </span>{ 
+           alert(<span class="hljs-string">"SECTION is Clicked"</span>)
+       }  
+
+        <span class="hljs-comment">//Result if I click on the button</span>
+        <span class="hljs-comment">// Alert : BTN is Clicked</span>
+        <span class="hljs-comment">// --&gt; The bubbling stopped</span>
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p><br></p>
+<hr>
+<h4><span style="color: #27C76B">Exercise 3</span></h4>
+<div style="background-color:#C0F7D7; border-color:#27C76B; border-style:ridge; padding: 30px">
+<p>Add a click event listener to the div</p>
+<p>Add a few event listeners to the button. With at least one click event. The event listeners should change the style of the button</p>
+<p>Check how the propagation works and try to prevent it</p></div>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"jsstyle"</span>&gt;</span>Style<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><p></p><br>
+                    
+
+                    <div style="display: flex; justify-content: flex-end; align-items: center;">
+                        <a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#breadcrumbs" class="btn btn-info mb-2">Back to Top</a>
+                    </div>
+
+                    <div>
+                        <hr>
+                        <h1><a name="Feedback">Feedback</a></h1>
+                        <p>Tell us what you thought about  the chapter: DOM Events</p>
+                        <div id="feedback" class="cui-embed" style="height: 300px; width: 100%;" data-cui-uid="Gp6szZ" data-cui-avatar="https://images.typeform.com/images/KV5BWnKMavQp" data-cui-mode="widget" data-cui-pill-button-color="#000000" data-cui-injected="true"><iframe class="cui-embed-frame" id="cui-Gp6szZ" src="./DOM events_files/Gp6szZ.html" frameborder="0" height="100%" width="100%" style="display: block; z-index: 2147483647;"></iframe></div><script src="./DOM events_files/embed.js.téléchargement" async=""></script>
+                    </div>
+                    
+                
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+    <div class="uk-grid-collapse uk-grid" uk-grid="">
+        <div class="uk-width-expand@s uk-first-column">
+            <p>© 2020 <strong>Developers Institute</strong>. All Rights Reserved. </p>
+        </div>
+        <div class="uk-width-auto@s">
+            <nav class="footer-nav-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/developers.institute/" target="_blank"><i class="icon-brand-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/developers.institute/" target="_blank"><i class="icon-brand-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-qcXcEsoBSSpYvj5DqoMDQ/featured" target="_blank"><i class="icon-brand-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/devtlv" target="_blank"><i class="icon-brand-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+<div class="uk-width-1-4@m uk-overflow-hidden vidlist-3-container">
+    <div uk-sticky="" class="uk-sticky uk-active uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 0px; width: 270px;">
+        <h5 class="bg-gradient-grey text-white py-4 p-3 mb-0">Learning DOM Events</h5>
+        
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%; background:#17d292; font-size:1.2em; color: #949393; font-weight:bold;">
+                    <span style="padding-left: 15px;" id="progress-bar-text">0% Complete</span>
+                </div>
+            </div>
+        
+
+        <ul class="uk-child-width-expand mb-0 uk-tab" uk-switcher="animation: uk-animation-slide-right-small, uk-animation-slide-left-small" uk-tab="">
+            <li class="uk-active"></li>
+        </ul>
+
+        <ul class="uk-switcher uk-overflow-hidden" style="touch-action: pan-y pinch-zoom;">
+            <li class="uk-active">
+                <div class="vidlist-3-content" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: -14px; bottom: 0px;"><div class="simplebar-content" style="padding: 0px; height: 100%; overflow: hidden scroll;">
+                    <ul class="vidlist-3-section uk-accordion" uk-accordion="">
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> Coding Daily Digest </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/1156">
+                                            <div id="chapter_id_1156" class="chapter-title">5 ways writing documentation helps YOU</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                <span class="badge badge-outline-primary">5 XP</span>
+                                                
+                                                
+                                                <span id="status_chapter_id_1156" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                <span class="badge badge-outline-info" data-toggle="tooltip" title="Self Learning"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> Course Notes </a>
+                            <div class="uk-accordion-content" aria-hidden="false">
+                                <ul class="vidlist-3">
+                                    
+                                    
+                                    
+                                    
+                                    <li class="chapter-active">
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169">
+                                            <div id="chapter_id_169" class="chapter-title">DOM Events</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_169" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a class="chapter_notes" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/170">
+                                            <div id="chapter_id_170" class="chapter-title">Form manipulation</div>
+                                            <div class="chapter-attributes">
+                                                <span class="badge"> </span>
+                                                
+                                                
+                                                
+                                                <span id="status_chapter_id_170" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                
+                                                
+                                                
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> Exercises </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/171">
+                                                <div id="chapter_id_171" class="chapter-title">Exercises XP</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    <span class="badge badge-outline-warning">XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_171" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/172">
+                                                <div id="chapter_id_172" class="chapter-title">Exercises XP Gold</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">8 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Gold</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_172" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/173">
+                                                <div id="chapter_id_173" class="chapter-title">Exercises XP Ninja</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">12 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Ninja</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_173" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_exercise" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/174">
+                                                <div id="chapter_id_174" class="chapter-title">Mini Project - Create a Sign-in form</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">25 XP</span>
+                                                    <span class="badge badge-outline-warning">XP Ninja</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_174" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> Online Learning </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_video" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/175">
+                                                <div id="chapter_id_175" class="chapter-title">DOM Events</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">5 XP</span>
+                                                    
+                                                    
+                                                    <span id="status_chapter_id_175" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="uk-accordion-title" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"> Daily Challenge </a>
+                            <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                <ul class="vidlist-3">
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                        <li>
+                                            <a class="chapter_daily_challenge" href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/177">
+                                                <div id="chapter_id_177" class="chapter-title">Daily challenge: Tell the story</div>
+                                                <div class="chapter-attributes">
+                                                    <span class="badge"> </span>
+                                                    <span class="badge badge-outline-primary">10 XP</span>
+                                                    <span class="badge badge-outline-danger" data-toggle="tooltip" title="Mandatory"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    
+                                                    <span id="status_chapter_id_177" class="badge badge-outline-secondary" data-toggle="tooltip" title="Not Completed"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                                    
+                                                    
+                                                    
+                                                </div> 
+                                            </a>
+                                        </li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        
+
+                        
+
+                        
+                    </ul>
+                </div></div></div><div class="simplebar-placeholder" style="width: 270px; height: 395px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); visibility: hidden;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); visibility: visible; height: 327px;"></div></div></div>
+            </li>
+        </ul>
+    </div><div class="uk-sticky-placeholder" style="height: 448px; margin: 0px;"></div>
+</div>
+
+<!-- small device icon video sidebar -->
+<span class="btn-vidlist-3" uk-toggle="target: #wrapper; cls: is-open"></span>
+
+<script>
+    // Removes empty accordians in right sidebar
+    let accordion_contents = document.getElementsByClassName("uk-accordion-content");
+    //Can't loop through and remove elements from array without controlling for length change
+    for(let i = 0; i < accordion_contents.length; i++){
+        content = accordion_contents[i].getElementsByTagName("li")
+        if (!content.length) {
+            accordion_contents[i].parentNode.remove();
+            i--;  
+        }
+    }
+</script>
+
+<script>
+    // Update Markdown Tables to Bootstrap Tables - Jonathan
+    [].forEach.call(document.getElementsByTagName("table"), function (el) {el.className += "table table-striped table-bordered"});
+</script>
+
+<script>
+    // Auto Build TOC from H1 - H6 Components in 'chapter-contents' div - Jonathan
+    let make_toc = function(){
+        var toc = "";
+        var level = 0;
+
+        document.getElementById("chapter-contents").innerHTML =
+            document.getElementById("chapter-contents").innerHTML.replace(
+                /<h([\d])>([^<]+)<\/h([\d])>/gi,
+                function (str, openLevel, titleText, closeLevel) {
+                    if (openLevel != closeLevel) {
+                        return str;
+                    }
+
+                    if (openLevel > level) {
+                        toc += (new Array(openLevel - level + 1)).join("<ul>");
+                    } else if (openLevel < level) {
+                        toc += (new Array(level - openLevel + 1)).join("</ul>");
+                    }
+
+                    level = parseInt(openLevel);
+
+                    var anchor = titleText.replace(/ /g, "_");
+                    toc += "<li><a href=\"#" + anchor + "\">" + titleText
+                        + "</a></li>";
+
+                    return "<h" + openLevel + "><a name=\"" + anchor + "\">"
+                        + titleText + "</a></h" + closeLevel + ">";
+                }
+            );
+
+        if (level) {
+            toc += (new Array(level + 1)).join("</ul>");
+        }
+
+        document.getElementById("toc").innerHTML += toc;
+    };
+    window.setTimeout(function(){make_toc()}, 0)
+    
+</script>
+
+<script>
+    // Typeform element hijacks focus when it loads. No way to control it. 
+    // So we hide it until it has fully loaded, then display it.
+    let load_feedback = function(){
+        document.getElementById("feedback").removeAttribute("hidden")
+    }
+
+    // To trigger a click on the correct chapter. This will open the accordion to correct location.
+    let run_target = function(){
+        chapter_id="169"
+        if (chapter_id == "") {
+            let accordion = document.querySelector(".vidlist-3-section > li > a")
+            accordion.click()
+            return;
+        }
+        click_target = document.getElementById('chapter_id_'+chapter_id)
+        click_target.closest("li").classList.add('chapter-active');
+        click_target.closest(".uk-accordion-content").previousElementSibling.click();
+    }    
+
+    window.addEventListener('load',function(){
+        load_feedback()
+    })
+
+    // JMS HACK: DOMContentLoaded isn't reliable here. Probably because of this weird template renders.
+    // And load event is too slow for good UX.
+    // So... fudging it using a setTimeout 0.  Thoughts?
+    window.setTimeout(function(){run_target()}, 0)
+
+
+
+  /*
+  Checking Course
+  */
+  window.addEventListener('load',function(){
+
+    // Cookie is supposed to be added before every ajax request
+    // This happens in lib/js/script.js in the Ajax setup "beforSend"
+    // But its buggy and doesn't always send. I tested it by making the target view csrf exempt
+    //... so I'm explicitly adding the cookie in the ajax data body
+    function getCookie(name) {
+      var cookieValue = null;
+      if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = jQuery.trim(cookies[i]);
+          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            break;
+          }
+        }
+      }
+      return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+
+    configure_modal()
+
+    const submit_button = document.getElementById('chapter-submit');
+    if (submit_button) {
+        submit_button.addEventListener('click', ()=>{
+            modal_get_submission()
+        })
+    }
+
+    function configure_modal(){
+        const modal_id = 'submit_exercise'
+        const modal = build_modal({
+            header  : "<h5 class='modal-title'>Mandatory Exercise Submission</h5>", 
+            body    : "<strong>Code Url:</strong>\
+                       <input class='form-control' id='exercise_url' name='exercise_url' placeholder='Enter Github link to your code'> \
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Difficulty</strong>\
+                                <p class='text-muted'>Was this exercise at the appropriate level for your skillset?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='difficulty' name='difficulty' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Clarity</strong>\
+                                <p class='text-muted'>Were the instructions and language understandable?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='clarity' name='clarity' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Relevance</strong>\
+                                <p class='text-muted'>Did this exercise reinforce ideas from today's lesson?</p>\
+                                <div class='slider-container '>\
+                                    <div style='display:flex; justify-content:space-evenly; margin: 0 -15px;'>\
+                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>\
+                                    </div>\
+                                    <input type='range' id='relevance' name='relevance' class='slider' min='0' max='10'>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix justify-content-center mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Time Taken</strong>\
+                                <p class='text-muted'>Approximately how long did you spend on this exercise?</p>\
+                                <select class='form-control' id='time_taken' name='time_taken'>\
+                                    <option value='< 10'>Less than 10 minutes</option>\
+                                    <option value='10-20'>10 - 20 minutes</option>\
+                                    <option value='20-30'>20 - 30 minutes</option>\
+                                    <option value='30-40'>30 - 40 minutes</option>\
+                                    <option value='40-50'>40 - 50 minutes</option>\
+                                    <option value='50-60'>50 minutes to 1 hour</option>\
+                                    <option value='> 60'>More than 1 hour</option>\
+                                </select>\
+                            </div>\
+                        </div>\
+                        <div class='row clearfix  mt-4'>\
+                            <div class='col-12'>\
+                                <strong>Comments</strong>\
+                                <p class='text-muted'>Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>\
+                                <div class='slider-container '>\
+                                    <textarea id='comment' name='comment' rows='4' maxlength='250' style='resize: none;' class='form-control'></textarea>\
+                                </div>\
+                            </div>\
+                        </div>",
+            footer  : "<button id='modal_btn_cancel' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>\
+                    <button id='modal_btn_submit' class='btn btn-success'>Submit</button>", 
+            new_id  : modal_id 
+        })
+
+        modal_get_submission = () => {
+            modal.modal('show');
+        }
+
+        isValidHttpUrl = (string) => {
+            let url;
+            try {
+                url = new URL(string);
+            } catch (_) {
+                return false;  
+            }
+
+            return url.protocol === "http:" || url.protocol === "https:";
+        }
+
+        const yes_callback = () => {
+            const token = 'ZnU8WtmEFQJm1bk4AVzv3hyHBx70Gl7DaQcGR0PLnQX2EiPJ1rU5GFneHN40GHTp';
+            const chapter_id = $('#chapter-submit').attr('chapter-id')
+            const data = getAllInputValuesInModal(modal_id)
+            data['collection_id'] = "20";
+            data['course_id'] = "11";
+            data['section_id'] = "43";
+            data['chapter_id'] = "169";
+            data['csrfmiddlewaretoken'] = 'ZnU8WtmEFQJm1bk4AVzv3hyHBx70Gl7DaQcGR0PLnQX2EiPJ1rU5GFneHN40GHTp';
+            if (!isValidHttpUrl(data['exercise_url'])) {
+                alert("Please enter a valid URL!")
+                return
+            }
+
+            $.ajax({
+                headers: { "X-CSRFToken": token },
+                url: "/courses/submit_chapter/",
+                type: 'POST',
+                data: JSON.stringify(data),
+                success: function (json) {
+                    console.log(json)
+                    submit_button.innerText = "Pending"
+                    submit_button.className='btn btn-warning'
+                    modal.modal('hide');
+                },
+                error: function (xhr, errMsg, err) {
+                    alert('Something went wrong!');
+                    console.log(errMsg, err);
+                }
+            })
+            
+        }
+
+
+        $("#modal_btn_submit").on("click", function(){
+            yes_callback();
+        });
+
+        $("#modal_btn_cancel").on("click", function(){
+            modal.modal('hide');
+        });
+
+    }
+    
+    $('#chapter-done').on('click', function () {
+      let chapter_id = $('#chapter-done').attr('chapter-id')
+      let section_id = $('#chapter-done').parent().attr('section-id')
+      
+      $.ajax({
+        url: '/courses/completed_chapter/',
+        type: 'POST',
+        data: {
+          'chapter_id': chapter_id,
+          'section_id': section_id,
+          csrfmiddlewaretoken: 'ZnU8WtmEFQJm1bk4AVzv3hyHBx70Gl7DaQcGR0PLnQX2EiPJ1rU5GFneHN40GHTp'
+        },
+        success: function (data) {
+          checkOrUncheck(chapter_id);
+          updateProgressBar(data['progress']);
+        },
+        error: function (xhr, errMsg, err) {
+          alert('Whoops, something went wrong!\n\nRefresh the page and try again.');
+          console.log(errMsg, err);
+        }
+      })
+    })
+  
+    function updateProgressBar(progress){
+        const progress_bar = document.getElementsByClassName('progress-bar')[0]
+        progress_bar.style.width = progress+"%"
+        document.getElementById('progress-bar-text').innerText = progress+"% Complete"
+    }
+
+    function checkOrUncheck(chapter_id) {
+      let button = $('#chapter-done');
+      let badge = $('#status_chapter_id_' + chapter_id);
+      
+      if ($('#chapter-done').attr('done') == 1) {
+        button.removeClass('btn-success').addClass('btn-secondary').attr('done', '0').text('Not Completed');
+        badge.removeClass('badge-outline-success').addClass('badge-outline-secondary')
+      } else {
+        button.removeClass('btn-secondary').addClass('btn-success').attr('done', '1').text('Done');
+        badge.removeClass('badge-outline-secondary').addClass('badge-outline-success')
+      }
+    }
+
+    // Show the buttons when ready
+    $('#chapter-submit').show()
+    $('#chapter-done').show()
+  })
+  
+</script>
+
+
+
+        
+    
+        
+    <!-- To use a modal, simply include this filec and then call buildmodal, passing in your desired options for 
+    header, body, footer, borders_off and new_id (so that it doesn't clash with other modals) -->
+    
+    
+    <div class="modal fade" id="submit_exercise" tabindex="-1" data-backdrop="static" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Mandatory Exercise Submission</h5></div>
+                <div class="modal-body"><strong>Code Url:</strong>                       <input class="form-control" id="exercise_url" name="exercise_url" placeholder="Enter Github link to your code">                         <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Difficulty</strong>                                <p class="text-muted">Was this exercise at the appropriate level for your skillset?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="difficulty" name="difficulty" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Clarity</strong>                                <p class="text-muted">Were the instructions and language understandable?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="clarity" name="clarity" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Relevance</strong>                                <p class="text-muted">Did this exercise reinforce ideas from today's lesson?</p>                                <div class="slider-container ">                                    <div style="display:flex; justify-content:space-evenly; margin: 0 -15px;">                                        <span>0</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>5</span><span>ı</span><span>ı</span><span>ı</span><span>ı</span><span>10</span>                                    </div>                                    <input type="range" id="relevance" name="relevance" class="slider" min="0" max="10">                                </div>                            </div>                        </div>                        <div class="row clearfix justify-content-center mt-4">                            <div class="col-12">                                <strong>Time Taken</strong>                                <p class="text-muted">Approximately how long did you spend on this exercise?</p>                                <select class="form-control" id="time_taken" name="time_taken">                                    <option value="&lt; 10">Less than 10 minutes</option>                                    <option value="10-20">10 - 20 minutes</option>                                    <option value="20-30">20 - 30 minutes</option>                                    <option value="30-40">30 - 40 minutes</option>                                    <option value="40-50">40 - 50 minutes</option>                                    <option value="50-60">50 minutes to 1 hour</option>                                    <option value="&gt; 60">More than 1 hour</option>                                </select>                            </div>                        </div>                        <div class="row clearfix  mt-4">                            <div class="col-12">                                <strong>Comments</strong>                                <p class="text-muted">Let us know your thoughts about this exercise. What did you like? What did you dislike? What can we improve??</p>                                <div class="slider-container ">                                    <textarea id="comment" name="comment" rows="4" maxlength="250" style="resize: none;" class="form-control"></textarea>                                </div>                            </div>                        </div></div>
+                <div class="modal-footer"><button id="modal_btn_cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>                    <button id="modal_btn_submit" class="btn btn-success">Submit</button></div>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+      
+      build_modal = (options = {}) => {
+          current_id = ('current_id' in options) ? options['current_id'] : "modal"
+          new_id = options['new_id'] ? options['new_id'] : current_id
+          $("#"+current_id).attr('id', new_id)
+      
+          if ('fade' in options && !options['fade']) $("#"+new_id).removeClass('fade')
+      
+          if ('header' in options) $("#"+new_id + " " + ".modal-header").html(options['header'])
+          if ('body' in options) $("#"+new_id + " " + ".modal-body").html(options['body'])
+          if ('footer' in options) $("#"+new_id + " " + ".modal-footer").html(options['footer'])
+          if (options['borders_off']) {
+              $("#"+new_id + " " + ".modal-header").css('border-bottom', 'none')
+              $("#"+new_id + " " + ".modal-footer").css('border-top', 'none')
+          }
+          return $("#"+new_id)
+      }
+      
+      
+      // Helper function to get all data submitted in modal
+      getAllInputValuesInModal = (modal_id) =>  {
+          var obj = {};
+      
+          $('#'+modal_id + ' ' + ':input').each(function(){
+              var key = $(this).attr('id');
+              var type = $(this).prop("type");
+              // checked radios/checkboxes
+              if ((type == "checkbox" || type == "radio") && this.checked) {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+              // all other fields, except buttons
+              else if (type != "button" && type != "submit") {
+                  obj[key] = $(this).val();
+                  //return arr;
+              }
+          });
+          return obj;
+      }
+      
+      </script>
+      
+
+
+    </div>
+
+
+
+    <style>
+        .flex-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .single-chart {
+            width: 33%;
+            justify-content: space-around;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            max-height: 250px;
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 3.8;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+        }
+
+        @keyframes progress {
+            0% {
+                stroke-dasharray: 0 100;
+            }
+        }
+
+        .circular-chart.orange .circle {
+            stroke: #ff9f00;
+        }
+
+        .circular-chart.green .circle {
+            stroke: #4CC790;
+        }
+
+        .circular-chart.blue .circle {
+            stroke: #3c9ee5;
+        }
+
+        .percentage {
+            fill: #666;
+            font-family: sans-serif;
+            font-size: 0.5em;
+            text-anchor: middle;
+        }
+    </style>
+
+    <!-- javaScripts (async defer )
+    ================================================== -->
+    <script src="./DOM events_files/framework.js.téléchargement"></script>
+    <script src="./DOM events_files/jquery-3.3.1.min.js.téléchargement"></script>
+    <script src="./DOM events_files/simplebar.js.téléchargement"></script>
+    <script src="./DOM events_files/main.js.téléchargement"></script>
+    <script src="./DOM events_files/bootstrap-select.min.js.téléchargement"></script>
+    <script src="./DOM events_files/bootstrap.min.js.téléchargement"></script> 
+    <script src="./DOM events_files/script.js.téléchargement"></script> 
+
+    
+<script type="text/javascript" src="./DOM events_files/shCore.js.téléchargement"></script>
+<script type="text/javascript" src="./DOM events_files/shBrushJScript.js.téléchargement"></script>
+<script type="text/javascript" src="./DOM events_files/shBrushXml.js.téléchargement"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
+
+<script src="./DOM events_files/highlight.min.js.téléchargement"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</div></div><div id="backtotop" class="visible uk-animation-slide-bottom"><a href="http://learn.di-learning.com/courses/collection/20/course/11/section/43/chapter/169#"></a></div></body></html>

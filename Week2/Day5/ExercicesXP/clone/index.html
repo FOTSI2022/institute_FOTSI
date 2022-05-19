@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Game Javascript</title>
+</head>
+
+<body>
+    <h1>MiniProject-PlayTheGame</h1>
+    <button onclick="playTheGame()">Click to play the game</button>
+
+    <script>
+       /* 
+        //create the function
+        function  playTheGame(){ 
+                                borne=[0,10];
+                                present=false;
+                                answer=confirm("Would you like to plat the game?")
+                                if (answer==false){
+                                                    console.log('No problem, Goodbye');
+                                                    Break;
+                                                   }
+                                                   else{
+                                                         nber=Number(prompt('Please!!! enter a number between 0 and 10'));
+                                                         console.log('number entering : '+nber);
+                                                         
+                                                         for (i of borne ){
+                                                                                if (nber==i){
+                                                                                             present=true;
+                                                                                            }
+                                                                              }
+
+
+                                                         if (isNaN(nber)){
+                                                                        console.log("Sorry Not a number, Goodbye");
+                                                                        Break;
+                                                                        }
+                                                        else if (present==true){
+                                                                                 let computerNumber=Math.floor(Math.random()*11); //returns a integer between 0 and 10
+                                                                                 console.log('computer number : '+computerNumber); //display
+                                                                               }
+                                                        else{
+                                                             prompt("Sorry it is not a good number, Goodbye");
+                                                            }
+                                                             
+                                                        }
+                                                        
+                                }
+
+        
+        //new function with parameters
+        function compareNumbers(userNumber,computerNumber){
+                 chances=3; // nomber of chances to play the game
+                
+                do{
+                    if (userNumber>computerNumber){
+                                                   userNumber=Number(prompt('Entrer a smaller number'));
+                                                   while (isNaN(userNumber)){
+                                                                             console.log("Sorry Not a number.....");
+                                                                             userNumber=Number(prompt('Entrer a smaller number'));
+                                                                            }  
+                                                  }
+                   
+                    if (userNumber<computerNumber){
+                    userNumber=Number(prompt('Entrer a bigger number'));
+                    while (isNaN(userNumber)){
+                                                console.log("Sorry Not a number.....");
+                                                userNumber=Number(prompt('Entrer a bigger number'));
+                                                }  
+                                                   }
+                    chances=chances-1;
+                  }
+                while ((chances!=0)&&(userNumber!=computerNumber));
+
+                if (chances==0){
+                                console.log('Game Over!!!');
+                               }
+                else{
+                    console.log('WINNER!!!');
+                    }
+                                                  }
+                
+                compareNumbers(12,18);*/
+        
+//bonus
+function  playTheGame2(){ 
+                        
+                        answer=confirm("Would you like to plat the game?")
+                        if (answer==false){
+                                            console.log('No problem, Goodbye');
+                                            Break;
+                                            }
+                                            else{ let computerNumber=Math.floor(Math.random()*110); //returns a integer between 0 and 10
+                                                  let userNumber=-1000 //default value
+                                                  do{
+                                                    if (userNumber>computerNumber){
+                                                                                userNumber=Number(prompt('Entrer a smaller number'));
+                                                                                while (isNaN(userNumber)){
+                                                                                                            console.log("Sorry Not a number.....");
+                                                                                                            userNumber=Number(prompt('Entrer a smaller number'));
+                                                                                                            }  
+                                                                                }
+                                                
+                                                    if (userNumber<computerNumber){
+                                                                                  userNumber=Number(prompt('Entrer a bigger number'));
+                                                                                    while (isNaN(userNumber)){
+                                                                                                                console.log("Sorry Not a number.....");
+                                                                                                                userNumber=Number(prompt('Entrer a bigger number'));
+                                                                                                                }  
+                                                                                }
+                                                     }
+                                                while ((userNumber!=computerNumber));
+
+                                                console.log('WINNER!!!');
+                                                console.log('The right number is : '+computerNumber); //display
+
+
+                                            }
+                                        }
+    playTheGame2();
+                                                    
+
+    </script>
+</body>
+
+</html>

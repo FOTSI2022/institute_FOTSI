@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM events table</title>
+     
+    </head>
+    <body>
+             
+    
+        <script>
+           function insertRow(){
+               //create a new tr, td, a text node; append the text node to the td then the td to the tr
+               //finally append the tr ti the table id sampleTable
+               let new_row=document.createElement('tr');
+               let new_cell1=document.createElement('td');
+               let new_cell2=document.createElement('td');
+               let cell_text1=document.createTextNote('Row cell 1'); 
+               let cell_text2=document.createTextNote('Row cell 2');
+               new_cell1.appendChild(cell_text1) 
+               new_cell2.appendChild(cell_tex2) 
+               new_row.appendChild(cell_cell1) 
+               new_row.appendChild(cell_cell2)  
+               document.querySelector('#sampleTable').appendChild(new_row)
+               
+            };
+        </script>
+    
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                border: 2px solid white;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+                border: 5px solid red;
+            }
+            .mercury{background-color: blueviolet;}
+            .venus{background-color: coral;}
+            .earth{background-color: aqua;}
+            .mars{background-color: chocolate;}
+            .jupiter{background-color: blue;}
+            .saturn{background-color: darksalmon;}
+            .neptune{background-color:darkslateblue;}
+            .uranus{background-color: indigo;}
+        </style>
+    </head>
+    <body>
+
+    <section class="listPlanets"></section>
+
+    <script type="text/javascript">
+        let solar_system =['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'neptune','uranus']
+        for(let planet of solar_system){
+            let div = document.createElement('div')
+            div.classList.add('planet')
+            div.classList.add(planet)
+            let section = document.querySelector('.listPlanets')
+            section.appendChild(div)
+        }
+    </script>
+    </body>
+</html>

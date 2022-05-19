@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button id="btn" onclick="myMove()">Click Me</button></p>
+
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+
+        <script>
+           //in your Javascript file, use setInterval to move the <div id="animate"> to the right side of the <div id="container">, when the button is clicked on.
+            let btn=document.querySelector('#btn') //attention au #
+            btn.addEventListener("click",myMove)// ne pas oublier surtout
+
+            //let timer = setInterval(myMove, 2000);// recupère id de setInterval
+            let move=0; //position of animate div
+            let timer=setInterval(myMove, 2000);// recupère id de setInterval
+            //setInterval(myMove, 2000);
+
+            function myMove(){
+                              let a=document.querySelector('#animate'); //attention au #
+                            //  let b=document.querySelector('#container'); //attention au #
+                             // console.log((b.style.width).substring(0,((b.style.width)).length))
+                              //let width_container=Number((b.style.width).substring(0,((b.style.width)).length))
+                              //console.log(width_container)
+                              
+                              a.style.left=move+'px'; //definir position
+                                
+                              //gestion de la limite du bord de container
+                              if (move<=300){
+                                    move=move+90;
+                                }
+                                else{
+                                   // move=0  //je repart au debut du div
+                                    clearInterval(timer); // je m'arrête au bout du carre
+                                     }
+                             
+                                //comment calculer automatiquement width
+                             // if ((move+50)<=((style.b.width).subString(0,length((style.b.width))-2)){
+                              //      move=move+50;
+                              //  }
+                                //else{move=0}
+                             
+                             }
+
+            //
+        </script>
+    </body>
+    </html>

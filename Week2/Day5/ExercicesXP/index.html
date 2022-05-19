@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+                //Add the stock and prices objects to your js file.
+
+                      let stock = { 
+                                        "banana": 6, 
+                                        "apple": 0,
+                                        "pear": 12,
+                                        "orange": 32,
+                                        "blueberry":1
+                                    }  
+
+                      let prices = {    
+                                        "banana": 4, 
+                                        "apple": 2, 
+                                        "pear": 1,
+                                        "orange": 1.5,
+                                        "blueberry":10
+                                    } 
+            
+            //Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. It means that you have 1 banana, 1 orange and 1 apple in your cart.
+              
+            let shoppingList= ['banana', 'orange', 'apple'];
+
+            //Create a function called myBill() that takes no parameters.
+            
+            function myBill(){
+                              let total=0;
+                              for (item of shoppingList){
+                                                         if (stock[item]!=0){
+                                                                            total=total+(stock[item]*prices[item]) //total is the total depense
+                                                         }
+                              }
+                    console.log('The total price is '+ total)
+                             }                                     
+                                 
+            //call the function
+            myBill();
+
+            //Bonus
+             let stock2 = { 
+                                        "banana": 6, 
+                                        "apple": 0,
+                                        "pear": 12,
+                                        "orange": 32,
+                                        "blueberry":1
+                                    }  
+
+              let prices2 = {    
+                              "banana": 4, 
+                              "apple": 2, 
+                              "pear": 1,
+                              "orange": 1.5,
+                              "blueberry":10
+                          } 
+          
+            //Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. It means that you have 1 banana, 1 orange and 1 apple in your cart.
+              
+            let shoppingList2= ['banana', 'orange', 'apple'];
+
+            //Create a function called myBill() that takes no parameters.
+            
+            function myBill2(){
+                              let total=0;
+                              console.log('Le stock initial est :');
+                              for (item in stock2){
+                                                console.log(item +':'+stock2[item])
+                                                 }
+
+                              for (item of shoppingList2){
+                                                         if (stock2[item]!=0){
+                                                                            total=total+(stock2[item]*prices2[item]) //total is the total depense
+                                                                            stock2[item]= stock2[item]-1;  //decrease quantity of item
+                                                                             }
+                                                        }
+                              console.log('The total price is '+ total);
+                              console.log('Le stock final est :');
+                              for (item in stock2){
+                                                console.log(item +':'+stock2[item]);
+                                                 }
+                             }                                     
+                                 
+            //call the function
+            myBill2();
+            
+            
+        </script>
+    </body>
+</html>
