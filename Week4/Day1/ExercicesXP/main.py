@@ -152,4 +152,29 @@ def ask_name():
 ask_name()
 '''
 '''
+Exercise 9 : Tall Enough To Ride A Roller Coaster
+Instructions
+Write code that will ask the user for their height in inches.
+If they are over 145cm print a message that states they are tall enough to ride.
+If they are not tall enough print a message that says they need to grow some more to ride.
+
+nb:1 cm = 0.39370079 in 
 '''
+
+def ride_roller():
+    your_height=""
+    while your_height=="":
+        your_height_saisi=input("Give us your height in inches")
+        try:
+            your_height=float(your_height_saisi)
+        except ValueError:
+            print("You should give a number")
+    height_converted= your_height//0.39370079
+    print(f"Your height is {your_height} inches which eguals to {height_converted} centimeters ")
+
+    if height_converted>145:
+        print("Your are are tall (under 145 cm) enough to ride ")
+    else:
+        print("You need to grow some more to ride")
+
+ride_roller()
