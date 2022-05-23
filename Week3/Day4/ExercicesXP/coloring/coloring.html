@@ -14,34 +14,34 @@
              
                  <button class="clear" type="button" name="button" onclick="clear()"> CLEAR</button>
               
-              <div class="colors">
-                <button class="colors" style="background-color:rgb(155,200,249);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(255,255,249);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(155,166,249);" onclick="color();"></button>
+              <div class="div_buttons">
+                <button class="colors" style="background-color:rgb(155,200,249);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(255,255,249);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(155,166,249);" onclick="color()"></button>
                 
-                <button class="colors" style="background-color:rgb(192, 77, 218);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(92, 92, 41);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(48, 243, 9);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(192, 77, 218);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(92, 92, 41);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(48, 243, 9);" onclick="color()"></button>
 
-                <button class="colors" style="background-color:rgb(187, 236, 52);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(92, 41, 77);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(48, 243, 9);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(187, 236, 52);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(92, 41, 77);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(48, 243, 9);" onclick="color()"></button>
 
-                <button class="colors" style="background-color:rgb(192, 224, 75);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(0, 41, 67);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(41, 143, 89);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(192, 224, 75);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(0, 41, 67);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(41, 143, 89);" onclick="color()"></button>
 
-                <button class="colors" style="background-color:rgb(236, 86, 0);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(219, 155, 190);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(218, 231, 224);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(236, 86, 0);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(219, 155, 190);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(218, 231, 224);" onclick="color()"></button>
 
-                <button class="colors" style="background-color:rgb(230, 206, 100);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(21, 0, 190);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(5, 172, 83);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(230, 206, 100);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(21, 0, 190);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(5, 172, 83);" onclick="color()"></button>
 
-                <button class="colors" style="background-color:rgb(230, 100, 100);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(224, 222, 240);" onclick="color();"></button>
-                <button class="colors" style="background-color:rgb(172, 5, 5);" onclick="color();"></button>
+                <button class="colors" style="background-color:rgb(230, 100, 100);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(224, 222, 240);" onclick="color()"></button>
+                <button class="colors" style="background-color:rgb(172, 5, 5);" onclick="color()"></button>
               </div>
                  
             </div> 
@@ -52,12 +52,50 @@
             </div> 
           </div>
           <script>
-            for (let i=0; i<=4320;i++){
+            //function pour dessiner les carreaux
+            for (let i=0; i<=1440;i++){
                                       let a=document.createElement('div');
                                       a.style.backgroundColor='white';
                                       document.querySelector('.partie_dessin').appendChild(a);
                                     }
+                                
+            //mouse down
             
+           
+           let b=document.createElement('div'); //create a variable b that should save the differents background color
+           //console.log(1)
+          // console.log(b)
+          let a=document.querySelector(".colors"); // a is the button selected
+          a.addEventListener("click", color) 
+           function color(){
+                           
+                           b.style.backgroundColor=a.style.backgroundColor; //b copied the background of a to use
+                           console.log(3)
+                           console.log(a.style.backgroundColor)
+                           console.log(b.style.backgroundColor)
+                            }
+
+            x=document.querySelectorAll(".partie_dessin > div") // x is an array of small div
+          
+            function clear(){
+                        b.style.backgroundColor='white';
+                        for (xi of x){
+                                  xi.style.backgroundColor='white';// initialise les background color de xi des div
+                                }
+                            }
+                            
+             for (xi of x){
+                         xi.addEventListener("click", colored) // affect events to xi
+                    
+                          }
+
+            function colored(){
+                      y=document.querySelectorAll(".partie_dessin > div") // x is an array of small div
+                      for (yi of y){              
+                              yi.style.backgroundColor=b.style.backgroundColor;
+                              }
+                            }
+
           </script>            
                  
         </body>
